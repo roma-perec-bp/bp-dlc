@@ -1,0 +1,54 @@
+{
+	"directory": "death",
+	"defaultZoom": 0.9,
+	"stageUI": "",
+
+	"boyfriend": [300, 100],
+	"girlfriend": [500, 50],
+	"opponent": [400, 100],
+
+	"hide_girlfriend": false,
+
+	"camera_boyfriend": [0, 0],
+	"girlfriendCameraOffset": [0, 0],
+	"camera_opponent": [0, 0],
+
+	"preload": {
+		"images/bars": 3,
+		"images/wave2/grass": 3,
+		"images/wave3/roof": 3,
+		"images/wave3/roofNight": 3,
+
+		"images/boom": 2,
+		"images/beatHand": 2,
+
+		"images/wave1/youAreOne": 2,
+        "images/wave2/pepBehind": 2,
+
+		"images/wave4/static": 3,
+		"images/wave4/grassStat": 3,
+		"images/wave4/roofStat": 3,
+
+		"images/beatuses/ycbu_lightning": 3,
+		"images/beatuses/YouCannotBeatUS_Fellas_Assets": 3,
+
+		"images/wave1/Too_Late_Luigi_Hallway": 2,
+		"images/wave1/wabe": 2,
+
+		"images/wave2/walkers": 2,
+		"images/wave2/target": 3,
+		"images/wave2/brain": 3,
+		"images/wave2/what": 3,
+
+		"images/wave3/walkersROOF": 2,
+		"images/wave3/imp": 2,
+
+		"images/Mario_static": 2,
+		"images/static": 1,
+		"images/Phase3Static": 2,
+		"images/stagnant_glitch": 2,
+		"images/staticBACKGROUND2": 2,
+		"images/HomeStatic": 2,
+		"images/daSTAT": 2
+	}
+}

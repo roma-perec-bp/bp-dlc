@@ -1,0 +1,71 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [-85, 6],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-78, -45],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [112, -61],
+			"anim": "intro",
+			"fps": 24,
+			"name": "cannot_fuck",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-102, -62],
+			"anim": "fuckUs",
+			"fps": 24,
+			"name": "down-fuck",
+			"indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21]
+		},
+		{
+			"loop": false,
+			"offsets": [-400, -24],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-128, -74],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [25, -130],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down0",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Unfuck_Pole_Normal_Assets, characters/Unfuck_Pole_Intro_Assets",
+	"position": [-100, 150],
+	"healthicon": "poolwalter",
+	"flip_x": false,
+	"healthbar_colors": [141, 168, 70],
+	"camera_position": [-630, -100],
+	"sing_duration": 4,
+	"scale": 2,
+	"_editor_isPlayer": false
+}

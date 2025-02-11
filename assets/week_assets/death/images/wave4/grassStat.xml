@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="grassStat.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="grass0000" x="10" y="10" width="1300" height="725"/>
+	<SubTexture name="grass0001" x="10" y="10" width="1300" height="725"/>
+	<SubTexture name="grass0002" x="10" y="745" width="1300" height="725"/>
+	<SubTexture name="grass0003" x="10" y="745" width="1300" height="725"/>
+	<SubTexture name="grass0004" x="1320" y="10" width="1300" height="725"/>
+	<SubTexture name="grass0005" x="1320" y="10" width="1300" height="725"/>
+	<SubTexture name="grass0006" x="1320" y="745" width="1300" height="725"/>
+	<SubTexture name="grass0007" x="1320" y="745" width="1300" height="725"/>
+</TextureAtlas>

@@ -1,0 +1,299 @@
+package substates;
+
+import states.MainMenuState;
+import backend.WeekData;
+import backend.Highscore;
+import backend.Song;
+
+import flixel.util.FlxStringUtil;
+import options.OptionsState;
+
+class PauseSubState extends MusicBeatSubstate
+{
+	var menuItems:Array<String> = [];
+	var menuItemsOG:Array<String> = ['Resume', 'Toggle Botplay', 'Restart Song', 'Options', 'Exit to menu'];
+
+	var menuItemsGroup:FlxTypedGroup<FlxSprite>;
+
+	var menuItemsAdvanced:Dynamic = [
+		["resume", 426, 575],
+		["botplay", 544, 309],
+		["restart", 544, 362],
+		["options", 544, 414],
+		["exit", 544, 467]
+	];
+	var curSelected:Int = 0;
+
+	var pauseMusic:FlxSound;
+	var bpText:FlxText;
+	//var botplayText:FlxText;
+
+	var dragDropObj:FlxSprite;
+	var bg2:FlxSprite;
+
+	var desc:FlxText;
+	
+	var curTime:Float = Math.max(0, Conductor.songPosition);
+
+	var missingTextBG:FlxSprite;
+	var missingText:FlxText;
+
+	public static var songName:String = null;
+
+	override function create()
+	{
+		menuItems = menuItemsOG;
+
+		pauseMusic = new FlxSound();
+
+		if(Init.fun >= 70 && Init.fun <= 87)
+		{
+			if(FlxG.random.bool(50))
+			{
+				pauseMusic.loadEmbedded(Paths.soundEmbed('rip'), true, true);
+				pauseMusic.volume = 0;
+				pauseMusic.play(false);
+			}
+			else
+			{
+				pauseMusic.loadEmbedded(Paths.music('scary'), true, true);
+				pauseMusic.volume = 0.6;
+				pauseMusic.play(false);
+			}
+		}
+		else
+		{
+			try
+			{
+				var pauseSong:String = getPauseSong();
+				if(pauseSong != null) pauseMusic.loadEmbedded(Paths.music(pauseSong), true, true);
+			}
+			catch(e:Dynamic) {}
+			pauseMusic.volume = 0;
+			pauseMusic.play(false, FlxG.random.int(0, Std.int(pauseMusic.length / 2)));
+		}
+
+		FlxG.sound.list.add(pauseMusic);
+
+		FlxG.sound.play(Paths.sound("buzzer"));
+
+		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+		bg.alpha = 0;
+		bg.scrollFactor.set();
+		add(bg);
+
+		bpText = new FlxText(20, 15, 0, "BOTPLAY ON", 32);
+		bpText.scrollFactor.set();
+		bpText.setFormat(Paths.font('vcr.ttf'), 32);
+		bpText.x = FlxG.width - (bpText.width + 20);
+		bpText.updateHitbox();
+		bpText.visible = PlayState.instance.cpuControlled;
+		add(bpText);
+
+		var chartingText:FlxText = new FlxText(20, 15 + 101, 0, "CHARTING MODE", 32);
+		chartingText.scrollFactor.set();
+		chartingText.setFormat(Paths.font('vcr.ttf'), 32);
+		chartingText.x = FlxG.width - (chartingText.width + 20);
+		chartingText.y = FlxG.height - (chartingText.height + 20);
+		chartingText.updateHitbox();
+		chartingText.visible = PlayState.chartingMode;
+		add(chartingText);
+
+		FlxTween.tween(bg, {alpha: 0.6}, 0.4, {ease: FlxEase.quartInOut});
+
+		changeSelection();
+
+		// new stuff
+		bg2 = new FlxSprite(0, 0).loadGraphic(Paths.image("pause_pvz_menu/background"));
+		bg2.screenCenter();
+		bg2.scrollFactor.set();
+		bg2.updateHitbox();
+		add(bg2);
+
+		FlxG.mouse.visible = true;
+
+		menuItemsGroup = new FlxTypedGroup<FlxSprite>();
+		add(menuItemsGroup);
+
+		for(i in 0...menuItemsAdvanced.length)
+		{
+			var menuItem:FlxSprite = new FlxSprite(0,0);
+			menuItem.frames = Paths.getSparrowAtlas('pause_pvz_menu/button_' + menuItemsAdvanced[i][0]);
+			menuItem.animation.addByPrefix('idle', "button_" + menuItemsAdvanced[i][0] + "_idle", 24);
+			menuItem.animation.addByPrefix('selected', "button_" + menuItemsAdvanced[i][0] + "_selected", 24);
+			menuItem.animation.play('idle');
+			menuItem.ID = i;
+			menuItemsGroup.add(menuItem);
+			menuItem.antialiasing = ClientPrefs.data.antialiasing;
+			menuItem.scrollFactor.set();
+			menuItem.updateHitbox();
+
+			menuItem.x = menuItemsAdvanced[i][1];
+			menuItem.y = menuItemsAdvanced[i][2];
+		}
+
+		desc = new FlxText(20, 15 + 64, 0, "", 25);
+		desc.text = "Song: " + Std.string(PlayState.SONG.song)
+		+ "\nBlueballed: " + Std.string(PlayState.deathCounter);
+		desc.scrollFactor.set();
+		desc.setFormat(Paths.font("serio.ttf"), 26, 0xFF6B6D91, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		desc.borderSize = 3;
+		desc.screenCenter();
+		desc.y -= 85;
+		desc.updateHitbox();
+		add(desc);
+
+		dragDropObj = new FlxSprite(0, 0).loadGraphic(Paths.image("pause_pvz_menu/hitbox"));
+		dragDropObj.setPosition(bg2.x, bg2.y);
+		dragDropObj.screenCenter(X);
+		dragDropObj.scrollFactor.set();
+		dragDropObj.updateHitbox();
+		dragDropObj.visible = false;
+		add(dragDropObj);
+
+		changeButtons();
+
+		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+
+		super.create();
+	}
+	
+	function getPauseSong()
+	{
+		var formattedSongName:String = (songName != null ? Paths.formatToSongPath(songName) : '');
+		var formattedPauseMusic:String = Paths.formatToSongPath(ClientPrefs.data.pauseMusic);
+		if(formattedSongName == 'none' || (formattedSongName != 'none' && formattedPauseMusic == 'none')) return null;
+
+		return (formattedSongName != '') ? formattedSongName : formattedPauseMusic;
+	}
+
+	var holdTime:Float = 0;
+	var cantUnpause:Float = 0.1;
+	override function update(elapsed:Float)
+	{
+		cantUnpause -= elapsed;
+
+		if (pauseMusic.volume < 0.5)
+			pauseMusic.volume += 0.01 * elapsed;
+
+		super.update(elapsed);
+
+		var accepted = controls.ACCEPT;
+		var mousePosX:Float = FlxG.mouse.getScreenPosition(camera).x;
+		var mousePosY:Float = FlxG.mouse.getScreenPosition(camera).y;
+
+		changeButtons();
+
+		if (FlxG.mouse.overlaps(dragDropObj, camera) && FlxG.mouse.pressed)
+		{
+			dragDropObj.x = mousePosX - (142/2);
+			dragDropObj.y = mousePosY - (79/2);
+		}
+
+		bg2.offset.set(-(dragDropObj.x - 569), -(dragDropObj.y - 38));
+
+		desc.offset.set(0 - (dragDropObj.x - 569), 0 - (dragDropObj.y - 38));
+
+		menuItemsGroup.forEach(function(spr:FlxSprite)
+		{
+			// spr.offset.x = 0 - (dragDropObj.x - 569);
+			// spr.offset.y = 0 - (dragDropObj.y - 38);
+
+			spr.x = menuItemsAdvanced[spr.ID][1]+(dragDropObj.x - 569);
+			spr.y = menuItemsAdvanced[spr.ID][2]+(dragDropObj.y - 38);
+
+			if (FlxG.mouse.overlaps(spr, camera) && FlxG.mouse.justPressed)
+			{
+				var daSelected:String = menuItems[curSelected];
+
+				switch (daSelected)
+				{
+					case "Resume":
+						FlxG.mouse.visible = false;
+						close();
+					case "Restart Song":
+						PlayState.respawnPoint = 0;
+						PlayState.respawned = false;
+						PlayState.changedDifficulty = false;
+						restartSong();
+					case 'Toggle Botplay':
+						PlayState.instance.cpuControlled = !PlayState.instance.cpuControlled;
+						PlayState.changedDifficulty = true;
+						PlayState.instance.botplayTxt.visible = PlayState.instance.cpuControlled;
+						PlayState.instance.botplayTxt.alpha = 1;
+						PlayState.instance.botplaySine = 0;
+						bpText.visible = PlayState.instance.cpuControlled;
+					case 'Options':
+						PlayState.changedDifficulty = false;
+						PlayState.instance.paused = true; // For lua
+						PlayState.instance.vocals.volume = 0;
+						PlayState.instance.canResync = false;
+						MusicBeatState.switchState(new OptionsState());
+						PlayState.respawnPoint = 0;
+						PlayState.respawned = false;
+						if(ClientPrefs.data.pauseMusic != 'None')
+						{
+							FlxG.sound.playMusic(Paths.music(Paths.formatToSongPath(ClientPrefs.data.pauseMusic)), pauseMusic.volume);
+							FlxTween.tween(FlxG.sound.music, {volume: 1}, 0.8);
+							FlxG.sound.music.time = pauseMusic.time;
+						}
+						OptionsState.onPlayState = true;
+					case "Exit to menu":
+						PlayState.respawnPoint = 0;
+						PlayState.respawned = false;
+						PlayState.deathCounter = 0;
+						PlayState.seenCutscene = false;
+						MusicBeatState.switchState(new MainMenuState());
+						FlxG.sound.playMusic(Paths.music('freakyMenu'), 0.7);
+						PlayState.changedDifficulty = false;
+						PlayState.chartingMode = false;
+				}
+			}
+		});
+
+		if(accepted)
+		{
+			close();
+		}
+	}
+
+	public static function restartSong(noTrans:Bool = false)
+	{
+		PlayState.instance.paused = true; // For lua
+		FlxG.sound.music.volume = 0;
+		PlayState.instance.vocals.volume = 0;
+
+		if(noTrans)
+		{
+			FlxTransitionableState.skipNextTransIn = true;
+			FlxTransitionableState.skipNextTransOut = true;
+		}
+		MusicBeatState.resetState();
+	}
+
+	override function destroy()
+	{
+		pauseMusic.destroy();
+		super.destroy();
+	}
+
+	function changeSelection(change:Int = 0):Void
+	{
+		curSelected = FlxMath.wrap(curSelected + change, 0, menuItems.length - 1);
+		FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
+	}
+
+	function changeButtons()
+	{
+		menuItemsGroup.forEach(function(spr:FlxSprite)
+		{
+			if(FlxG.mouse.overlaps(spr, camera))
+			{
+				curSelected = spr.ID;
+				spr.animation.play('selected');
+			} else {
+				spr.animation.play('idle');
+			}
+		});
+	}
+}

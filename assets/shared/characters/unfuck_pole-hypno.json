@@ -1,0 +1,71 @@
+{
+	"animations": [
+		{
+			"offsets": [-85, 6],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle-hypno"
+		},
+		{
+			"offsets": [161, 310],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left-hypno"
+		},
+		{
+			"offsets": [-25, -18],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down-hypno"
+		},
+		{
+			"offsets": [-467, 384],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up-hypno"
+		},
+		{
+			"offsets": [-55, 19],
+			"loop": false,
+			"fps": 24,
+			"anim": "die",
+			"indices": [],
+			"name": "death"
+		},
+		{
+			"offsets": [-409, 175],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right-hypno"
+		},
+		{
+			"offsets": [-115, 73],
+			"loop": false,
+			"fps": 12,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "up-rawr"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Unfuck_Pole_Hypno_Assets, characters/Unfuck_Pole_Dying_Assets",
+	"position": [-35, 260],
+	"healthicon": "poolwalter",
+	"flip_x": false,
+	"healthbar_colors": [141, 168, 70],
+	"camera_position": [-630, -100],
+	"sing_duration": 4,
+	"scale": 2,
+	"_editor_isPlayer": false
+}

@@ -1,0 +1,119 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [31, 0],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left-angry",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-73, -51],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down-angry",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-71, 80],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up-angry",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-35, 19],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right-angry",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [119, 12],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "left-alt-angry",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [144, 3],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "down-alt-angry",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-85, 72],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "up-alt-angry",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-184, 22],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "right-alt-angry",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [1, -10],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "left-miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-53, -31],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "down-miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-81, 60],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "up-miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-15, -19],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "right-miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-5, 0],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle_angry",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Unfuck_Hwaw_Angry_Assets, characters/Unfuck_Hwaw_Miss_Assets",
+	"position": [160, 270],
+	"healthicon": "hwaw",
+	"flip_x": true,
+	"healthbar_colors": [204, 0, 182],
+	"camera_position": [260, -350],
+	"sing_duration": 4,
+	"scale": 2,
+	"_editor_isPlayer": true
+}

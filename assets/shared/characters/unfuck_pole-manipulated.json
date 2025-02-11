@@ -1,0 +1,87 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [-85, 6],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle-manipulated0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-8, 23],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left-manipulated",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-90, -77],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down-manipulated",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-136, -75],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up-manipulated",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-202, -93],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right-manipulated",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [396, 153],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "left-hypno",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [210, -175],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "down-hypno",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-232, 227],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "up-hypno",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-174, 17],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "right-hypno",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Unfuck_Pole_Manipulated_Assets, characters/Unfuck_Pole_Hypno_Assets",
+	"position": [120, 180],
+	"healthicon": "poolwalter",
+	"flip_x": false,
+	"healthbar_colors": [141, 168, 70],
+	"camera_position": [-630, -100],
+	"sing_duration": 4,
+	"scale": 2,
+	"_editor_isPlayer": false
+}

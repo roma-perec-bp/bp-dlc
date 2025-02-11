@@ -1,0 +1,23 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "lork"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/dead_lork",
+	"position": [220, 10],
+	"healthicon": "pep",
+	"flip_x": false,
+	"healthbar_colors": [192, 0, 0],
+	"camera_position": [-170, 0],
+	"sing_duration": 4,
+	"scale": 1.5,
+	"_editor_isPlayer": false
+}

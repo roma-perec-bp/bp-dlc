@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="stagnant_glitch.png" width="3729" height="3816">
+	<SubTexture name="sadface 20000" x="2735" y="0" width="512" height="1280" rotated="true" frameX="-0" frameY="-169" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20001" x="2570" y="1285" width="601" height="1280" rotated="true" frameX="-0" frameY="-119" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20002" x="2570" y="2570" width="975" height="550" frameX="-260" frameY="-166" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20003" x="2170" y="3242" width="1" height="1" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20004" x="2170" y="3242" width="1" height="1" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20005" x="2170" y="3242" width="1" height="1" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20006" x="0" y="2900" width="1280" height="374" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20007" x="2170" y="3242" width="1" height="1" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20008" x="1285" y="2735" width="1280" height="502" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20009" x="2170" y="3242" width="1" height="1" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20010" x="3176" y="1285" width="333" height="1280" rotated="true" frameX="-0" frameY="-387" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20011" x="0" y="0" width="1280" height="720" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20012" x="2170" y="3544" width="775" height="146" frameX="-0" frameY="-211" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20013" x="2170" y="3242" width="1" height="1" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20014" x="2170" y="3242" width="1" height="1" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20015" x="1285" y="3242" width="880" height="403" frameX="-400" frameY="-33" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20016" x="879" y="3650" width="574" height="166" frameX="-395" frameY="-203" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20017" x="2570" y="3125" width="949" height="414" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20018" x="3252" y="0" width="477" height="856" rotated="true" frameX="-419" frameY="-243" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20019" x="0" y="725" width="1280" height="720" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20020" x="1285" y="0" width="720" height="1280" rotated="true" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20021" x="0" y="1450" width="1280" height="720" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20022" x="1285" y="1285" width="1280" height="720" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20023" x="2010" y="0" width="720" height="1280" rotated="true" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20024" x="1285" y="2010" width="1280" height="720" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20025" x="0" y="3279" width="874" height="381" frameX="-0" frameY="-339" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20026" x="0" y="2175" width="1280" height="720" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20027" x="3524" y="3125" width="185" height="607" rotated="true" frameX="-335" frameY="-469" frameWidth="1280" frameHeight="720"/>
+	<SubTexture name="sadface 20028" x="2170" y="3242" width="1" height="1" frameX="-0" frameY="-0" frameWidth="1280" frameHeight="720"/>
+</TextureAtlas>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="roofStat.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="roof0000" x="10" y="10" width="1300" height="725"/>
+	<SubTexture name="roof0001" x="10" y="10" width="1300" height="725"/>
+	<SubTexture name="roof0002" x="1320" y="10" width="1300" height="725"/>
+	<SubTexture name="roof0003" x="1320" y="10" width="1300" height="725"/>
+	<SubTexture name="roof0004" x="10" y="745" width="1300" height="725"/>
+	<SubTexture name="roof0005" x="10" y="745" width="1300" height="725"/>
+	<SubTexture name="roof0006" x="1320" y="745" width="1300" height="725"/>
+</TextureAtlas>

@@ -1,0 +1,95 @@
+{
+	"animations": [
+		{
+			"offsets": [-85, 6],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "idle"
+		},
+		{
+			"offsets": [-47, -10],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right0"
+		},
+		{
+			"offsets": [20, 0],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "right-alt"
+		},
+		{
+			"offsets": [110, 0],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "up-alt"
+		},
+		{
+			"offsets": [70, 36],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up0"
+		},
+		{
+			"offsets": [-75, -60],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down0"
+		},
+		{
+			"offsets": [-100, -50],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "down-alt"
+		},
+		{
+			"offsets": [127, -44],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left0"
+		},
+		{
+			"offsets": [420, 0],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "left alt"
+		},
+		{
+			"offsets": [610, 20],
+			"indices": [],
+			"fps": 24,
+			"anim": "cannot",
+			"loop": false,
+			"name": "cannot-fuck"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Unfuck_Pepper_Normal_Assets, characters/Unfuck_Pepper_Fuck_Assets",
+	"position": [-20, 90],
+	"healthicon": "pep",
+	"flip_x": false,
+	"healthbar_colors": [192, 0, 0],
+	"camera_position": [-360, -220],
+	"sing_duration": 4,
+	"scale": 1.7,
+	"_editor_isPlayer": false
+}

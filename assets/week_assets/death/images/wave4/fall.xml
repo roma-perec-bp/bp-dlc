@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fall.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fall00000" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00001" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00002" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00003" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00004" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00005" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00006" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00007" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00008" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00009" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00010" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00011" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00012" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00013" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00014" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00015" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall00016" x="10" y="257" width="429" height="204"/>
+	<SubTexture name="fall10000" x="10" y="10" width="562" height="237"/>
+</TextureAtlas>

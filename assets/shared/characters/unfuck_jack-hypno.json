@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [-85, 6],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle-hypno",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [215, -141],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down-hypno",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-168, -104],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right-hypno",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [140, 61],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up-hypno",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [132, -99],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left-hypno",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Unfuck_Jackson_Hypno_Assets",
+	"position": [-30, 150],
+	"healthicon": "dance",
+	"flip_x": false,
+	"healthbar_colors": [226, 240, 183],
+	"camera_position": [-480, -100],
+	"sing_duration": 4,
+	"scale": 1.5,
+	"_editor_isPlayer": false
+}

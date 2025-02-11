@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="Unfuck_Pepper_ControlTrans_Assets.png" width="3108" height="3445">
+	<SubTexture name="trans-evil0000" x="0" y="0" width="587" height="650" frameX="-21" frameY="-59" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0001" x="592" y="0" width="576" height="643" frameX="-23" frameY="-66" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0002" x="0" y="655" width="642" height="576" rotated="true" frameX="-22" frameY="-67" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0003" x="1173" y="0" width="426" height="640" frameX="-30" frameY="-69" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0004" x="647" y="648" width="640" height="426" rotated="true" frameX="-30" frameY="-69" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0005" x="2418" y="1374" width="346" height="668" frameX="-67" frameY="-41" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0006" x="2418" y="1374" width="346" height="668" frameX="-67" frameY="-41" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0007" x="0" y="2456" width="680" height="341" rotated="true" frameX="-65" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0008" x="0" y="2456" width="680" height="341" rotated="true" frameX="-65" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0009" x="2422" y="2047" width="340" height="679" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0010" x="2422" y="2047" width="340" height="679" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0011" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0012" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0013" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0014" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0015" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0016" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0017" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0018" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0019" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0020" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0021" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0022" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0023" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0024" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0025" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0026" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0027" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0028" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0029" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0030" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0031" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0032" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0033" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0034" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0035" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0036" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0037" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0038" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0039" x="685" y="2456" width="679" height="341" rotated="true" frameX="-66" frameY="-30" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0040" x="647" y="1079" width="688" height="340" rotated="true" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0041" x="647" y="1079" width="688" height="340" rotated="true" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0042" x="1386" y="2079" width="687" height="339" rotated="true" frameX="-67" frameY="-22" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0043" x="1386" y="2079" width="687" height="339" rotated="true" frameX="-67" frameY="-22" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0044" x="0" y="1424" width="688" height="339" rotated="true" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0045" x="693" y="1424" width="688" height="339" rotated="true" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0046" x="693" y="1424" width="688" height="339" rotated="true" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0047" x="1340" y="645" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0048" x="1340" y="645" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0049" x="1340" y="645" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0050" x="1340" y="645" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0051" x="1340" y="645" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0052" x="1386" y="1338" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0053" x="1386" y="1338" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0054" x="1386" y="1338" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0055" x="0" y="1768" width="688" height="339" rotated="true" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0056" x="0" y="1768" width="688" height="339" rotated="true" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0057" x="693" y="1768" width="688" height="339" rotated="true" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0058" x="693" y="1768" width="688" height="339" rotated="true" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0059" x="693" y="1768" width="688" height="339" rotated="true" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0060" x="1684" y="0" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0061" x="1684" y="0" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0062" x="1684" y="0" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0063" x="1684" y="0" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0064" x="1684" y="0" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0065" x="693" y="1424" width="688" height="339" rotated="true" frameX="-73" frameY="-34" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0066" x="693" y="1424" width="688" height="339" rotated="true" frameX="-73" frameY="-34" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0067" x="693" y="1768" width="688" height="339" rotated="true" frameX="-69" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0068" x="693" y="1768" width="688" height="339" rotated="true" frameX="-69" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0069" x="693" y="1768" width="688" height="339" rotated="true" frameX="-69" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0070" x="1730" y="693" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0071" x="1730" y="693" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0072" x="1730" y="1386" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0073" x="1730" y="1386" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0074" x="1730" y="1386" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0075" x="1730" y="1386" width="339" height="688" frameX="-67" frameY="-21" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0076" x="1340" y="645" width="339" height="688" frameX="-64" frameY="-22" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0077" x="1340" y="645" width="339" height="688" frameX="-64" frameY="-22" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0078" x="693" y="1768" width="688" height="339" rotated="true" frameX="-77" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0079" x="693" y="1768" width="688" height="339" rotated="true" frameX="-77" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0080" x="2054" y="3104" width="612" height="341" rotated="true" frameX="-65" frameY="-97" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0081" x="2072" y="2760" width="680" height="339" rotated="true" frameX="-68" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0082" x="2072" y="2760" width="680" height="339" rotated="true" frameX="-68" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0083" x="685" y="2802" width="668" height="339" rotated="true" frameX="-68" frameY="-41" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0084" x="685" y="2802" width="668" height="339" rotated="true" frameX="-68" frameY="-41" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0085" x="685" y="2802" width="668" height="339" rotated="true" frameX="-68" frameY="-41" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0086" x="685" y="2802" width="668" height="339" rotated="true" frameX="-68" frameY="-41" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0087" x="685" y="2802" width="668" height="339" rotated="true" frameX="-68" frameY="-41" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0088" x="685" y="2802" width="668" height="339" rotated="true" frameX="-68" frameY="-41" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0089" x="685" y="2802" width="668" height="339" rotated="true" frameX="-68" frameY="-41" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0090" x="2716" y="0" width="339" height="668" frameX="-68" frameY="-41" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0091" x="2762" y="673" width="339" height="668" frameX="-68" frameY="-41" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0092" x="2767" y="2047" width="339" height="668" frameX="-68" frameY="-41" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0093" x="2716" y="0" width="339" height="668" frameX="-64" frameY="-39" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0094" x="2372" y="0" width="339" height="682" frameX="-68" frameY="-27" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0095" x="2418" y="687" width="339" height="682" frameX="-68" frameY="-27" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0096" x="0" y="2112" width="687" height="339" rotated="true" frameX="-68" frameY="-22" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0097" x="0" y="2112" width="687" height="339" rotated="true" frameX="-68" frameY="-22" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0098" x="2769" y="1346" width="339" height="635" frameX="-68" frameY="-74" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0099" x="1369" y="2767" width="680" height="339" rotated="true" frameX="-68" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0100" x="1369" y="2767" width="680" height="339" rotated="true" frameX="-68" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0101" x="692" y="2112" width="685" height="339" rotated="true" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0102" x="692" y="2112" width="685" height="339" rotated="true" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0103" x="2028" y="0" width="339" height="685" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0104" x="2028" y="0" width="339" height="685" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0105" x="2074" y="690" width="339" height="685" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0106" x="2074" y="690" width="339" height="685" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0107" x="2074" y="690" width="339" height="685" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0108" x="2767" y="2720" width="339" height="635" frameX="-68" frameY="-74" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0109" x="0" y="2802" width="680" height="339" rotated="true" frameX="-68" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0110" x="0" y="2802" width="680" height="339" rotated="true" frameX="-68" frameY="-29" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0111" x="2074" y="1380" width="339" height="685" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0112" x="2074" y="1380" width="339" height="685" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0113" x="2078" y="2070" width="339" height="685" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0114" x="2078" y="2070" width="339" height="685" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0115" x="1382" y="2423" width="685" height="339" rotated="true" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0116" x="1382" y="2423" width="685" height="339" rotated="true" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0117" x="1382" y="2423" width="685" height="339" rotated="true" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0118" x="1382" y="2423" width="685" height="339" rotated="true" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+	<SubTexture name="trans-evil0119" x="1382" y="2423" width="685" height="339" rotated="true" frameX="-68" frameY="-24" frameWidth="626" frameHeight="722"/>
+</TextureAtlas>

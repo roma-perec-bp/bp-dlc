@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sparkles.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="spark00000" x="897" y="10" width="45" height="61" frameX="-198" frameY="0" frameWidth="243" frameHeight="211"/>
+	<SubTexture name="spark00001" x="869" y="348" width="112" height="115" frameX="-129" frameY="-8" frameWidth="243" frameHeight="211"/>
+	<SubTexture name="spark00002" x="304" y="234" width="211" height="153" frameX="-27" frameY="-34" frameWidth="243" frameHeight="211"/>
+	<SubTexture name="spark00003" x="10" y="243" width="216" height="139" frameX="-7" frameY="-67" frameWidth="243" frameHeight="211"/>
+	<SubTexture name="spark00004" x="10" y="243" width="216" height="139" frameX="-7" frameY="-67" frameWidth="243" frameHeight="211"/>
+	<SubTexture name="spark00005" x="10" y="392" width="218" height="136" frameX="0" frameY="-75" frameWidth="243" frameHeight="211"/>
+	<SubTexture name="spark00006" x="10" y="392" width="218" height="136" frameX="0" frameY="-75" frameWidth="243" frameHeight="211"/>
+	<SubTexture name="spark10000" x="952" y="10" width="38" height="49" frameX="-62" frameY="0" frameWidth="153" frameHeight="163"/>
+	<SubTexture name="spark10001" x="869" y="218" width="133" height="120" frameX="-12" frameY="-28" frameWidth="153" frameHeight="163"/>
+	<SubTexture name="spark10002" x="413" y="397" width="153" height="79" frameX="0" frameY="-84" frameWidth="153" frameHeight="163"/>
+	<SubTexture name="spark10003" x="413" y="397" width="153" height="79" frameX="0" frameY="-84" frameWidth="153" frameHeight="163"/>
+	<SubTexture name="spark10004" x="576" y="411" width="153" height="61" frameX="0" frameY="-98" frameWidth="153" frameHeight="163"/>
+	<SubTexture name="spark10005" x="576" y="411" width="153" height="61" frameX="0" frameY="-98" frameWidth="153" frameHeight="163"/>
+	<SubTexture name="spark20000" x="238" y="397" width="165" height="91" frameX="0" frameY="0" frameWidth="379" frameHeight="297"/>
+	<SubTexture name="spark20001" x="603" y="218" width="256" height="183" frameX="-50" frameY="-17" frameWidth="379" frameHeight="297"/>
+	<SubTexture name="spark20002" x="603" y="10" width="284" height="198" frameX="-69" frameY="-49" frameWidth="379" frameHeight="297"/>
+	<SubTexture name="spark20003" x="603" y="10" width="284" height="198" frameX="-69" frameY="-49" frameWidth="379" frameHeight="297"/>
+	<SubTexture name="spark20004" x="304" y="10" width="289" height="214" frameX="-82" frameY="-67" frameWidth="379" frameHeight="297"/>
+	<SubTexture name="spark20005" x="304" y="10" width="289" height="214" frameX="-82" frameY="-67" frameWidth="379" frameHeight="297"/>
+</TextureAtlas>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="jacksonWalkBald.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="jackson0000" x="10" y="399" width="88" height="122" frameX="-5" frameY="-15" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0001" x="10" y="138" width="91" height="120" frameX="-2" frameY="-17" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0002" x="10" y="10" width="93" height="118" frameX="0" frameY="-19" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0003" x="10" y="531" width="88" height="120" frameX="-2" frameY="-17" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0004" x="203" y="10" width="83" height="122" frameX="-4" frameY="-15" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0005" x="108" y="404" width="78" height="125" frameX="-5" frameY="-12" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0006" x="284" y="148" width="73" height="128" frameX="-6" frameY="-9" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0007" x="446" y="156" width="71" height="130" frameX="-7" frameY="-7" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0008" x="446" y="296" width="69" height="131" frameX="-8" frameY="-6" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0009" x="367" y="300" width="69" height="133" frameX="-9" frameY="-4" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0010" x="203" y="288" width="69" height="135" frameX="-10" frameY="-2" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0011" x="204" y="142" width="70" height="136" frameX="-12" frameY="-1" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0012" x="384" y="10" width="73" height="136" frameX="-12" frameY="0" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0013" x="296" y="10" width="78" height="128" frameX="-8" frameY="-8" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0014" x="111" y="148" width="83" height="119" frameX="-4" frameY="-17" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0015" x="467" y="10" width="84" height="118" frameX="-3" frameY="-18" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0016" x="109" y="277" width="84" height="117" frameX="-3" frameY="-19" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0017" x="108" y="539" width="79" height="119" frameX="-5" frameY="-17" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0018" x="282" y="288" width="75" height="123" frameX="-6" frameY="-13" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0019" x="275" y="433" width="71" height="125" frameX="-6" frameY="-11" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0020" x="275" y="568" width="68" height="127" frameX="-7" frameY="-9" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0021" x="434" y="443" width="68" height="129" frameX="-8" frameY="-7" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0022" x="356" y="443" width="68" height="130" frameX="-9" frameY="-6" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0023" x="197" y="433" width="68" height="132" frameX="-10" frameY="-4" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0024" x="367" y="156" width="69" height="134" frameX="-11" frameY="-2" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0025" x="113" y="10" width="80" height="128" frameX="-7" frameY="-9" frameWidth="93" frameHeight="137"/>
+	<SubTexture name="jackson0026" x="10" y="268" width="89" height="121" frameX="-4" frameY="-16" frameWidth="93" frameHeight="137"/>
+</TextureAtlas>

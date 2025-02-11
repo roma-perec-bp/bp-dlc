@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="pepBehind.png" width="2527" height="2688">
+	<SubTexture name="pep_look0000" x="677" y="2515" width="699" height="173" rotated="true" frameX="-169" frameY="-21" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0001" x="2257" y="1976" width="180" height="700" frameX="-142" frameY="-20" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0002" x="2047" y="1944" width="205" height="698" frameX="-117" frameY="-22" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0003" x="2280" y="1277" width="226" height="694" frameX="-96" frameY="-26" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0004" x="2283" y="0" width="244" height="689" frameX="-78" frameY="-31" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0005" x="1359" y="2239" width="683" height="259" rotated="true" frameX="-63" frameY="-37" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0006" x="677" y="2239" width="677" height="271" rotated="true" frameX="-51" frameY="-43" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0007" x="0" y="2229" width="672" height="282" rotated="true" frameX="-40" frameY="-48" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0008" x="1318" y="1944" width="667" height="290" rotated="true" frameX="-32" frameY="-53" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0009" x="1978" y="1277" width="297" height="662" frameX="-25" frameY="-58" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0010" x="1623" y="970" width="658" height="302" rotated="true" frameX="-20" frameY="-62" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0011" x="1315" y="1313" width="655" height="307" rotated="true" frameX="-15" frameY="-65" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0012" x="1308" y="656" width="310" height="652" frameX="-12" frameY="-68" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0013" x="653" y="971" width="650" height="312" rotated="true" frameX="-10" frameY="-70" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0014" x="962" y="0" width="314" height="648" frameX="-8" frameY="-72" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0015" x="0" y="653" width="647" height="315" rotated="true" frameX="-7" frameY="-73" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0016" x="0" y="0" width="316" height="647" frameX="-6" frameY="-73" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0017" x="321" y="0" width="316" height="647" frameX="-6" frameY="-73" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0018" x="0" y="0" width="316" height="647" frameX="-4" frameY="-75" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0019" x="642" y="0" width="315" height="648" frameX="-7" frameY="-72" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0020" x="0" y="973" width="648" height="314" rotated="true" frameX="-8" frameY="-72" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0021" x="652" y="653" width="649" height="313" rotated="true" frameX="-9" frameY="-71" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0022" x="653" y="1288" width="650" height="312" rotated="true" frameX="-10" frameY="-70" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0023" x="1306" y="0" width="311" height="651" frameX="-11" frameY="-69" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0024" x="0" y="1605" width="652" height="309" rotated="true" frameX="-13" frameY="-68" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0025" x="657" y="1605" width="653" height="308" rotated="true" frameX="-14" frameY="-67" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0026" x="1623" y="0" width="307" height="654" frameX="-15" frameY="-66" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0027" x="1318" y="1625" width="655" height="306" rotated="true" frameX="-16" frameY="-65" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0028" x="1623" y="659" width="655" height="306" rotated="true" frameX="-16" frameY="-65" frameWidth="356" frameHeight="722"/>
+	<SubTexture name="pep_look0029" x="657" y="1918" width="656" height="306" rotated="true" frameX="-16" frameY="-64" frameWidth="356" frameHeight="722"/>
+</TextureAtlas>

@@ -58,7 +58,7 @@ class LoadingState extends MusicBeatState
 	var barWidth:Int = 0;
 	var intendedPercent:Float = 0;
 	var curPercent:Float = 0;
-	var canChangeState:Bool = true;
+	var stateChangeDelay:Float = 0;
 
 	var logo:FlxSprite;
 	var loadingText:FlxText;
@@ -69,21 +69,7 @@ class LoadingState extends MusicBeatState
 
 	override function create()
 	{
-		#if !SHOW_LOADING_SCREEN
-		while(true)
-		#end
-		{
-			if (checkLoaded())
-			{
-				dontUpdate = true;
-				super.create();
-				onLoad();
-				return;
-			}
-			#if !SHOW_LOADING_SCREEN
-			Sys.sleep(0.001);
-			#end
-		}
+		persistentUpdate = true;
 
 		funkay = new FlxSprite(0, 0).loadGraphic(Paths.image('funkay'));
         funkay.antialiasing = ClientPrefs.data.antialiasing;
@@ -114,8 +100,13 @@ class LoadingState extends MusicBeatState
         add(bar);
         barWidth = Std.int(bg.width - 10);
 
-		persistentUpdate = true;
 		super.create();
+
+		if (stateChangeDelay <= 0 && checkLoaded())
+		{
+			dontUpdate = true;
+			onLoad();
+		}
 	}
 
 	var transitioning:Bool = false;
@@ -126,11 +117,15 @@ class LoadingState extends MusicBeatState
 
 		if (!transitioning)
 		{
-			if (canChangeState && !finishedLoading && checkLoaded())
+			if (!finishedLoading && checkLoaded())
 			{
-				transitioning = true;
-				onLoad();
-				return;
+				if(stateChangeDelay <= 0)
+				{
+					transitioning = true;
+					onLoad();
+					return;
+				}
+				else stateChangeDelay = Math.max(0, stateChangeDelay - elapsed);
 			}
 			intendedPercent = loaded / loadMax;
 		}
@@ -214,6 +209,10 @@ class LoadingState extends MusicBeatState
 	static var isIntrusive:Bool = false;
 	static function getNextState(target:FlxState, stopMusic = false, intrusive:Bool = true):FlxState
 	{
+		#if !SHOW_LOADING_SCREEN
+		intrusive = false;
+		#end
+		
 		LoadingState.isIntrusive = intrusive;
 		_startPool();
 		loadNextDirectory();
@@ -259,6 +258,19 @@ class LoadingState extends MusicBeatState
 
 	public static function prepareToSong()
 	{
+		if(PlayState.SONG == null)
+		{
+			imagesToPrepare = [];
+			soundsToPrepare = [];
+			musicToPrepare = [];
+			songsToPrepare = [];
+			loaded = 0;
+			loadMax = 0;
+			initialThreadCompleted = true;
+			isIntrusive = false;
+			return;
+		}
+		
 		_startPool();
 		imagesToPrepare = [];
 		soundsToPrepare = [];

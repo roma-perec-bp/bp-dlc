@@ -336,7 +336,6 @@ class PlayState extends MusicBeatState
 	public var songName:String;
 
 	//video var
-	//public var sequence2:VideoSprite = null;
 	public var sequences:VideoSprite = null;
 	var hypnoBg:VideoSprite = null;
 
@@ -491,7 +490,7 @@ class PlayState extends MusicBeatState
 			{
 				if(SONG.song == 'UNFUCKABLE')
 				{
-					hypnoBg = new VideoSprite(Paths.video('hypno bg'), true, false, true, false);
+					hypnoBg = new VideoSprite(Paths.video('hypno bg'), true, false, true);
 					add(hypnoBg);
 					hypnoBg.play();
 					hypnoBg.videoSprite.setGraphicSize(FlxG.width * 2, FlxG.height * 2);
@@ -754,16 +753,11 @@ class PlayState extends MusicBeatState
 		if(ClientPrefs.data.downScroll) ratingTxt.y = healthBar.y + 100;
 		uiGroup.add(ratingTxt);
 
-		/*sequence2 = new VideoSprite(Paths.video('sequence 2'), true, false, false, false);
-		sequence2.videoSprite.bitmap.rate = playbackRate;
-		add(sequence2);
-		sequence2.videoSprite.cameras = [camHudBehind];*/
-
 		if (!ClientPrefs.data.lowQuality)
 		{
 			if(SONG.song == 'UNFUCKABLE' && !ClientPrefs.data.optimize)
 			{
-				sequences = new VideoSprite(Paths.video('sequences'), true, false, false, false);
+				sequences = new VideoSprite(Paths.video('sequences'), true, false, false);
 				sequences.videoSprite.bitmap.rate = playbackRate;
 				add(sequences);
 				sequences.videoSprite.cameras = [camHudBehind];
@@ -930,9 +924,8 @@ class PlayState extends MusicBeatState
 		FlxG.animationTimeScale = value;
 		Conductor.offset = Reflect.hasField(PlayState.SONG, 'offset') ? (PlayState.SONG.offset / value) : 0;
 		Conductor.safeZoneOffset = (ClientPrefs.data.safeFrames / 60) * 1000 * value;
-		if(videoCutscene != null) videoCutscene.videoSprite.bitmap.rate = value;
-		//if(sequence2 != null) sequence2.videoSprite.bitmap.rate = value;
-		if(sequences != null) sequences.videoSprite.bitmap.rate = value;
+		if(videoCutscene != null && videoCutscene.videoSprite != null) videoCutscene.videoSprite.bitmap.rate = value;
+		if(sequences != null  && sequences.videoSprite != null) sequences.videoSprite.bitmap.rate = value;
 		setOnScripts('playbackRate', playbackRate);
 		#else
 		playbackRate = 1.0; // ensuring -Crow
@@ -1125,7 +1118,7 @@ class PlayState extends MusicBeatState
 
 		if (foundFile)
 		{
-			videoCutscene = new VideoSprite(fileName, forMidSong, canSkip, loop, false);
+			videoCutscene = new VideoSprite(fileName, forMidSong, canSkip, loop);
 			videoCutscene.videoSprite.bitmap.rate = playbackRate;
 
 			// Finish callback
@@ -1928,11 +1921,6 @@ class PlayState extends MusicBeatState
 				if(songName == 'unfuckable') beatusVocals.pause();
 			}
 
-			if(videoCutscene != null) videoCutscene.videoSprite.pause();
-			//if(sequence2 != null) sequence2.videoSprite.pause();
-			if(sequences != null) sequences.videoSprite.pause();
-			if(hypnoBg != null) hypnoBg.videoSprite.pause();
-
 			FlxTimer.globalManager.forEach(function(tmr:FlxTimer) if(!tmr.finished) tmr.active = false);
 			FlxTween.globalManager.forEach(function(twn:FlxTween) if(!twn.finished) twn.active = false);
 		}
@@ -1955,10 +1943,6 @@ class PlayState extends MusicBeatState
 
 			FlxTimer.globalManager.forEach(function(tmr:FlxTimer) if(!tmr.finished) tmr.active = true);
 			FlxTween.globalManager.forEach(function(twn:FlxTween) if(!twn.finished) twn.active = true);
-			if(videoCutscene != null) videoCutscene.resume();
-			//if(sequence2 != null) sequence2.resume();
-			if(sequences != null) sequences.resume();
-			if(hypnoBg != null) hypnoBg.resume();
 
 			paused = false;
 			callOnScripts('onResume');
@@ -1966,34 +1950,20 @@ class PlayState extends MusicBeatState
 		}
 	}
 
+	#if DISCORD_ALLOWED
 	override public function onFocus():Void
 	{
-		if (!paused)
-		{
-			if (health > 0) resetRPC(Conductor.songPosition > 0.0);
-			if (videoCutscene != null) videoCutscene.resume();
-			//if (sequence2 != null) sequence2.resume();
-			if (sequences != null) sequences.resume();
-			if (hypnoBg != null) hypnoBg.resume();
-		}
 		super.onFocus();
+		if (!paused && health > 0) resetRPC(Conductor.songPosition > 0.0);
 	}
 
 	override public function onFocusLost():Void
 	{
-		if (!paused)
-		{
-			#if DISCORD_ALLOWED
-			if (health > 0 && autoUpdateRPC) DiscordClient.changePresence(detailsPausedText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
-			#end
-			if (videoCutscene != null) videoCutscene.pause();
-			//if (sequence2 != null) sequence2.pause();
-			if (sequences != null) sequences.pause();
-			if (hypnoBg != null) hypnoBg.pause();
-		}
-
 		super.onFocusLost();
+		
+		if (!paused && health > 0 && autoUpdateRPC) DiscordClient.changePresence(detailsPausedText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
 	}
+	#end
 
 	// Updating Discord Rich Presence.
 	public var autoUpdateRPC:Bool = true; //performance setting for custom RPC things
@@ -2583,12 +2553,6 @@ class PlayState extends MusicBeatState
 					videoCutscene = null;
 				}
 
-				/*if(sequence2 != null)
-				{
-					sequence2.destroy();
-					sequence2 = null;
-				}*/
-
 				if(sequences != null)
 				{
 					sequences.destroy();
@@ -3136,6 +3100,8 @@ class PlayState extends MusicBeatState
 				});
 
 			case 'Ghost Behind':
+				if(ClientPrefs.data.optimize) return;
+
 				ghostToggle = !ghostToggle;
 
 				if(!ghostToggle)
@@ -3778,9 +3744,6 @@ class PlayState extends MusicBeatState
 			case 'Play Video':
 				switch(value1)
 				{
-					case 'sequence 2':
-						//sequence2.play();	
-
 					case 'sequences':
 						if (!ClientPrefs.data.lowQuality && !ClientPrefs.data.optimize)
 						{
@@ -4913,7 +4876,6 @@ class PlayState extends MusicBeatState
 		}
 
 		if(videoCutscene != null) videoCutscene.destroy();
-		//if(sequence2 != null) sequence2.destroy();
 		if(sequences != null) sequences.destroy();
 		if(hypnoBg != null) hypnoBg.destroy();
 
@@ -4941,12 +4903,6 @@ class PlayState extends MusicBeatState
 		hscriptArray = null;
 		#end
 		stagesFunc(function(stage:BaseStage) stage.destroy());
-
-		/*if(sequence2 != null)
-		{
-			sequence2.destroy();
-			sequence2 = null;
-		}*/
 
 		if(sequences != null)
 		{

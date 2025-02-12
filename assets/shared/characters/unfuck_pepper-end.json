@@ -1,0 +1,63 @@
+{
+	"animations": [
+		{
+			"offsets": [-167, -63],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "idle-angry"
+		},
+		{
+			"offsets": [-125, -150],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down-angry"
+		},
+		{
+			"offsets": [-180, -24],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up-angry"
+		},
+		{
+			"offsets": [-113, -104],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left-angry"
+		},
+		{
+			"offsets": [-267, -50],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right-angry"
+		},
+		{
+			"offsets": [-160, 40],
+			"indices": [],
+			"fps": 24,
+			"anim": "end",
+			"loop": false,
+			"name": "end"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Unfuck_Pepper_End_Assets",
+	"position": [-280, 40],
+	"healthicon": "pep",
+	"flip_x": false,
+	"healthbar_colors": [192, 0, 0],
+	"camera_position": [-190, -100],
+	"sing_duration": 4,
+	"scale": 1.7,
+	"_editor_isPlayer": false
+}

@@ -31,24 +31,37 @@ class LohState extends MusicBeatState
 
 		if (foundFile)
 		{
-			var cutscene:VideoSprite = new VideoSprite(fileName, false, true, false, false);
+			videoCutscene = new VideoSprite(fileName, false, true, false);
 
 			function onVideoEnd()
 			{
-				cutscene = null;
+				videoCutscene = null;
 				MusicBeatState.switchState(new PlayState());
 			}
 
-			cutscene.finishCallback = onVideoEnd;
-			cutscene.onSkip = onVideoEnd;
+			videoCutscene.finishCallback = onVideoEnd;
+			videoCutscene.onSkip = onVideoEnd;
 
-            add(cutscene);
+            add(videoCutscene);
 
-            cutscene.play();
+            videoCutscene.play();
 		}
 		#else
 		FlxG.log.warn('Platform not supported!');
 		MusicBeatState.switchState(new PlayState());
 		#end
     }
+
+	override function destroy() 
+	{
+		#if VIDEOS_ALLOWED
+		if(videoCutscene != null)
+		{
+			videoCutscene.destroy();
+			videoCutscene = null;
+		}
+		#end
+
+		super.destroy();
+	}
 }

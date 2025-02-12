@@ -1895,7 +1895,7 @@ function onUpdatePost(elapsed)
     for i=0, getProperty('notes.length')-1 do
         if getPropertyFromGroup('notes', i, 'isSustainNote') == true then
             if initScroll then
-                setPropertyFromGroup('notes', i, 'flipY', not getPropertyFromGroup("strumLineNotes", 0, 'downScroll'))
+                setPropertyFromGroup('notes', i, 'flipY', getPropertyFromGroup("strumLineNotes", 0, 'downScroll'))
             else
                 setPropertyFromGroup('notes', i, 'flipY', getPropertyFromGroup("strumLineNotes", 0, 'downScroll'))
             end

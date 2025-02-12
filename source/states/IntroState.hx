@@ -66,33 +66,25 @@ class IntroState extends MusicBeatState
 
 		if (foundFile)
 		{
-			var cutscene:VideoSprite = new VideoSprite(fileName, false, true, false, false);
+			videoCutscene = new VideoSprite(fileName, false, true, false);
 
-			cutscene.finishCallback = function()
+			function onVideoEnd()
 			{
+				videoCutscene = null;
 				if(FlxG.save.data.firstTime == true)
 					MusicBeatState.switchState(new FlashingState());
 				else
 				{
 					MusicBeatState.switchState(new SetTvEffectState());
 				}
-			};
-
-			// Skip callback
-			cutscene.onSkip = function()
-			{
-                remove(cutscene);
-				if(FlxG.save.data.firstTime == true)
-					MusicBeatState.switchState(new FlashingState());
-				else
-				{
-					MusicBeatState.switchState(new SetTvEffectState());
-				}
-			};
-
-            add(cutscene);
-
-            cutscene.play();
+			}
+	
+			videoCutscene.finishCallback = onVideoEnd;
+			videoCutscene.onSkip = onVideoEnd;
+	
+			add(videoCutscene);
+	
+			videoCutscene.videoSprite.play();
 		}
 		#else
 		FlxG.log.warn('Platform not supported!');
@@ -103,5 +95,18 @@ class IntroState extends MusicBeatState
 			MusicBeatState.switchState(new SetTvEffectState());
 		}
 		#end
+	}
+
+	override function destroy() 
+	{
+		#if VIDEOS_ALLOWED
+		if(videoCutscene != null)
+		{
+			videoCutscene.destroy();
+			videoCutscene = null;
+		}
+		#end
+
+		super.destroy();
 	}
 }

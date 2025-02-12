@@ -124,7 +124,7 @@ class CutState extends MusicBeatState
 
 		if (foundFile)
 		{
-			videoCutscene = new VideoSprite(fileName, false, true, false, false);
+			videoCutscene = new VideoSprite(fileName, false, true, false);
 
 			function onVideoEnd()
 			{
@@ -143,23 +143,6 @@ class CutState extends MusicBeatState
 		FlxG.log.warn('Platform not supported!');
 		MusicBeatState.switchState(new SetTvEffectState());
 		#end
-	}
-
-	override public function onFocus():Void
-	{
-		#if VIDEOS_ALLOWED
-		if (videoCutscene != null) videoCutscene.resume();
-		#end
-
-		super.onFocus();
-	}
-
-	override public function onFocusLost():Void
-	{
-		#if VIDEOS_ALLOWED
-		if (videoCutscene != null) videoCutscene.pause();
-		#end
-		super.onFocusLost();
 	}
 
 	override function destroy() 

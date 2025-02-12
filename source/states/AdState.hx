@@ -10,7 +10,7 @@ import objects.VideoSprite;
 
 class AdState extends MusicBeatState
 {
-    public var videoCutscene:VideoSprite = null;
+	public var videoCutscene:VideoSprite = null;
 
 	var videoShow:String = 'brutal-pizdec';
 	var link:String = 'https://discord.gg/9crVmT7dfA';
@@ -210,23 +210,36 @@ class AdState extends MusicBeatState
 
 		if (foundFile)
 		{
-			var cutscene:VideoSprite = new VideoSprite(fileName, false, false, false, false);
+			videoCutscene = new VideoSprite(fileName, false, true, false);
 
 			function onVideoEnd()
 			{
-				cutscene = null;
+				videoCutscene = null;
 				endAd();
 			}
 
-			cutscene.finishCallback = onVideoEnd;
+			videoCutscene.finishCallback = onVideoEnd;
 
-            add(cutscene);
+            add(videoCutscene);
 
-            cutscene.play();
+            videoCutscene.play();
 		}
 		#else
 		FlxG.log.warn('Platform not supported!');
 		endAd();
 		#end
+	}
+
+	override function destroy() 
+	{
+		#if VIDEOS_ALLOWED
+		if(videoCutscene != null)
+		{
+			videoCutscene.destroy();
+			videoCutscene = null;
+		}
+		#end
+
+		super.destroy();
 	}
 }

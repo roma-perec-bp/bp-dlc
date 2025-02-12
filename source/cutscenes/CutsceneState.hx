@@ -11,6 +11,8 @@ import objects.VideoSprite;
 
 class CutsceneState extends MusicBeatState
 {
+	public var videoCutscene:VideoSprite = null;
+
     override function create()
 	{
 		FlxG.camera.bgColor = 0xFF000000; //пизда
@@ -28,21 +30,21 @@ class CutsceneState extends MusicBeatState
 
 		if (foundFile)
 		{
-			var cutscene:VideoSprite = new VideoSprite(fileName, false, true, false, false);
+			videoCutscene = new VideoSprite(fileName, false, true, false);
 
 			function onVideoEnd()
 			{
-				cutscene = null;
+				videoCutscene = null;
 				LoadingState.loadAndSwitchState(new PlayState());
 				Init.fun = -1;
 			}
 
-			cutscene.finishCallback = onVideoEnd;
-			cutscene.onSkip = onVideoEnd;
+			videoCutscene.finishCallback = onVideoEnd;
+			videoCutscene.onSkip = onVideoEnd;
 
-            add(cutscene);
+            add(videoCutscene);
 
-            cutscene.videoSprite.play();
+            videoCutscene.play();
 		}
 		#else
 		FlxG.log.warn('Platform not supported!');
@@ -50,4 +52,17 @@ class CutsceneState extends MusicBeatState
 		Init.fun = -1;
 		#end
     }
+
+	override function destroy() 
+	{
+		#if VIDEOS_ALLOWED
+		if(videoCutscene != null)
+		{
+			videoCutscene.destroy();
+			videoCutscene = null;
+		}
+		#end
+
+		super.destroy();
+	}
 }

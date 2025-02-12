@@ -212,6 +212,7 @@ class PauseSubState extends MusicBeatSubstate
 						FlxG.mouse.visible = false;
 						close();
 					case "Restart Song":
+						FlxG.mouse.visible = false;
 						PlayState.respawnPoint = 0;
 						PlayState.respawned = false;
 						PlayState.changedDifficulty = false;
@@ -224,6 +225,7 @@ class PauseSubState extends MusicBeatSubstate
 						PlayState.instance.botplaySine = 0;
 						bpText.visible = PlayState.instance.cpuControlled;
 					case 'Options':
+						FlxG.mouse.visible = false;
 						PlayState.changedDifficulty = false;
 						PlayState.instance.paused = true; // For lua
 						PlayState.instance.vocals.volume = 0;
@@ -239,6 +241,7 @@ class PauseSubState extends MusicBeatSubstate
 						}
 						OptionsState.onPlayState = true;
 					case "Exit to menu":
+						FlxG.mouse.visible = false;
 						PlayState.respawnPoint = 0;
 						PlayState.respawned = false;
 						PlayState.deathCounter = 0;

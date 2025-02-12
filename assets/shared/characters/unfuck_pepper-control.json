@@ -60,11 +60,11 @@
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/Unfuck_Pepper_Control_Assets, characters/Unfuck_Pepper_ControlTrans_Assets, characters/Unfuck_Pepper_Peashooter_Assets",
-	"position": [150, 70],
+	"position": [200, 70],
 	"healthicon": "pep",
 	"flip_x": false,
 	"healthbar_colors": [192, 0, 0],
-	"camera_position": [-810, -190],
+	"camera_position": [-850, -200],
 	"sing_duration": 4,
 	"scale": 1.7,
 	"_editor_isPlayer": false

@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"offsets": [223, -120],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right-control-noBg"
+		},
+		{
+			"offsets": [600, -44],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up-control-noBg"
+		},
+		{
+			"offsets": [385, -50],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down-control-noBg"
+		},
+		{
+			"offsets": [-85, 6],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "idle-control-noBg"
+		},
+		{
+			"offsets": [727, -134],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left-control-noBg"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Unfuck_Pepper_ControlNoBg_Assets",
+	"position": [200, 70],
+	"healthicon": "pep",
+	"flip_x": false,
+	"healthbar_colors": [192, 0, 0],
+	"camera_position": [-850, -200],
+	"sing_duration": 4,
+	"scale": 1.7,
+	"_editor_isPlayer": false
+}

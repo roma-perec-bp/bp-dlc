@@ -25,12 +25,12 @@ class Init extends FlxState
 	{
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
+		
+		FlxG.save.bind('funkin', CoolUtil.getSavePath());
 
-        FlxG.save.bind('funkin', CoolUtil.getSavePath());
+		Highscore.load();
 
-        Highscore.load();
-
-        FlxG.fixedTimestep = false;
+		FlxG.fixedTimestep = false;
 		FlxG.game.focusLostFramerate = 60;
 		FlxG.keys.preventDefaultKeys = [TAB];
 

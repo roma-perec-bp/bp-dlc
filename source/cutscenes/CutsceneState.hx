@@ -35,6 +35,19 @@ class CutsceneState extends MusicBeatState
 			function onVideoEnd()
 			{
 				videoCutscene = null;
+				var directory = StageData.forceNextDirectory;
+				LoadingState.loadNextDirectory();
+				StageData.forceNextDirectory = directory;
+				
+				@:privateAccess
+				if(PlayState._lastLoadedModDirectory != Mods.currentModDirectory)
+				{
+					trace('CHANGED MOD DIRECTORY, RELOADING STUFF');
+					Paths.freeGraphicsFromMemory();
+				}
+				
+				if(!ClientPrefs.data.optimize) LoadingState.prepareToSong();
+
 				LoadingState.loadAndSwitchState(new PlayState());
 				Init.fun = -1;
 			}
@@ -48,6 +61,19 @@ class CutsceneState extends MusicBeatState
 		}
 		#else
 		FlxG.log.warn('Platform not supported!');
+		var directory = StageData.forceNextDirectory;
+		LoadingState.loadNextDirectory();
+		StageData.forceNextDirectory = directory;
+		
+		@:privateAccess
+		if(PlayState._lastLoadedModDirectory != Mods.currentModDirectory)
+		{
+			trace('CHANGED MOD DIRECTORY, RELOADING STUFF');
+			Paths.freeGraphicsFromMemory();
+		}
+				
+		if(!ClientPrefs.data.optimize) LoadingState.prepareToSong();
+
 		LoadingState.loadAndSwitchState(new PlayState());
 		Init.fun = -1;
 		#end

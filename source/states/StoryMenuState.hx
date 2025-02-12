@@ -181,18 +181,6 @@ class StoryMenuState extends MusicBeatState
 				
 						Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '', PlayState.storyPlaylist[0].toLowerCase());
 				
-						var directory = StageData.forceNextDirectory;
-						LoadingState.loadNextDirectory();
-						StageData.forceNextDirectory = directory;
-				
-						@:privateAccess
-						if(PlayState._lastLoadedModDirectory != Mods.currentModDirectory)
-						{
-							trace('CHANGED MOD DIRECTORY, RELOADING STUFF');
-							Paths.freeGraphicsFromMemory();
-						}
-				
-						if(!ClientPrefs.data.optimize) LoadingState.prepareToSong();
 						start();
 					});
 				});
@@ -235,6 +223,18 @@ class StoryMenuState extends MusicBeatState
 		}
 		else
 		{
+			var directory = StageData.forceNextDirectory;
+			LoadingState.loadNextDirectory();
+			StageData.forceNextDirectory = directory;
+				
+			@:privateAccess
+			if(PlayState._lastLoadedModDirectory != Mods.currentModDirectory)
+			{
+				trace('CHANGED MOD DIRECTORY, RELOADING STUFF');
+				Paths.freeGraphicsFromMemory();
+			}
+				
+			if(!ClientPrefs.data.optimize) LoadingState.prepareToSong();
 			LoadingState.loadAndSwitchState(new PlayState());
 		}
 

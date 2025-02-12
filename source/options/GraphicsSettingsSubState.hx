@@ -39,6 +39,12 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 			BOOL);
 		addOption(option);
 
+		var option:Option = new Option('Loading Screens', //Name
+			"Allows Loading Screen, speeds up loading times.", //Description
+			'loadingScreen',
+			BOOL);
+		addOption(option);
+
 		var option:Option = new Option('Enable TV Effect',
 			"Pretty self explanatory, isn't it?\nRecommended to leave unchecked if you have an AMD card (I'm sorry i just hate flixel)",
 			'tvEffect',

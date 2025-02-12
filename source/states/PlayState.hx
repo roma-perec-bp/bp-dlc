@@ -631,7 +631,7 @@ class PlayState extends MusicBeatState
 		SustainSplash.frameRate = Math.floor(24 / 100 * SONG.bpm);
 		var splash:SustainSplash = new SustainSplash();
 		grpHoldSplashes.add(splash);
-		splash.alpha = 0.0001;
+		splash.alpha = 0.00001;
 
 		generateSong();
 
@@ -747,7 +747,7 @@ class PlayState extends MusicBeatState
 		ratingTxt = new FlxText(0, healthBar.y - 125, FlxG.width, "Lmao x69", 64);
 		ratingTxt.setFormat(Paths.font("HouseofTerror.ttf"), 64, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE_FAST, FlxColor.BLACK);
 		ratingTxt.scrollFactor.set();
-		ratingTxt.alpha = 0.001;
+		ratingTxt.alpha = 0.00001;
 		ratingTxt.borderSize = 1.5;
 
 		if(ClientPrefs.data.downScroll) ratingTxt.y = healthBar.y + 100;
@@ -762,7 +762,7 @@ class PlayState extends MusicBeatState
 				add(sequences);
 				sequences.videoSprite.cameras = [camHudBehind];
 				sequences.play();
-				sequences.alpha = 0.0001;
+				sequences.alpha = 0.00001;
 			}
 			fireHalapeno = new FlxSprite(0, scoreTxt.y - 150);
 			fireHalapeno.frames = Paths.getSparrowAtlas('fire_jap');
@@ -771,7 +771,7 @@ class PlayState extends MusicBeatState
 			fireHalapeno.antialiasing = ClientPrefs.data.antialiasing;
 			fireHalapeno.scrollFactor.set();
 			fireHalapeno.blend = ADD;
-			fireHalapeno.alpha = 0.0001;
+			fireHalapeno.alpha = 0.00001;
 			fireHalapeno.updateHitbox();
 			fireHalapeno.screenCenter(X);
 			fireHalapeno.animation.play('idle');
@@ -782,7 +782,7 @@ class PlayState extends MusicBeatState
 		}
 
 		fireFlash = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, 0xFFFF7700);
-		fireFlash.alpha = 0.001;
+		fireFlash.alpha = 0.00001;
 		fireFlash.blend = ADD;
 		uiGroup.add(fireFlash);
 
@@ -876,7 +876,7 @@ class PlayState extends MusicBeatState
 		
 		var splash:NoteSplash = new NoteSplash();
 		grpNoteSplashes.add(splash);
-		splash.alpha = 0.000001; //cant make it invisible or it won't allow precaching
+		splash.alpha = 0.00001; //cant make it invisible or it won't allow precaching
 
 		super.create();
 		Paths.clearUnusedMemory();
@@ -2023,11 +2023,11 @@ class PlayState extends MusicBeatState
 
 		if (!ClientPrefs.data.lowQuality)
 		{
-			if (fireHalapeno.alpha >= 0.001)
+			if (fireHalapeno.alpha >= 0.00001)
 				fireHalapeno.alpha -= 0.01;
 		}
 
-		if (fireFlash.alpha >= 0.001)
+		if (fireFlash.alpha >= 0.00001)
 			fireFlash.alpha -= 0.01;
 
 		wave2Zom.x = iconP1.x;
@@ -2482,7 +2482,7 @@ class PlayState extends MusicBeatState
 				Paths.freeGraphicsFromMemory();
 			}
 
-			if(!ClientPrefs.data.optimize) LoadingState.prepareToSong();
+			LoadingState.prepareToSong();
 			LoadingState.loadAndSwitchState(new PlayState());
     
             FlxG.sound.music.stop();
@@ -3747,7 +3747,7 @@ class PlayState extends MusicBeatState
 						if (!ClientPrefs.data.lowQuality && !ClientPrefs.data.optimize)
 						{
 							if(sequences.alpha == 1)
-								sequences.alpha = 0.001;
+								sequences.alpha = 0.00001;
 							else
 								sequences.alpha = 1;
 						}

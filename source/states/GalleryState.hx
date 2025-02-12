@@ -193,7 +193,7 @@ class GalleryState extends MusicBeatState
 				Paths.freeGraphicsFromMemory();
 			}
 
-			if(!ClientPrefs.data.optimize) LoadingState.prepareToSong();
+			LoadingState.prepareToSong();
 			LoadingState.loadAndSwitchState(new PlayState());
     
             FlxG.sound.music.stop();

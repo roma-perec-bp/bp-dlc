@@ -1367,16 +1367,11 @@ function onBeatHit()
         end
     end
 
-    if curBeat == 792 then --SCROLL MOMENTS
-        scrollChange("elasticOut")
-    end
-
     if curBeat >= 776 and curBeat <= 807 then --ТЫ НЕ ЕБЕШЬ НАС
         staticArrowWave = 69
     end
 
     if curBeat == 808 then --переход нв 3 волну
-    scrollChange("quadOut")
         for i = 0, 3 do
             noteTweenX('movePlayer'..i + 4, i + 4, _G["initDefaultPlayerStrumX"..i], 1, "quadOut")
             noteTweenAngle("poleAngle"..i + 4, i + 4, 360, 1, "quadOut")
@@ -1719,17 +1714,7 @@ function onBeatHit()
     if curBeat == 1600 then
         scrollChange('expoOut')
     end
-
-    if curBeat == 1648 then
-        scrollChange('expoOut')
-    end
-
-    if curBeat == 1664 then
-        scrollChange('expoOut')
-    end
-
     
-
     if curBeat == 1444 then 
         for i=0,3 do
             noteTweenX('resetX'..i, i, _G['defaultPlayerStrumX'..i], 1, 'elasticOut')

@@ -408,6 +408,32 @@ function onStepHit()
         balls = not balls
     end
 
+    if curStep == 6928 then
+        setPropertyFromGroup('strumLineNotes', 4, 'alpha', 1)
+    end
+
+    if curStep == 6932 then
+        setPropertyFromGroup('strumLineNotes', 5, 'alpha', 1)
+    end
+
+    if curStep == 6934 then
+        setPropertyFromGroup('strumLineNotes', 6, 'alpha', 1)
+    end
+
+    if curStep == 6936 then
+        setPropertyFromGroup('strumLineNotes', 7, 'alpha', 1)
+    end
+
+    if curStep == 6940 then
+        setProperty('healthBar.visible', true)
+        setProperty('healthBarBGOverlay.visible', true)
+        setProperty('iconP1.visible', true)
+        setProperty('iconP2.visible', true)
+        setProperty('iconPEP.visible', true)
+        setProperty('iconPOLE.visible', true)
+        setProperty('iconJACK.visible', true)
+    end
+
     if curStep == 184 then --оно
         setPropertyFromGroup('strumLineNotes', 0, 'visible', true)
     end
@@ -1618,11 +1644,77 @@ function onBeatHit()
             noteTweenX('foxTween4', 7, 415 + Meow4, 1, 'cubeInOut');
         end
 
+        
+
         for i = 0, 3 do
             noteTweenAlpha("note"..i, i, 0, 1, "quadInOut")
         end
     end
 
+    if curBeat == 1436 then
+        setProperty('healthBar.visible', false)
+        setProperty('timeTxt.visible', false)
+        setProperty('timeBar.visible', false)
+        setProperty('iconP1.visible', false)
+        setProperty('iconP2.visible', false)
+        setProperty('scoreTxt.visible', false)
+        setProperty('accuracyShit.visible', false)
+        setProperty('healthBarBGOverlay.visible', false)
+        setProperty('timeTxt.visible', false)
+        setProperty('iconPEP.visible', false)
+        setProperty('iconPOLE.visible', false)
+        setProperty('iconJACK.visible', false)
+        setProperty('ratingTxt.visible', false)
+    end
+
+    if curBeat == 1552 then
+        setProperty('timeTxt.visible', true)
+        setProperty('timeBar.visible', true)
+    end
+
+    if curBeat == 1556 then
+        setProperty('scoreTxt.visible', true)
+    end
+
+    if curBeat == 1560 then
+        setProperty('ratingTxt.visible', true)
+        setProperty('accuracyShit.visible', true)
+    end
+
+    if curBeat == 1562 then
+        setProperty('healthBar.visible', true)
+        setProperty('healthBarBGOverlay.visible', true)
+    end
+
+    if curBeat == 1564 then
+        setProperty('iconP2.visible', true)
+        setProperty('iconPEP.visible', true)
+    end
+
+    if curBeat == 1566 then
+        setProperty('iconPOLE.visible', true)
+    end
+
+    if curBeat == 1568 then
+        setProperty('iconJACK.visible', true)
+    end
+
+    if curBeat == 1570 then
+        setProperty('iconP1.visible', true)
+    end
+
+
+    if curBeat == 1583 then
+        scrollChange('expoOut') --короче есть такой баг что 1584 не хочеть даунскроллить и вот поэтому я это времмено поставил (мож пофиксить и убрать его?????)
+    end
+    if curBeat == 1584 then
+        scrollChange('expoOut')
+    end
+
+    if curBeat == 1600 then
+        scrollChange('expoOut')
+    end
+    
     if curBeat == 1444 then 
         for i=0,3 do
             noteTweenX('resetX'..i, i, _G['defaultPlayerStrumX'..i], 1, 'elasticOut')
@@ -1683,6 +1775,13 @@ function onBeatHit()
             noteTweenX('trabs'..strums,strums,getPropertyFromGroup('opponentStrums',strums,'x'),0.2,'cubeOut')
             noteTweenY('resetY'..strums, strums, _G['defaultOpponentStrumY'..strums], 0.2, 'cubeOut')
         end
+
+        setProperty('timeTxt.visible', false)
+        setProperty('timeBar.visible', false)
+        setProperty('scoreTxt.visible', false)
+        setProperty('accuracyShit.visible', false)
+        setProperty('timeTxt.visible', false)
+        setProperty('ratingTxt.visible', false)
     end
 
     if curBeat == 1720 then --Хуяк
@@ -1722,10 +1821,13 @@ function onSectionHit()
         for strums = 0,3 do
             noteTweenAlpha('noteUniAlpha'..strums,strums,0,0.5,'linear')
         end
-    elseif curSection == 433 then
-        for strums = 0,3 do
-            noteTweenAlpha('noteUniAlpha'..(strums+4),strums+4,1,0.5,'linear')
-        end
+        setProperty('healthBar.visible', false)
+        setProperty('healthBarBGOverlay.visible', false)
+        setProperty('iconP1.visible', false)
+        setProperty('iconP2.visible', false)
+        setProperty('iconPEP.visible', false)
+        setProperty('iconPOLE.visible', false)
+        setProperty('iconJACK.visible', false)
     elseif curSection == 435 then
         for strums = 0,3 do
             noteTweenAlpha('noteUniAlpha'..(strums+4),strums+4,0,3,'linear')

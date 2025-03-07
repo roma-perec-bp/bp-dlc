@@ -53,7 +53,7 @@ class NoteOffsetState extends MusicBeatState
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		bg.color = 0xff1a5170;
-		gf.scrollFactor.set(0, 0);
+		bg.scrollFactor.set(0, 0);
 		bg.updateHitbox();
 
 		bg.screenCenter();

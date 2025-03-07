@@ -26,6 +26,7 @@ class MainMenuState extends MusicBeatState
 		'play',
 		'gallery',
 		'credits',
+		'hall of fame',
 		'options'
 	];
 
@@ -177,6 +178,9 @@ class MainMenuState extends MusicBeatState
 					case 'gallery':
 						MusicBeatState.switchState(new GalleryState());
 						Init.fog = false;
+
+					case 'hall of fame':
+						MusicBeatState.switchState(new FameState());
 
 					case 'credits':
 						MusicBeatState.switchState(new CreditsState());

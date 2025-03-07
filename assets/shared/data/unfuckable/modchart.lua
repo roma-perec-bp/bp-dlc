@@ -172,7 +172,7 @@ function onUpdate(elapsed)
 
     if curBeat >= 541 and curBeat <= 571 then --старт парта где будет видео
 		for i = 0,7 do
-			setPropertyFromGroup('strumLineNotes', i, 'x', defaultNotePos2[i + 1][1] + 25 *math.sin((currentBeat + i*0.25) * math.pi))
+			setPropertyFromGroup('strumLineNotes', i, 'x', defaultNotePos[i + 1][1] + 25 *math.sin((currentBeat + i*0.25) * math.pi))
 		end
 	end
 
@@ -1417,9 +1417,10 @@ function onBeatHit()
     end
 	
 	if curBeat == 872 then --Меняет направление нот плавно
+        noAngle = false
         runTimer('direct3', 1, 0)
 		for i = 0,7 do
-            startTween('noteDirect'..i, 'strumLineNotes.members['..i..']', {direction = 70}, 1)
+            startTween('noteDirect3'..i, 'strumLineNotes.members['..i..']', {direction = 70}, 1)
 		end
     end
 
@@ -1618,6 +1619,20 @@ function onBeatHit()
             noteTweenX('foxTween4', 7, 415 + Meow4, 1, 'cubeInOut');
         end
 
+        setProperty('healthBar.visible', false)
+        setProperty('timeTxt.visible', false)
+        setProperty('timeBar.visible', false)
+        setProperty('iconP1.visible', false)
+        setProperty('iconP2.visible', false)
+        setProperty('scoreTxt.visible', false)
+        setProperty('accuracyShit.visible', false)
+        setProperty('healthBarBGOverlay.visible', false)
+        setProperty('timeTxt.visible', false)
+        setProperty('iconPEP.visible', false)
+        setProperty('iconPOLE.visible', false)
+        setProperty('iconJACK.visible', false)
+        setProperty('ratingTxt.visible', false)
+
         for i = 0, 3 do
             noteTweenAlpha("note"..i, i, 0, 1, "quadInOut")
         end
@@ -1629,9 +1644,41 @@ function onBeatHit()
         end
     end
 
+    if curBeat == 1552 then
+        setProperty('scoreTxt.visible', true)
+    end
+
     if curBeat == 1556 then --и...
         setProperty('updateTime', false)
         setProperty('timeTxt.text', 'YOU CANNOT FUCK US')
+        setProperty('timeTxt.visible', true)
+        setProperty('timeBar.visible', true)
+    end
+
+    if curBeat == 1560 then
+        setProperty('ratingTxt.visible', true)
+        setProperty('accuracyShit.visible', true)
+    end
+
+    if curBeat == 1562 then
+        setProperty('healthBar.visible', true)
+        setProperty('healthBarBGOverlay.visible', true)
+    end
+
+    if curBeat == 1564 then
+        setProperty('iconPEP.visible', true)
+    end
+
+    if curBeat == 1565 then
+        setProperty('iconPOLE.visible', true)
+    end
+
+    if curBeat == 1566 then
+        setProperty('iconJACK.visible', true)
+    end
+
+    if curBeat == 1567 then
+        setProperty('iconP1.visible', true)
     end
 
     if curBeat >= 1568 and curBeat < 1600 then
@@ -1683,6 +1730,13 @@ function onBeatHit()
             noteTweenX('trabs'..strums,strums,getPropertyFromGroup('opponentStrums',strums,'x'),0.2,'cubeOut')
             noteTweenY('resetY'..strums, strums, _G['defaultOpponentStrumY'..strums], 0.2, 'cubeOut')
         end
+
+        setProperty('timeTxt.visible', false)
+        setProperty('timeBar.visible', false)
+        setProperty('scoreTxt.visible', false)
+        setProperty('accuracyShit.visible', false)
+        setProperty('timeTxt.visible', false)
+        setProperty('ratingTxt.visible', false)
     end
 
     if curBeat == 1720 then --Хуяк

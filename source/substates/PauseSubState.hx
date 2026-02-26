@@ -1,6 +1,7 @@
 package substates;
 
 import states.MainMenuState;
+import states.FreeplayState;
 import backend.WeekData;
 import backend.Highscore;
 import backend.Song;
@@ -46,32 +47,21 @@ class PauseSubState extends MusicBeatSubstate
 
 		pauseMusic = new FlxSound();
 
-		if(Init.fun >= 70 && Init.fun <= 87)
+		try
 		{
-			if(FlxG.random.bool(50))
-			{
-				pauseMusic.loadEmbedded(Paths.soundEmbed('rip'), true, true);
-				pauseMusic.volume = 0;
-				pauseMusic.play(false);
-			}
-			else
-			{
+			var pauseSong:String = getPauseSong();
+
+			@:privateAccess
+			if(PlayState.instance.curSong == 'Holy Hell')
+				pauseMusic.loadEmbedded(Paths.music('holy-pause'), true, true);
+			else if(FlxG.random.bool(6))
 				pauseMusic.loadEmbedded(Paths.music('scary'), true, true);
-				pauseMusic.volume = 0.6;
-				pauseMusic.play(false);
-			}
+			else
+				pauseMusic.loadEmbedded(Paths.music(pauseSong), true, true);
 		}
-		else
-		{
-			try
-			{
-				var pauseSong:String = getPauseSong();
-				if(pauseSong != null) pauseMusic.loadEmbedded(Paths.music(pauseSong), true, true);
-			}
-			catch(e:Dynamic) {}
-			pauseMusic.volume = 0;
-			pauseMusic.play(false, FlxG.random.int(0, Std.int(pauseMusic.length / 2)));
-		}
+		catch(e:Dynamic) {}
+		pauseMusic.volume = 0;
+		pauseMusic.play(false, FlxG.random.int(0, Std.int(pauseMusic.length / 2)));
 
 		FlxG.sound.list.add(pauseMusic);
 
@@ -127,6 +117,12 @@ class PauseSubState extends MusicBeatSubstate
 			menuItem.antialiasing = ClientPrefs.data.antialiasing;
 			menuItem.scrollFactor.set();
 			menuItem.updateHitbox();
+
+			@:privateAccess
+			if(PlayState.instance.curSong == 'Holy Hell' && i == 1)
+			{
+				menuItem.color = 0xFF666666;
+			}
 
 			menuItem.x = menuItemsAdvanced[i][1];
 			menuItem.y = menuItemsAdvanced[i][2];
@@ -212,18 +208,26 @@ class PauseSubState extends MusicBeatSubstate
 						FlxG.mouse.visible = false;
 						close();
 					case "Restart Song":
+						PlayState.usedBotplay = false;
 						FlxG.mouse.visible = false;
 						PlayState.respawnPoint = 0;
 						PlayState.respawned = false;
+						PlayState.finalwave = false;
+						PlayState.watched_ad = false;
 						PlayState.changedDifficulty = false;
 						restartSong();
 					case 'Toggle Botplay':
-						PlayState.instance.cpuControlled = !PlayState.instance.cpuControlled;
-						PlayState.changedDifficulty = true;
-						PlayState.instance.botplayTxt.visible = PlayState.instance.cpuControlled;
-						PlayState.instance.botplayTxt.alpha = 1;
-						PlayState.instance.botplaySine = 0;
-						bpText.visible = PlayState.instance.cpuControlled;
+						@:privateAccess
+						if(PlayState.instance.curSong != 'Holy Hell')
+						{
+							PlayState.instance.cpuControlled = !PlayState.instance.cpuControlled;
+							PlayState.changedDifficulty = true;
+							PlayState.instance.botplayTxt.visible = PlayState.instance.cpuControlled;
+							PlayState.instance.botplayTxt.alpha = 1;
+							PlayState.instance.botplaySine = 0;
+							PlayState.usedBotplay = true;
+							bpText.visible = PlayState.instance.cpuControlled;
+						}
 					case 'Options':
 						FlxG.mouse.visible = false;
 						PlayState.changedDifficulty = false;
@@ -233,6 +237,8 @@ class PauseSubState extends MusicBeatSubstate
 						MusicBeatState.switchState(new OptionsState());
 						PlayState.respawnPoint = 0;
 						PlayState.respawned = false;
+						PlayState.watched_ad = false;
+						PlayState.finalwave = false;
 						if(ClientPrefs.data.pauseMusic != 'None')
 						{
 							FlxG.sound.playMusic(Paths.music(Paths.formatToSongPath(ClientPrefs.data.pauseMusic)), pauseMusic.volume);
@@ -241,15 +247,32 @@ class PauseSubState extends MusicBeatSubstate
 						}
 						OptionsState.onPlayState = true;
 					case "Exit to menu":
+						PlayState.usedBotplay = false;
 						FlxG.mouse.visible = false;
 						PlayState.respawnPoint = 0;
 						PlayState.respawned = false;
+						PlayState.finalwave = false;
 						PlayState.deathCounter = 0;
+						PlayState.watched_ad = false;
 						PlayState.seenCutscene = false;
-						MusicBeatState.switchState(new MainMenuState());
-						FlxG.sound.playMusic(Paths.music('freakyMenu'), 0.7);
+
+						if (FlxG.save.data.finalSong)
+						{
+							MusicBeatState.switchState(new MainMenuState());
+						}
+						else if (FlxG.save.data.beatUnfuck)
+							MusicBeatState.switchState(new FreeplayState());
+						else
+							MusicBeatState.switchState(new MainMenuState());
+
+						if (FlxG.save.data.finalSong)
+							FlxG.sound.playMusic(Paths.music('final_mus'), 0.7);
+						else
+							FlxG.sound.playMusic(Paths.music('freakyMenu'), 0.7);
+
 						PlayState.changedDifficulty = false;
 						PlayState.chartingMode = false;
+						PlayState.reloadEverything = true;
 				}
 			}
 		});
@@ -293,6 +316,10 @@ class PauseSubState extends MusicBeatSubstate
 			if(FlxG.mouse.overlaps(spr, camera))
 			{
 				curSelected = spr.ID;
+
+				@:privateAccess
+				if(PlayState.instance.curSong == 'Holy Hell' && curSelected == 1) return;
+					
 				spr.animation.play('selected');
 			} else {
 				spr.animation.play('idle');

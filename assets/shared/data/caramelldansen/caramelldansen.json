@@ -1,0 +1,5088 @@
+{
+	"player1": "caramel_player",
+	"gfVersion": "gf-boner",
+	"notes": [
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[8194.93006993007, 3, 0],
+				[8194.93006993007, 0, 0],
+				[8377.03962703963, 1, 0],
+				[8559.14918414918, 2, 455.273892773893]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[8923.3682983683, 1, 91.0547785547786],
+				[9105.47785547786, 0, 819.493006993007],
+				[10016.0256410256, 2, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[10380.2447552448, 1, 0],
+				[10562.3543123543, 3, 0],
+				[10562.3543123543, 0, 0],
+				[10744.4638694639, 1, 0],
+				[10926.5734265734, 2, 0],
+				[11108.682983683, 1, 0],
+				[11290.7925407925, 0, 0],
+				[11290.7925407925, 2, 0],
+				[11472.9020979021, 3, 1547.93123543124]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[16025.641025641, 1, 0],
+				[16025.641025641, 0, 0],
+				[16298.8053613054, 1, 0],
+				[16298.8053613054, 3, 0],
+				[16571.9696969697, 0, 0],
+				[16571.9696969697, 2, 0],
+				[16845.134032634, 0, 0],
+				[16845.134032634, 3, 0],
+				[17118.2983682984, 1, 0],
+				[17300.4079254079, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[17482.5174825175, 2, 0],
+				[17482.641025641, 0, 0],
+				[17755.6818181818, 3, 0],
+				[17755.6818181818, 2, 0],
+				[18028.8461538462, 1, 0],
+				[18028.9696969697, 2, 0],
+				[18302.0104895105, 0, 0],
+				[18302.0104895105, 3, 0],
+				[18575.1748251748, 1, 0],
+				[18757.2843822844, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[18939.3939393939, 2, 0],
+				[18939.3939393939, 1, 0],
+				[19212.5582750583, 1, 0],
+				[19212.5582750583, 3, 0],
+				[19485.7226107226, 0, 0],
+				[19485.7226107226, 2, 0],
+				[19758.8869463869, 2, 0],
+				[19758.8869463869, 1, 0],
+				[20032.0512820513, 3, 0],
+				[20214.1608391608, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[20396.2703962704, 3, 0],
+				[20396.641025641, 0, 0],
+				[20669.8053613054, 2, 0],
+				[20669.8053613054, 3, 0],
+				[20942.9696969697, 0, 0],
+				[20942.9696969697, 2, 0],
+				[21215.7634032634, 2, 0],
+				[21215.7634032634, 1, 0],
+				[21488.9277389277, 0, 0],
+				[21671.0372960373, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[21853.1468531468, 1, 0],
+				[21853.1468531468, 0, 0],
+				[22126.3111888112, 1, 0],
+				[22126.3111888112, 3, 0],
+				[22399.4755244755, 0, 0],
+				[22399.4755244755, 2, 0],
+				[22672.6398601399, 0, 0],
+				[22672.6398601399, 3, 0],
+				[22945.8041958042, 1, 0],
+				[23127.9137529137, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[23310.0233100233, 2, 0],
+				[23310.1468531468, 0, 0],
+				[23583.1876456876, 3, 0],
+				[23583.1876456876, 2, 0],
+				[23856.351981352, 1, 0],
+				[23856.4755244755, 2, 0],
+				[24129.5163170163, 2, 0],
+				[24129.5163170163, 0, 0],
+				[24402.6806526806, 3, 0],
+				[24584.7902097902, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[24766.8997668998, 2, 0],
+				[24766.8997668998, 1, 0],
+				[25040.0641025641, 1, 0],
+				[25040.0641025641, 3, 0],
+				[25313.2284382284, 0, 0],
+				[25313.2284382284, 2, 0],
+				[25586.3927738927, 2, 0],
+				[25586.3927738928, 3, 0],
+				[25859.5571095571, 0, 0],
+				[26041.6666666666, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[26223.7762237762, 2, 0],
+				[26223.7762237762, 1, 0],
+				[26496.9405594406, 1, 0],
+				[26496.9405594406, 3, 0],
+				[26770.1048951049, 0, 0],
+				[26770.1048951049, 2, 0],
+				[27043.2692307692, 2, 0],
+				[27043.2692307692, 3, 0],
+				[27316.4335664336, 1, 0],
+				[27498.5431235431, 3, 0],
+				[27498.5431235431, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[27680.6526806527, 0, 0],
+				[27862.7622377622, 2, 0],
+				[27862.7622377622, 3, 0],
+				[28044.8717948718, 1, 0],
+				[28226.9813519814, 3, 0],
+				[28226.9813519814, 0, 0],
+				[28409.0909090909, 1, 273.164335664336],
+				[28773.31002331, 0, 0],
+				[28773.31002331, 2, 0],
+				[28955.4195804196, 3, 0],
+				[29137.5291365291, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[29319.6386946387, 2, 0],
+				[29683.8578088578, 3, 0],
+				[29683.8578088578, 0, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[30594.4055944056, 2, 273.164335664336],
+				[30958.6247086247, 0, 0],
+				[30958.6247086247, 1, 0],
+				[31140.7342657343, 3, 0],
+				[31322.8438228438, 1, 273.164335664336],
+				[31687.0629370629, 0, 0],
+				[31687.0629370629, 2, 0],
+				[31869.1724941725, 0, 0],
+				[31869.1724941725, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[32051.2820512821, 3, 0],
+				[32233.3916083916, 1, 0],
+				[32597.6107226107, 2, 0],
+				[32597.6107226107, 0, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[33508.1585081585, 1, 273.164335664336],
+				[33872.3776223776, 3, 0],
+				[33872.3776223776, 0, 0],
+				[34054.4871794872, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[35511.3636363636, 1, 0],
+				[35875.5827505828, 1, 0],
+				[36057.6923076923, 3, 0],
+				[36057.6923076923, 2, 0],
+				[36239.8018648019, 0, 0],
+				[36421.9114209114, 2, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[36786.1305361305, 1, 0],
+				[36968.2400932401, 1, 0],
+				[36968.2400932401, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[37878.7878787879, 1, 273.164335664336],
+				[38243.006993007, 2, 0],
+				[38425.1165501166, 1, 0],
+				[39153.5547785548, 0, 0],
+				[39153.5547785548, 3, 0],
+				[39335.6643346643, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[39517.7738927739, 3, 0],
+				[39517.7738927739, 2, 0],
+				[39699.8834498835, 0, 0],
+				[39699.8834498835, 1, 0],
+				[39881.993006993, 1, 0],
+				[40064.1025641026, 2, 273.164335664336],
+				[40428.3216783217, 3, 0],
+				[40428.3216783217, 1, 0],
+				[40610.4312354312, 0, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[40792.5407925408, 3, 0],
+				[40974.6503496504, 2, 0],
+				[40974.6503496504, 1, 0],
+				[41338.8694638695, 2, 0],
+				[41338.8694638695, 1, 0],
+				[42067.3076923077, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[42249.4172494173, 0, 0],
+				[42249.4172494173, 2, 0],
+				[42431.5268065268, 3, 0],
+				[42613.6363636364, 2, 0],
+				[42795.7459207459, 0, 0],
+				[42977.8554778555, 2, 273.164335664336],
+				[43342.0745920746, 1, 0],
+				[43524.1841491842, 3, 0],
+				[43706.2937052937, 2, 0],
+				[43706.2937052937, 0, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[43888.4032634033, 2, 0],
+				[43888.4032634033, 3, 0],
+				[44252.6223776224, 3, 0],
+				[44252.6223776224, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[45163.1701631702, 1, 273.164335664336],
+				[45527.3892773893, 0, 0],
+				[45709.4988344988, 2, 0],
+				[45709.4988344988, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[46984.2657342657, 1, 0],
+				[47166.3752913753, 2, 273.164335664336],
+				[47166.3752913753, 0, 273.164335664336],
+				[47530.5944055944, 1, 0],
+				[47712.703962704, 3, 0],
+				[47712.703962704, 2, 0],
+				[47894.8135198135, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[48076.9230769231, 0, 0],
+				[48076.9230769231, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[49715.9090909091, 1, 0],
+				[49898.0186480187, 2, 0],
+				[50080.1282051282, 1, 0],
+				[50262.2377622378, 2, 0],
+				[50626.4568764569, 2, 273.164335664336],
+				[50808.5664335664, 1, 91.0547785547786],
+				[50990.675989676, 3, 273.164335664336],
+				[50990.675989676, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[51354.8951048951, 2, 0],
+				[51537.0046620047, 1, 0],
+				[51719.1142191142, 3, 0],
+				[51719.1142191142, 2, 0],
+				[52265.4428904429, 3, 273.164335664336],
+				[52265.4428904429, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[52629.662004662, 2, 0],
+				[52811.7715617716, 1, 0],
+				[52993.8811188811, 2, 0],
+				[52993.8811188811, 0, 0],
+				[53175.9906759907, 3, 273.164335664336],
+				[53540.2097902098, 1, 182.109557109557],
+				[53540.2097902098, 2, 0],
+				[53904.4289034289, 0, 273.164335664336],
+				[53904.4289034289, 2, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[54268.648018648, 3, 0],
+				[54450.7575757576, 1, 0],
+				[54632.8671328671, 2, 0],
+				[54997.0862470863, 2, 0],
+				[54997.0862470863, 1, 0],
+				[55179.1958041958, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[55543.4149184149, 1, 0],
+				[55543.4149184149, 3, 0],
+				[55725.5244755245, 2, 0],
+				[55907.634032634, 1, 0],
+				[55907.634032634, 3, 0],
+				[56089.7435897436, 0, 273.164335664336],
+				[56453.9627039627, 1, 182.109557109557],
+				[56453.9627039627, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[56818.675990676, 3, 273.164335664336],
+				[56818.675990676, 0, 273.164335664336],
+				[57182.8951048951, 2, 0],
+				[57365.0046620047, 1, 0],
+				[57547.1142191142, 3, 0],
+				[57547.1142191142, 2, 0],
+				[58093.4428904429, 3, 273.164335664336],
+				[58093.4428904429, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[58457.662004662, 2, 0],
+				[58639.7715617716, 1, 0],
+				[58821.8811188811, 2, 0],
+				[58821.8811188811, 0, 0],
+				[59003.9906759907, 3, 273.164335664336],
+				[59367.7156177156, 2, 182.109557109557],
+				[59367.7156177156, 1, 0],
+				[59731.9347309348, 1, 273.164335664336],
+				[59731.9347309348, 0, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[60096.1538461539, 2, 0],
+				[60278.2634032634, 3, 0],
+				[60460.372960373, 2, 0],
+				[60460.372960373, 1, 0],
+				[60824.5920745921, 2, 0],
+				[60824.5920745921, 1, 0],
+				[61006.7016317016, 3, 273.164335664336],
+				[61006.7016317016, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[61370.9207459208, 1, 0],
+				[61553.0303030303, 2, 0],
+				[61553.0303030303, 3, 0],
+				[61735.1398601399, 0, 0],
+				[61917.2494172494, 1, 273.164335664336],
+				[61917.2494172494, 3, 0],
+				[62281.4685314685, 2, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[62645.6876456877, 1, 0],
+				[63009.9067599068, 1, 0],
+				[63374.1258741259, 1, 0],
+				[63556.2354312354, 2, 0],
+				[63738.344988345, 1, 0],
+				[63920.4545454546, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[65559.4405584406, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[65923.6596736597, 1, 0],
+				[66287.8787878788, 1, 0],
+				[66469.9883449883, 2, 0],
+				[66652.0979020979, 1, 0],
+				[66834.2074592075, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[67198.4265734266, 2, 0],
+				[67380.5361305361, 0, 0],
+				[68473.1934721935, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[68837.4125874126, 1, 0],
+				[69201.6317016317, 1, 0],
+				[69383.7412587413, 2, 0],
+				[69565.8508158508, 1, 0],
+				[69747.9603729604, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[71386.9463859465, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[71751.1655011655, 1, 0],
+				[72115.3846153846, 1, 0],
+				[72297.4941724942, 2, 0],
+				[72479.6037296037, 1, 0],
+				[72661.7132867133, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[73025.9324009324, 2, 0],
+				[73208.041958042, 0, 0],
+				[74118.5897435897, 0, 0],
+				[74300.6992996994, 2, 182.109557109557],
+				[74300.6992996994, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[74664.9184149184, 3, 0],
+				[74664.9184149184, 0, 0],
+				[74847.027972028, 2, 0],
+				[75029.1375291375, 3, 0],
+				[75029.1375291375, 0, 0],
+				[75393.3566433566, 1, 0],
+				[75575.4662004662, 2, 0],
+				[75757.5757565758, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[75939.6853146853, 2, 0],
+				[75939.6853146853, 3, 0],
+				[76303.9044289044, 3, 0],
+				[76303.9044289044, 1, 0],
+				[77032.3426573427, 1, 0],
+				[77214.4522134523, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[77396.5617715618, 0, 0],
+				[77578.6713286713, 2, 0],
+				[77760.7808857809, 1, 0],
+				[77942.8904428904, 3, 182.109557109557],
+				[77942.8904428904, 2, 0],
+				[78307.1095571096, 0, 273.164335664336],
+				[78671.3286703288, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[78853.4382284382, 1, 273.164335664336],
+				[79217.6573426573, 2, 0],
+				[79217.6573426573, 0, 0],
+				[80128.1585081585, 1, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[80492.3776223776, 3, 0],
+				[80492.3776223776, 0, 0],
+				[80674.4871794872, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[81767.1807668998, 1, 182.109557109557],
+				[82131.3998811189, 0, 182.109557109557],
+				[82495.618995338, 1, 0],
+				[82677.6923076923, 3, 0],
+				[82859.8018648019, 0, 0],
+				[83041.9114219114, 2, 273.164335664336],
+				[83041.9476666667, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[83406.1667808858, 1, 0],
+				[83588.2400932401, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[84680.9336806527, 1, 0],
+				[84863.0432377622, 2, 0],
+				[85045.1527948718, 1, 0],
+				[85227.2623519813, 2, 0],
+				[85591.4814662005, 2, 273.164335664336],
+				[85773.59102331, 3, 0],
+				[85773.59102331, 0, 0],
+				[85955.7005804196, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[86137.8101375291, 2, 0],
+				[86137.8101375291, 3, 0],
+				[86319.9196946387, 0, 0],
+				[86502.0292517483, 2, 0],
+				[86684.1388088578, 3, 273.164335664336],
+				[86684.1388088578, 1, 273.164335664336],
+				[87048.3579230769, 0, 0],
+				[87230.4674801865, 2, 0],
+				[87412.577037296, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[87594.6865944056, 2, 0],
+				[87594.6865944056, 3, 0],
+				[87958.9057086247, 2, 0],
+				[87958.9057086247, 1, 0],
+				[88687.3439370629, 1, 0],
+				[88869.4534941725, 2, 0],
+				[88869.4534941725, 0, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[89051.563051282, 1, 0],
+				[89233.6726083916, 2, 0],
+				[89415.7821655012, 1, 0],
+				[89597.8917226107, 3, 273.164335664336],
+				[89962.1108368298, 0, 0],
+				[89962.1108368298, 2, 0],
+				[90144.2203939394, 1, 0],
+				[90326.329951049, 2, 0],
+				[90326.329951049, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[90508.4395081585, 2, 0],
+				[90872.6586223776, 2, 0],
+				[90872.6586223776, 0, 0],
+				[91783.1701631702, 1, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[92147.3892773893, 0, 0],
+				[92329.4988344988, 2, 0],
+				[92329.4988344988, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[93604.2657342657, 1, 0],
+				[93786.3752913753, 2, 273.164335664336],
+				[93786.3752913753, 0, 273.164335664336],
+				[94150.5944055944, 1, 0],
+				[94332.703962704, 3, 0],
+				[94332.7402074592, 0, 0],
+				[94514.8497645688, 1, 0],
+				[94696.9593216783, 2, 0],
+				[94696.9593216783, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[96518.0548927739, 2, 0],
+				[96518.0548927739, 0, 0],
+				[96882.274006993, 2, 0],
+				[96882.274006993, 1, 0],
+				[97246.4931212121, 3, 0],
+				[97246.4931212121, 0, 0],
+				[97610.675990676, 3, 273.164335664336],
+				[97610.675990676, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[97974.8951048951, 2, 0],
+				[98157.0046620047, 1, 0],
+				[98339.1142191142, 3, 0],
+				[98339.1142191142, 2, 0],
+				[98885.4428904429, 3, 273.164335664336],
+				[98885.4428904429, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[99249.662004662, 2, 0],
+				[99431.7715617716, 1, 0],
+				[99613.8811188811, 2, 0],
+				[99613.8811188811, 0, 0],
+				[99795.9906759907, 3, 273.164335664336],
+				[100160.20979021, 1, 182.109557109557],
+				[100160.20979021, 2, 0],
+				[100524.428904429, 0, 273.164335664336],
+				[100524.428904429, 2, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[100888.648018648, 3, 0],
+				[101070.757575758, 1, 0],
+				[101252.867132867, 2, 0],
+				[101617.086247086, 2, 0],
+				[101617.086247086, 1, 0],
+				[101799.195804196, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[102163.414918415, 1, 0],
+				[102163.414918415, 3, 0],
+				[102345.524475524, 2, 0],
+				[102527.634032634, 1, 0],
+				[102527.634032634, 3, 0],
+				[102709.743589744, 0, 273.164335664336],
+				[103073.962703963, 1, 182.109557109557],
+				[103073.962703963, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[103438.675990676, 3, 273.164335664336],
+				[103438.675990676, 0, 273.164335664336],
+				[103802.895104895, 2, 0],
+				[103985.004662005, 1, 0],
+				[104167.114219114, 3, 0],
+				[104167.114219114, 2, 0],
+				[104713.442890443, 3, 273.164335664336],
+				[104713.442890443, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[105077.662004662, 2, 0],
+				[105259.771561772, 1, 0],
+				[105441.881118881, 2, 0],
+				[105441.881118881, 0, 0],
+				[105623.990675991, 3, 273.164335664336],
+				[105987.715617716, 2, 182.109557109557],
+				[105987.715617716, 1, 0],
+				[106351.934731935, 1, 273.164335664336],
+				[106351.934731935, 0, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[106716.153846154, 2, 0],
+				[106898.263403263, 3, 0],
+				[107080.372960373, 2, 0],
+				[107080.372960373, 1, 0],
+				[107444.592074592, 2, 0],
+				[107444.592074592, 1, 0],
+				[107626.701631702, 3, 273.164335664336],
+				[107626.701631702, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[107990.920745921, 1, 0],
+				[108173.03030303, 2, 0],
+				[108173.03030303, 3, 0],
+				[108355.13986014, 0, 0],
+				[108537.249417249, 1, 273.164335664336],
+				[108537.249417249, 3, 0],
+				[108901.468531469, 2, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[109265.734265734, 1, 0],
+				[109265.734265734, 0, 0],
+				[109538.898601399, 1, 0],
+				[109538.898601399, 3, 0],
+				[109812.062937063, 0, 0],
+				[109812.062937063, 2, 0],
+				[110085.227272727, 0, 0],
+				[110085.227272727, 3, 0],
+				[110358.391608392, 1, 0],
+				[110540.501165501, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[110722.610722611, 2, 0],
+				[110722.734265734, 0, 0],
+				[110995.775058275, 3, 0],
+				[110995.775058275, 2, 0],
+				[111268.93939394, 1, 0],
+				[111269.062937063, 2, 0],
+				[111542.103729604, 0, 0],
+				[111542.103729604, 3, 0],
+				[111815.268065268, 1, 0],
+				[111997.377622378, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[112179.487179487, 2, 0],
+				[112179.487179487, 1, 0],
+				[112452.651515152, 1, 0],
+				[112452.651515152, 3, 0],
+				[112725.815850816, 0, 0],
+				[112725.815850816, 2, 0],
+				[112998.98018648, 2, 0],
+				[112998.98018648, 1, 0],
+				[113272.144522145, 3, 0],
+				[113454.254079254, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[113636.363636364, 3, 0],
+				[113636.734265734, 0, 0],
+				[113909.898601399, 2, 0],
+				[113909.898601399, 3, 0],
+				[114183.062937063, 0, 0],
+				[114183.062937063, 2, 0],
+				[114455.856643357, 2, 0],
+				[114455.856643357, 1, 0],
+				[114729.020979021, 0, 0],
+				[114911.130536131, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[115093.24009324, 1, 0],
+				[115093.24009324, 0, 0],
+				[115366.404428905, 1, 0],
+				[115366.404428905, 3, 0],
+				[115639.568764569, 0, 0],
+				[115639.568764569, 2, 0],
+				[115912.733100233, 0, 0],
+				[115912.733100233, 3, 0],
+				[116185.897435898, 1, 0],
+				[116368.006993007, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[116550.116550117, 2, 0],
+				[116550.24009324, 0, 0],
+				[116823.280885781, 3, 0],
+				[116823.280885781, 2, 0],
+				[117096.445221445, 1, 0],
+				[117096.568764569, 2, 0],
+				[117369.60955711, 2, 0],
+				[117369.60955711, 0, 0],
+				[117642.773892774, 3, 0],
+				[117824.883449884, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[118006.993006993, 2, 0],
+				[118006.993006993, 1, 0],
+				[118280.157342658, 1, 0],
+				[118280.157342658, 3, 0],
+				[118553.321678322, 0, 0],
+				[118553.321678322, 2, 0],
+				[118826.486013986, 2, 0],
+				[118826.486013986, 3, 0],
+				[119099.650349651, 0, 0],
+				[119281.75990676, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[119463.86946387, 2, 0],
+				[119463.86946387, 1, 0],
+				[119737.033799534, 1, 0],
+				[119737.033799534, 3, 0],
+				[120010.198135198, 0, 0],
+				[120010.198135198, 2, 0],
+				[120283.362470863, 2, 0],
+				[120283.362470863, 3, 0],
+				[120556.526806527, 1, 0],
+				[120738.636363637, 3, 0],
+				[120738.636363637, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[120920.745920746, 0, 0],
+				[121284.954659674, 1, 0],
+				[121467.064216783, 2, 0],
+				[121649.173773893, 3, 0],
+				[122195.502445221, 2, 182.109557109557]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[122559.721559441, 1, 0],
+				[122741.83111655, 2, 0],
+				[122923.94067366, 1, 0],
+				[123106.050230769, 0, 0],
+				[123470.269344988, 3, 0],
+				[123834.488459207, 1, 182.109557109557]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[124198.707573427, 1, 0],
+				[124380.817130536, 3, 0],
+				[124562.926687646, 1, 182.109557109557],
+				[124927.145801865, 1, 0],
+				[125109.255358974, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[125473.474473193, 2, 0],
+				[125655.584030303, 3, 0],
+				[125837.693587413, 2, 0],
+				[126019.803144522, 1, 182.109557109557],
+				[126384.022258741, 2, 182.109557109557],
+				[126748.24137296, 0, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[127112.460487179, 1, 0],
+				[127294.570044289, 3, 0],
+				[127476.679601399, 2, 0],
+				[128023.008272727, 0, 182.109557109557]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[128387.227386946, 1, 0],
+				[128569.336944056, 2, 0],
+				[128751.446501166, 1, 0],
+				[128933.556058275, 3, 182.109557109557],
+				[129297.775172494, 1, 182.109557109557],
+				[129661.994286713, 0, 182.109557109557]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[130026.213400932, 0, 0],
+				[130208.322958042, 2, 0],
+				[130390.432515152, 1, 0],
+				[130754.651629371, 1, 0],
+				[130936.76118648, 2, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[131300.980300699, 1, 0],
+				[131483.089857809, 3, 182.109557109557],
+				[131847.308972028, 3, 182.109557109557],
+				[132211.528086247, 0, 182.109557109557]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[135489.687645688, 1, 0],
+				[135853.906759907, 1, 0],
+				[136218.125874126, 1, 0],
+				[136400.235431235, 2, 0],
+				[136582.344988345, 1, 0],
+				[136764.454545455, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[138403.440559441, 1, 0],
+				[138767.65967366, 1, 0],
+				[139131.878787879, 1, 0],
+				[139313.988344988, 2, 0],
+				[139496.097902098, 1, 0],
+				[139678.207459207, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[140042.426573427, 2, 0],
+				[140224.536130536, 0, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[141317.193473193, 1, 0],
+				[141681.412587413, 1, 0],
+				[142045.631701632, 1, 0],
+				[142227.741258741, 2, 0],
+				[142409.850815851, 1, 0],
+				[142591.96037296, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[144230.946386946, 1, 0],
+				[144595.165501165, 1, 0],
+				[144959.384615385, 1, 0],
+				[145141.494172494, 2, 0],
+				[145323.603729604, 1, 0],
+				[145505.713286713, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[145869.932400932, 2, 0],
+				[146051.858782984, 3, 0],
+				[146052.041958042, 0, 0],
+				[146416.077897203, 3, 0],
+				[146416.077897203, 2, 0],
+				[146780.297011422, 0, 0],
+				[146780.297011422, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[147144.675990676, 3, 273.164335664336],
+				[147144.675990676, 0, 273.164335664336],
+				[147508.895104895, 2, 0],
+				[147691.004662005, 1, 0],
+				[147873.114219114, 3, 0],
+				[147873.114219114, 2, 0],
+				[148419.442890443, 3, 273.164335664336],
+				[148419.442890443, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[148783.662004662, 2, 0],
+				[148965.771561772, 1, 0],
+				[149147.881118881, 2, 0],
+				[149147.881118881, 0, 0],
+				[149329.990675991, 3, 273.164335664336],
+				[149694.20979021, 1, 182.109557109557],
+				[149694.20979021, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[150058.428904429, 0, 273.164335664336],
+				[150058.428904429, 2, 273.164335664336],
+				[150422.648018648, 3, 0],
+				[150604.757575758, 1, 0],
+				[150786.867132867, 2, 0],
+				[151151.086247086, 2, 0],
+				[151151.086247086, 1, 0],
+				[151333.195804196, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[151697.414918415, 1, 0],
+				[151697.414918415, 3, 0],
+				[151879.524475524, 2, 0],
+				[152061.634032634, 1, 0],
+				[152061.634032634, 3, 0],
+				[152243.743589744, 0, 273.164335664336],
+				[152607.962703963, 1, 182.109557109557],
+				[152607.962703963, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[152972.675990676, 3, 273.164335664336],
+				[152972.675990676, 0, 273.164335664336],
+				[153336.895104895, 2, 0],
+				[153519.004662005, 1, 0],
+				[153701.114219114, 3, 0],
+				[153701.114219114, 2, 0],
+				[154247.442890443, 3, 273.164335664336],
+				[154247.442890443, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[154611.662004662, 2, 0],
+				[154793.771561772, 1, 0],
+				[154975.881118881, 2, 0],
+				[154975.881118881, 0, 0],
+				[155157.990675991, 3, 273.164335664336],
+				[155521.715617716, 2, 182.109557109557],
+				[155521.715617716, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[155885.934731935, 1, 273.164335664336],
+				[155885.934731935, 0, 0],
+				[156250.153846154, 2, 0],
+				[156432.263403263, 3, 0],
+				[156614.372960373, 2, 0],
+				[156614.372960373, 1, 0],
+				[156978.592074592, 2, 0],
+				[156978.592074592, 1, 0],
+				[157160.701631702, 3, 273.164335664336],
+				[157160.701631702, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[157524.920745921, 1, 0],
+				[157707.03030303, 2, 0],
+				[157707.03030303, 3, 0],
+				[157889.13986014, 0, 0],
+				[158071.249417249, 1, 273.164335664336],
+				[158071.249417249, 3, 0],
+				[158435.468531469, 2, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[158799.675990676, 3, 273.164335664336],
+				[158799.675990676, 0, 273.164335664336],
+				[159163.895104895, 2, 0],
+				[159346.004662005, 1, 0],
+				[159528.114219114, 3, 0],
+				[159528.114219114, 2, 0],
+				[160074.442890443, 3, 273.164335664336],
+				[160074.442890443, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[160438.662004662, 2, 0],
+				[160620.771561772, 1, 0],
+				[160802.881118881, 2, 0],
+				[160802.881118881, 0, 0],
+				[160984.990675991, 3, 273.164335664336],
+				[161349.20979021, 1, 182.109557109557],
+				[161349.20979021, 2, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[161713.428904429, 0, 273.164335664336],
+				[161713.428904429, 2, 273.164335664336],
+				[162077.648018648, 3, 0],
+				[162259.757575758, 1, 0],
+				[162441.867132867, 2, 0],
+				[162806.086247086, 2, 0],
+				[162806.086247086, 1, 0],
+				[162988.195804196, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[163352.414918415, 1, 0],
+				[163352.414918415, 3, 0],
+				[163534.524475524, 2, 0],
+				[163716.634032634, 1, 0],
+				[163716.634032634, 3, 0],
+				[163898.743589744, 0, 273.164335664336],
+				[164262.962703963, 1, 182.109557109557],
+				[164262.962703963, 3, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[164627.675990676, 3, 273.164335664336],
+				[164627.675990676, 0, 273.164335664336],
+				[164991.895104895, 2, 0],
+				[165174.004662005, 1, 0],
+				[165356.114219114, 3, 0],
+				[165356.114219114, 2, 0],
+				[165902.442890443, 3, 273.164335664336],
+				[165902.442890443, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[166266.662004662, 2, 0],
+				[166448.771561772, 1, 0],
+				[166630.881118881, 2, 0],
+				[166630.881118881, 0, 0],
+				[166812.990675991, 3, 273.164335664336],
+				[167176.715617716, 2, 182.109557109557],
+				[167176.715617716, 1, 0]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[167540.934731935, 1, 273.164335664336],
+				[167540.934731935, 0, 0],
+				[167905.153846154, 2, 0],
+				[168087.263403263, 3, 0],
+				[168269.372960373, 2, 0],
+				[168269.372960373, 1, 0],
+				[168633.592074592, 2, 0],
+				[168633.592074592, 1, 0],
+				[168815.701631702, 3, 273.164335664336],
+				[168815.701631702, 0, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"sectionBeats": 4,
+			"zoomTime": 1,
+			"mustHitSection": false,
+			"zoom": 1,
+			"tweenFollow": "Linear",
+			"sectionNotes": [
+				[169179.920745921, 1, 0],
+				[169362.03030303, 2, 0],
+				[169362.03030303, 3, 0],
+				[169544.13986014, 0, 0],
+				[169726.249417249, 1, 273.164335664336],
+				[169726.249417249, 3, 0],
+				[170090.468531469, 2, 273.164335664336]
+			],
+			"hwaw": true,
+			"followTime": 1,
+			"tweenZoom": "Linear",
+			"charFollow": "bf"
+		},
+		{
+			"zoomTime": 1,
+			"pepper": false,
+			"zoom": 1,
+			"hwaw": true,
+			"gfSection": false,
+			"charFollow": "bf",
+			"followX": 0,
+			"followY": 0,
+			"sectionBeats": 4,
+			"pole": false,
+			"stgZoom": false,
+			"altAnim": false,
+			"mustHitSection": false,
+			"zoomCam": false,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"tweenZoom": "Linear",
+			"followCam": false,
+			"followTime": 1,
+			"jack": false,
+			"changeBPM": false,
+			"bpm": 164.736
+		},
+		{
+			"zoomTime": 1,
+			"pepper": false,
+			"zoom": 1,
+			"hwaw": true,
+			"gfSection": false,
+			"charFollow": "bf",
+			"followX": 0,
+			"followY": 0,
+			"sectionBeats": 4,
+			"pole": false,
+			"stgZoom": false,
+			"altAnim": false,
+			"mustHitSection": false,
+			"zoomCam": false,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"tweenZoom": "Linear",
+			"followCam": false,
+			"followTime": 1,
+			"jack": false,
+			"changeBPM": false,
+			"bpm": 164.736
+		},
+		{
+			"zoomTime": 1,
+			"pepper": false,
+			"zoom": 1,
+			"hwaw": true,
+			"gfSection": false,
+			"charFollow": "bf",
+			"followX": 0,
+			"followY": 0,
+			"sectionBeats": 4,
+			"pole": false,
+			"stgZoom": false,
+			"altAnim": false,
+			"mustHitSection": false,
+			"zoomCam": false,
+			"tweenFollow": "Linear",
+			"sectionNotes": [],
+			"tweenZoom": "Linear",
+			"followCam": false,
+			"followTime": 1,
+			"jack": false,
+			"changeBPM": false,
+			"bpm": 164.736
+		}
+	],
+	"events": [
+		[
+			0,
+			[
+				["Set Camera Bop", "999999", "1", "", "", ""]
+			]
+		],
+		[
+			1456.87645687646,
+			[
+				["Caramel Triggers", "black off", "", "", "", ""]
+			]
+		],
+		[
+			1821.09557109557,
+			[
+				["Show Song Default", "", "", "", "", ""]
+			]
+		],
+		[
+			13111.8881118881,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			15661.4219114219,
+			[
+				["Caramel Triggers", "pep appear", "", "", "", ""]
+			]
+		],
+		[
+			15843.5314685315,
+			[
+				["Caramel Triggers", "can bop", "", "", "", ""]
+			]
+		],
+		[
+			16025.641025641,
+			[
+				["Caramel Triggers", "pep white", "", "", "", ""],
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			16389.8601398601,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			16754.0792540793,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			17118.2983682984,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			17482.5174825175,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			17846.7365967366,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			18210.9557109557,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			18575.1748251748,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			18939.3939393939,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			19303.6130536131,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			19667.8321678322,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			20032.0512820513,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			20396.2703962704,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			20760.4895104895,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			21124.7086247086,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			21488.9277389277,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			21853.1468531468,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			22217.365967366,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			22581.5850815851,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			22945.8041958042,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			23310.0233100233,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			23674.2424242424,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			24038.4615384615,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			24402.6806526806,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			24766.8997668998,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			25131.1188811189,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			25495.337995338,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			25859.5571095571,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			26223.7762237762,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			26587.9953379953,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			26952.2144522144,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			27316.4335664336,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			27680.6526806527,
+			[
+				["Caramel Triggers", "default suffix", "", "", "", ""],
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			37878.7878787879,
+			[
+				["Caramel Triggers", "left singer sing", "", "", "", ""]
+			]
+		],
+		[
+			39335.6643356643,
+			[
+				["Caramel Triggers", "left singer out", "", "", "", ""]
+			]
+		],
+		[
+			39517.7738927739,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			39881.993006993,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			40246.2121212121,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			40610.4312354312,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			40974.6503496504,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			41338.8694638695,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			41703.0885780886,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			41885.1981351981,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			42431.5268065268,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			42795.7459207459,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			43159.965034965,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			43524.1841491842,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			43888.4032634033,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			44252.6223776224,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			44616.8414918415,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			44798.9510489511,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			45345.2797202797,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			45709.4988344989,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			46073.717948718,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			46437.9370629371,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			46802.1561771562,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			47166.3752913753,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			47530.5944055944,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			47712.703962704,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			48259.0326340327,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			48623.2517482518,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			48987.4708624709,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			49351.68997669,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			49533.7995337996,
+			[
+				["Caramel Triggers", "right singer sing", "", "", "", ""]
+			]
+		],
+		[
+			49533.7995337996,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			50990.675990676,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""],
+				["Caramel Triggers", "caramel suffix", "", "", "", ""]
+			]
+		],
+		[
+			50990.675990676,
+			[
+				["Caramel Triggers", "right singer out", "", "", "", ""]
+			]
+		],
+		[
+			51354.8951048951,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			51719.1142191142,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			52083.3333333334,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			52447.5524475525,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			52811.7715617716,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			53175.9906759907,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			53540.2097902098,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			53904.4289044289,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			54268.6480186481,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			54632.8671328672,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			54997.0862470863,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			55361.3053613054,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			55725.5244755245,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			56089.7435897436,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			56453.9627039627,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			56818.1818181819,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			57182.400932401,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			57546.6200466201,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			57910.8391608392,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			58275.0582750583,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			58639.2773892774,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			59003.4965034965,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			59367.7156177157,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			59731.9347319348,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			60096.1538461539,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			60460.372960373,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			60824.5920745921,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			61188.8111888112,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			61553.0303030304,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			61917.2494172495,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			62281.4685314686,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			62645.6876456877,
+			[
+				["Caramel Triggers", "left singer sing", "", "", "", ""]
+			]
+		],
+		[
+			62645.6876456877,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			63009.9067599068,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			63374.1258741259,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			63738.344988345,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			64102.5641025642,
+			[
+				["Caramel Triggers", "left singer out", "", "", "", ""]
+			]
+		],
+		[
+			64102.5641025642,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			64284.6736596737,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			64466.7832167833,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			64648.8927738928,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			64831.0023310024,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			65013.1118881119,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			65184.4086902681,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			65195.2214452215,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			65559.4405594406,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			65559.4405594406,
+			[
+				["Caramel Triggers", "right singer sing", "", "", "", ""]
+			]
+		],
+		[
+			65923.6596736597,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			66287.8787878788,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			66652.097902098,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			67016.3170163171,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			67380.5361305362,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			67562.6456876457,
+			[
+				["Caramel Triggers", "right singer out", "", "", "", ""]
+			]
+		],
+		[
+			67744.7552447553,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			68108.9743589744,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			68473.1934731935,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			68473.1934731935,
+			[
+				["Caramel Triggers", "left singer sing", "", "", "", ""]
+			]
+		],
+		[
+			68837.4125874126,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			69201.6317016318,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			69565.8508158509,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			69930.06993007,
+			[
+				["Caramel Triggers", "left singer out", "", "", "", ""]
+			]
+		],
+		[
+			69930.06993007,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			70112.1794871795,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			70294.2890442891,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			70476.3986013987,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			70658.5081585082,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			70840.6177156178,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			71013.6217948719,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			71022.7272727273,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			71386.9463869465,
+			[
+				["Caramel Triggers", "right singer sing", "", "", "", ""]
+			]
+		],
+		[
+			71386.9463869465,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			71751.1655011656,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			72115.3846153847,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			72479.6037296038,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			72843.8228438229,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			73208.041958042,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			73390.1515151516,
+			[
+				["Caramel Triggers", "right singer out", "", "", "", ""]
+			]
+		],
+		[
+			73572.2610722611,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			73936.4801864803,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			74300.6993006994,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""],
+				["Caramel Triggers", "default suffix", "", "", "", ""]
+			]
+		],
+		[
+			84498.8344988346,
+			[
+				["Caramel Triggers", "left singer sing", "", "", "", ""]
+			]
+		],
+		[
+			85773.6013986015,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			85955.7109557111,
+			[
+				["Caramel Triggers", "left singer out", "", "", "", ""]
+			]
+		],
+		[
+			86137.8205128206,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			86502.0396270397,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			86866.2587412588,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			87230.4778554779,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			87594.6969696971,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			87958.9160839162,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			88323.1351981353,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			88505.2447552449,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			89051.5734265735,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			89415.7925407926,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			89780.0116550118,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			90144.2307692309,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			90508.44988345,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			90872.6689976691,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			91236.8881118882,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			91418.9976689978,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			91965.3263403264,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			92329.5454545456,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			92693.7645687647,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			93057.9836829838,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			93422.2027972029,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			93786.421911422,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			94150.6410256411,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			94332.7505827507,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			94879.0792540794,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			95243.2983682985,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			95607.5174825176,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			95971.7365967367,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			96153.8461538463,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			97610.7226107227,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""],
+				["Caramel Triggers", "caramel suffix", "", "", "", ""]
+			]
+		],
+		[
+			97974.9417249418,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			98339.160839161,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			98703.3799533801,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			99067.5990675992,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			99431.8181818183,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			99796.0372960374,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			100160.256410257,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			100524.475524476,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			100888.694638695,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			101252.913752914,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			101617.132867133,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			101981.351981352,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			102345.571095571,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			102709.79020979,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			103074.009324009,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			103438.228438229,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			103802.447552448,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			104166.666666667,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			104530.885780886,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			104895.104895105,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			105259.324009324,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			105623.543123543,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			105987.762237762,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			106351.981351981,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			106716.200466201,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			107080.41958042,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			107444.638694639,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			107808.857808858,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			108173.076923077,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			108537.296037296,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			108719.405594406,
+			[
+				["Caramel Triggers", "pep bye", "", "", "", ""]
+			]
+		],
+		[
+			108901.515151515,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			109265.734265734,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			109447.843822844,
+			[
+				["Caramel Triggers", "pep black", "", "", "", ""]
+			]
+		],
+		[
+			109629.953379954,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			109994.172494173,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			110358.391608392,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			110722.610722611,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			111086.82983683,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			111451.048951049,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			111815.268065268,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			112179.487179487,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			112543.706293706,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			112907.925407926,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			113272.144522145,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			113636.363636364,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			114000.582750583,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			114364.801864802,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			114729.020979021,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			115093.24009324,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			115457.459207459,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			115821.678321678,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			116185.897435898,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			116550.116550117,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			116914.335664336,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			117278.554778555,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			117642.773892774,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			118006.993006993,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			118371.212121212,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			118735.431235431,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			119099.650349651,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			119463.86946387,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			119828.088578089,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			120192.307692308,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			120556.526806527,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			120920.745920746,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""],
+				["Caramel Triggers", "rom appear", "", "", "", ""]
+			]
+		],
+		[
+			126748.251748252,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			132575.757575758,
+			[
+				["Caramel Triggers", "rom bye", "", "", "", ""]
+			]
+		],
+		[
+			132575.757575758,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			134032.634032634,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			134396.853146853,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			134761.072261072,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			135125.291375292,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""],
+				["Caramel Triggers", "pep appear", "", "", "", ""]
+			]
+		],
+		[
+			135489.510489511,
+			[
+				["Caramel Triggers", "left singer sing", "", "", "", ""]
+			]
+		],
+		[
+			135489.510489511,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""],
+				["Caramel Triggers", "pep white", "", "", "", ""]
+			]
+		],
+		[
+			135853.72960373,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			136217.948717949,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			136582.167832168,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			136946.386946387,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			136946.386946387,
+			[
+				["Caramel Triggers", "left singer out", "", "", "", ""]
+			]
+		],
+		[
+			137128.496503497,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			137310.606060606,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			137492.715617716,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			137674.825174825,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			137856.934731935,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			138039.044289044,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			138039.044289045,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			138403.263403264,
+			[
+				["Caramel Triggers", "right singer sing", "", "", "", ""]
+			]
+		],
+		[
+			138403.263403264,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			138767.482517483,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			139131.701631702,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			139495.920745921,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			139860.13986014,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			140224.358974359,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			140406.468531469,
+			[
+				["Caramel Triggers", "right singer out", "", "", "", ""]
+			]
+		],
+		[
+			140588.578088578,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			140952.797202797,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			141317.016317017,
+			[
+				["Caramel Triggers", "left singer sing", "", "", "", ""]
+			]
+		],
+		[
+			141317.016317017,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			141681.235431236,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			142045.454545455,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			142409.673659674,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			142773.892773893,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			142956.002331003,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			143138.111888112,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			143320.221445222,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			143502.331002331,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			143684.440559441,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			143866.55011655,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			143866.55011655,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			144230.769230769,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			144230.769230769,
+			[
+				["Caramel Triggers", "right singer sing", "", "", "", ""]
+			]
+		],
+		[
+			144594.988344989,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			144959.207459208,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			145323.426573427,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			145687.645687646,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			146051.864801865,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			146051.864801865,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			146051.864801865,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			146051.864801865,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			146416.083916084,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			146416.083916084,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			146416.083916084,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			146780.303030303,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			146780.303030303,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			146780.303030303,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			146780.303030303,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			147144.522144522,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			147326.631701632,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			147508.741258741,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			147690.850815851,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			147872.960372961,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			148055.06993007,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			148237.17948718,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			148419.289044289,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			148601.398601399,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			148783.508158508,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			148965.617715618,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			149147.727272727,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			149329.836829837,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			149511.946386947,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			149694.055944056,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			149876.165501166,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			150058.275058275,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			150240.384615385,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			150422.494172494,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			150604.603729604,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			150786.713286714,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			150968.822843823,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			151150.932400933,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			151333.041958042,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			151515.151515152,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			151697.261072261,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			151879.370629371,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			152061.48018648,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			152243.58974359,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			152425.6993007,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			152607.808857809,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			152789.918414919,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			152972.027972028,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			153154.137529138,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			153336.247086247,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			153518.356643357,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			153700.466200466,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			153882.575757576,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			154064.685314686,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			154246.794871795,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			154428.904428905,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			154611.013986014,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			154793.123543124,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			154975.233100233,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			155157.342657343,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			155339.452214452,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			155521.561771562,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			155703.671328672,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			155885.780885781,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			156067.890442891,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			156250,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			156432.10955711,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			156614.219114219,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			156796.328671329,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			156978.438228438,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			157160.547785548,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			157342.657342658,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			157524.766899767,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			157706.876456877,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			157888.986013986,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			158071.095571096,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			158253.205128205,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			158435.314685315,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			158617.424242424,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			158799.533799534,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			158981.643356644,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			159163.752913753,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			159345.862470863,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			159527.972027972,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			159710.081585082,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			159892.191142191,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			160074.300699301,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			160256.410256411,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			160438.51981352,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			160438.51981352,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			160620.62937063,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			160802.738927739,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			160802.738927739,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			160984.848484849,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			161166.958041958,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			161166.958041958,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			161349.067599068,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			161349.067599068,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			161531.177156177,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			161713.286713287,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			161895.396270397,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			162077.505827506,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			162259.615384616,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			162441.724941725,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			162623.834498835,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			162805.944055944,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			162988.053613054,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			163170.163170163,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			163352.272727273,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			163534.382284383,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			163716.491841492,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			163898.601398602,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			164080.710955711,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			164262.820512821,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			164444.93006993,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			164627.03962704,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			164809.149184149,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			164991.258741259,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			165173.368298369,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			165355.477855478,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			165537.587412588,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			165719.696969697,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			165901.806526807,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			166083.916083916,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			166266.025641026,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			166266.025641026,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			166448.135198135,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			166630.244755245,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			166630.244755245,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			166812.354312355,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			166994.463869464,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			166994.463869464,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			167176.573426574,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			167176.573426574,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			167358.682983683,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			167540.792540793,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			167722.902097902,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			167905.011655012,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			168087.121212121,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			168269.230769231,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			168451.340326341,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			168633.44988345,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			168815.55944056,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			168997.668997669,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			168997.668997669,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			168997.668997669,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			168997.668997669,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			168997.668997669,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			169361.888111888,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			169361.888111888,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			169361.888111888,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			169361.888111888,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			169361.888111888,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			169726.107226107,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			169726.107226107,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			169726.107226107,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			169726.107226107,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			169726.107226108,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			170090.326340327,
+			[
+				["Caramel Triggers", "jumper", "", "", "", ""],
+				["Caramel Triggers", "jumper", "", "", "", ""],
+				["Caramel Triggers", "jumper", "", "", "", ""],
+				["Caramel Triggers", "jumper", "", "", "", ""],
+				["Caramel Triggers", "jumper", "", "", "", ""],
+				["Caramel Triggers", "jumper", "", "", "", ""],
+				["Caramel Triggers", "jumper", "", "", "", ""]
+			]
+		],
+		[
+			170090.326340327,
+			[
+				["Caramel Triggers", "flashes", "", "", "", ""]
+			]
+		],
+		[
+			170454.545454546,
+			[
+				["Caramel Triggers", "black end", "", "", "", ""]
+			]
+		]
+	],
+	"player2": "caramel_opponent",
+	"offset": 0,
+	"charter": "r",
+	"song": "CaramellDansen",
+	"needsVoices": true,
+	"generatedBy": "Psych Engine v1.0.3 - Chart Editor V-Slice Importer",
+	"stage": "caramelStage",
+	"bpm": 164.736,
+	"format": "psych_v1_convert",
+	"speed": 2.9,
+	"artist": "the guys"
+}

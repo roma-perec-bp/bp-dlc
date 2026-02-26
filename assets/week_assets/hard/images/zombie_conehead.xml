@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="zombie_conehead.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="dance0000" x="10" y="621" width="267" height="600" frameX="0" frameY="-15" frameWidth="267" frameHeight="616" rotated="false"/>
+	<SubTexture name="dance0001" x="10" y="621" width="267" height="600" frameX="0" frameY="-15" frameWidth="267" frameHeight="616" rotated="false"/>
+	<SubTexture name="dance0002" x="812" y="1242" width="256" height="598" frameX="-5" frameY="-18" frameWidth="267" frameHeight="616" rotated="false"/>
+	<SubTexture name="dance0003" x="812" y="1242" width="256" height="598" frameX="-5" frameY="-18" frameWidth="267" frameHeight="616" rotated="false"/>
+	<SubTexture name="dance0004" x="288" y="1271" width="252" height="615" frameX="-7" frameY="-1" frameWidth="267" frameHeight="616" rotated="false"/>
+	<SubTexture name="dance0005" x="288" y="1271" width="252" height="615" frameX="-7" frameY="-1" frameWidth="267" frameHeight="616" rotated="false"/>
+	<SubTexture name="dance0006" x="550" y="1265" width="252" height="616" frameX="-7" frameY="0" frameWidth="267" frameHeight="616" rotated="false"/>
+	<SubTexture name="dance0007" x="550" y="1265" width="252" height="616" frameX="-7" frameY="0" frameWidth="267" frameHeight="616" rotated="false"/>
+	<SubTexture name="dance0008" x="550" y="1265" width="252" height="616" frameX="-7" frameY="0" frameWidth="267" frameHeight="616" rotated="false"/>
+	<SubTexture name="dance0009" x="550" y="1265" width="252" height="616" frameX="-7" frameY="0" frameWidth="267" frameHeight="616" rotated="false"/>
+	<SubTexture name="dance_alt0000" x="10" y="1231" width="268" height="594" frameX="0" frameY="-26" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0001" x="10" y="1231" width="268" height="594" frameX="0" frameY="-26" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0002" x="812" y="627" width="256" height="605" frameX="-5" frameY="-16" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0003" x="812" y="627" width="256" height="605" frameX="-5" frameY="-16" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0004" x="550" y="638" width="252" height="617" frameX="-7" frameY="-4" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0005" x="550" y="638" width="252" height="617" frameX="-7" frameY="-4" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0006" x="287" y="10" width="252" height="621" frameX="-7" frameY="0" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0007" x="287" y="10" width="252" height="621" frameX="-7" frameY="0" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0008" x="287" y="10" width="252" height="621" frameX="-7" frameY="0" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0009" x="287" y="10" width="252" height="621" frameX="-7" frameY="0" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0010" x="10" y="10" width="267" height="601" frameX="0" frameY="-19" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0011" x="10" y="10" width="267" height="601" frameX="0" frameY="-19" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0012" x="811" y="10" width="256" height="607" frameX="-5" frameY="-14" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0013" x="811" y="10" width="256" height="607" frameX="-5" frameY="-14" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0014" x="549" y="10" width="252" height="618" frameX="-7" frameY="-3" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0015" x="549" y="10" width="252" height="618" frameX="-7" frameY="-3" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0016" x="288" y="641" width="252" height="620" frameX="-7" frameY="-1" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0017" x="288" y="641" width="252" height="620" frameX="-7" frameY="-1" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0018" x="288" y="641" width="252" height="620" frameX="-7" frameY="-1" frameWidth="268" frameHeight="621" rotated="false"/>
+	<SubTexture name="dance_alt0019" x="288" y="641" width="252" height="620" frameX="-7" frameY="-1" frameWidth="268" frameHeight="621" rotated="false"/>
+</TextureAtlas>

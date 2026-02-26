@@ -1,0 +1,95 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "d-idle"
+		},
+		{
+			"offsets": [90, -25],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "d-left"
+		},
+		{
+			"offsets": [22, -14],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "d-down"
+		},
+		{
+			"offsets": [0, 81],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "d-up"
+		},
+		{
+			"offsets": [-6, -22],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "d-right"
+		},
+		{
+			"offsets": [-4, -8],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "d-miss"
+		},
+		{
+			"offsets": [-4, -8],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "d-miss"
+		},
+		{
+			"offsets": [-4, -8],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "d-miss"
+		},
+		{
+			"offsets": [-4, -8],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "d-miss"
+		},
+		{
+			"offsets": [0, 0],
+			"indices": [],
+			"fps": 24,
+			"anim": "shock",
+			"loop": true,
+			"name": "d-ahui"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/dust_dep_assets",
+	"position": [0, 0],
+	"healthicon": "dust-sketch",
+	"flip_x": true,
+	"healthbar_colors": [255, 255, 255],
+	"camera_position": [120, 60],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

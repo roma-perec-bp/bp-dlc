@@ -1,76 +1,76 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [-85, 6],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "idle-manipulated0",
-			"indices": []
+			"indices": [],
+			"name": "idle-manipulated0"
 		},
 		{
-			"loop": false,
 			"offsets": [-8, 23],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "left-manipulated",
-			"indices": []
+			"indices": [],
+			"name": "left-manipulated"
 		},
 		{
-			"loop": false,
 			"offsets": [-90, -77],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "down-manipulated",
-			"indices": []
+			"indices": [],
+			"name": "down-manipulated"
 		},
 		{
-			"loop": false,
 			"offsets": [-136, -75],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "up-manipulated",
-			"indices": []
+			"indices": [],
+			"name": "up-manipulated"
 		},
 		{
-			"loop": false,
 			"offsets": [-202, -93],
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "right-manipulated",
-			"indices": []
+			"indices": [],
+			"name": "right-manipulated"
 		},
 		{
+			"offsets": [364, -27],
 			"loop": false,
-			"offsets": [396, 153],
+			"fps": 24,
 			"anim": "singLEFT-alt",
-			"fps": 24,
-			"name": "left-hypno",
-			"indices": []
+			"indices": [],
+			"name": "left-hypno"
 		},
 		{
+			"offsets": [-140, -25],
 			"loop": false,
-			"offsets": [210, -175],
+			"fps": 24,
 			"anim": "singDOWN-alt",
-			"fps": 24,
-			"name": "down-hypno",
-			"indices": []
+			"indices": [],
+			"name": "down-hypno"
 		},
 		{
+			"offsets": [-262, 227],
 			"loop": false,
-			"offsets": [-232, 227],
+			"fps": 24,
 			"anim": "singUP-alt",
-			"fps": 24,
-			"name": "up-hypno",
-			"indices": []
+			"indices": [],
+			"name": "up-hypno"
 		},
 		{
+			"offsets": [-176, -45],
 			"loop": false,
-			"offsets": [-174, 17],
-			"anim": "singRIGHT-alt",
 			"fps": 24,
-			"name": "right-hypno",
-			"indices": []
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "right-hypno"
 		}
 	],
 	"vocals_file": "",

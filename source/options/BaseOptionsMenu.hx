@@ -12,6 +12,7 @@ import objects.CheckboxThingie;
 import objects.AttachedText;
 import options.Option;
 import backend.InputFormatter;
+import states.FreeplayState;
 
 class BaseOptionsMenu extends MusicBeatSubstate
 {
@@ -156,12 +157,12 @@ class BaseOptionsMenu extends MusicBeatSubstate
 					{
 						FlxG.sound.play(Paths.sound('scrollMenu'));
 
-						if(curOption.name == 'Download Free Mario Madness V2 Content')
+						if(curOption.name == 'Mario Madness Mode')
 						{
-							Init.fun = -1;
-							
-							PlayState.storyPlaylist = ['its-a-me'];
-							PlayState.isStoryMode = false;
+							FreeplayState.curSelected = 2;
+
+							PlayState.storyPlaylist = ['its-a-me', 'starman-slaughter'];
+							PlayState.isStoryMode = true;
 					
 							Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '', PlayState.storyPlaylist[0].toLowerCase());
 					

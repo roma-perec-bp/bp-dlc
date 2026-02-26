@@ -13,13 +13,14 @@ import sys.FileSystem;
 import sys.io.File;
 import backend.StageData;
 import backend.Song;
+import states.FreeplayState;
 
 import flixel.addons.display.FlxBackdrop;
 
 class GalleryState extends MusicBeatState
 {
     var images = [];
-    var paths = ["Arts", "Memes", "Other"];
+    var paths = ["Arts", "Ost Arts", "Comics", "Memes", "Other", "Devil Content"];
     var name:FlxText; 
     var author:FlxText;
     var pathname:FlxText;
@@ -32,6 +33,11 @@ class GalleryState extends MusicBeatState
     var mouseWheel:Float = 0;
 
     var curSelected:Int = 0;
+
+    var ex_box:FlxSprite;
+
+    var canDo:Bool = true;
+
     public var sprItemsGroup:FlxTypedGroup<FlxSprite>;
 
 	override function create()
@@ -40,6 +46,9 @@ class GalleryState extends MusicBeatState
 
         var bg:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image("gallery_pvz/bg"));
         add(bg);
+
+        if(FlxG.save.data.ending == false)
+            paths = ["Arts", "Ost Arts", "Comics", "Memes", "Other"];
 
         for(j in 0...paths.length)
         {
@@ -81,6 +90,14 @@ class GalleryState extends MusicBeatState
 
             }
         };
+
+        ex_box = new FlxSprite(0, 0);
+        ex_box.antialiasing = ClientPrefs.data.antialiasing;
+        ex_box.frames = Paths.getSparrowAtlas('gallery_ex');
+        ex_box.animation.addByPrefix('idle', "attack", 24, false);
+        ex_box.animation.play('idle');
+        add(ex_box);
+        ex_box.alpha = 0.0001;
 
         name = new FlxText(0, 25, 0, "", 55);
 		name.text = "Hello";
@@ -148,56 +165,98 @@ class GalleryState extends MusicBeatState
 
     override function update(elapsed:Float) 
     {
-        if (controls.UI_RIGHT || FlxG.mouse.overlaps(rightArrows))
-            rightArrows.animation.play('press')
-        else
-            rightArrows.animation.play('idle');
-
-        if (controls.UI_LEFT || FlxG.mouse.overlaps(leftArrows))
-            leftArrows.animation.play('press');
-        else
-            leftArrows.animation.play('idle');
-
-        if (controls.UI_LEFT_P || FlxG.mouse.overlaps(leftArrows) && FlxG.mouse.justPressed)
+        if (canDo)
         {
-            changeButtons(-1);
-            name.screenCenter(X);
-            author.screenCenter(X);
-            pathname.screenCenter(X);
-            FlxG.sound.play(Paths.sound('scrollMenu'));
+            if (controls.UI_RIGHT || FlxG.mouse.overlaps(rightArrows))
+                rightArrows.animation.play('press')
+            else
+                rightArrows.animation.play('idle');
+    
+            if (controls.UI_LEFT || FlxG.mouse.overlaps(leftArrows))
+                leftArrows.animation.play('press');
+            else
+                leftArrows.animation.play('idle');
+    
+            if (controls.UI_LEFT_P || FlxG.mouse.overlaps(leftArrows) && FlxG.mouse.justPressed)
+            {
+                changeButtons(-1);
+                name.screenCenter(X);
+                author.screenCenter(X);
+                pathname.screenCenter(X);
+                FlxG.sound.play(Paths.sound('scrollMenu'));
+            }
+            
+            if (controls.UI_RIGHT_P || FlxG.mouse.overlaps(rightArrows) && FlxG.mouse.justPressed) 
+            {
+                changeButtons(1);
+                name.screenCenter(X);
+                author.screenCenter(X);
+                pathname.screenCenter(X);
+                FlxG.sound.play(Paths.sound('scrollMenu'));
+            }
         }
+
+        if (FlxG.save.data.beatUnfuck && !FlxG.save.data.unlockedSong.contains('exerection'))
+            ex_box.offset.set(FlxG.random.float(-16, 16), FlxG.random.float(-16, 16));
+
+        if (FlxG.save.data.beatUnfuck && canDo && !FlxG.save.data.unlockedSong.contains('exerection'))
+        {
+            if(controls.ACCEPT && (curSelected == 15 || curSelected == 16)) {
+                canDo = false;
+
+                ex_box.scale.set(1 + mouseWheel, 1 + mouseWheel);
+
+                FlxTween.tween(ex_box.scale, {x: 0.65 + mouseWheel, y: 0.65 + mouseWheel}, 0.5, {
+                    ease: FlxEase.bounceOut,
+                });
+
+                ex_box.updateHitbox();
+                ex_box.screenCenter();
+               //ex_box.x += 255;
+                FlxG.camera.shake(0.066, 0.2);
+                FlxTween.tween(FlxG.camera, {zoom:1.4}, 5, {ease: FlxEase.expoOut, type: BACKWARD});
+                sprItemsGroup.forEach(function(spr:FlxSprite)
+                {
+                    spr.color = 0xFF000000;
+                    spr.alpha = 0;
+                });
+                ex_box.alpha = 1;
+                ex_box.animation.play('idle');
+                FlxG.sound.play(Paths.sound('exerection_unlock'));
+                FlxG.camera.flash(0xFFFF0000, 0.6, null, true);
+
+                new FlxTimer().start(2, function(tmr:FlxTimer)
+                {
+                    FlxG.camera.fade(0xFF000000, 2);
+                });
+
+                new FlxTimer().start(7, function(tmr:FlxTimer)
+                {
+                    PlayState.storyPlaylist = ['exerection'];
+                    PlayState.isStoryMode = true;
+    
+                    FreeplayState.curSelected = 1;
+            
+                    Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '', PlayState.storyPlaylist[0].toLowerCase());
         
-        if (controls.UI_RIGHT_P || FlxG.mouse.overlaps(rightArrows) && FlxG.mouse.justPressed) 
-        {
-            changeButtons(1);
-            name.screenCenter(X);
-            author.screenCenter(X);
-            pathname.screenCenter(X);
-            FlxG.sound.play(Paths.sound('scrollMenu'));
-        }
-
-        if(controls.ACCEPT && (curSelected == 7 || curSelected == 8)) {
-            PlayState.storyPlaylist = ['exerection'];
-            PlayState.isStoryMode = false;
-    
-            Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '', PlayState.storyPlaylist[0].toLowerCase());
-
-            var directory = StageData.forceNextDirectory;
-			LoadingState.loadNextDirectory();
-			StageData.forceNextDirectory = directory;
-
-            @:privateAccess
-			if(PlayState._lastLoadedModDirectory != Mods.currentModDirectory)
-			{
-				trace('CHANGED MOD DIRECTORY, RELOADING STUFF');
-				Paths.freeGraphicsFromMemory();
-			}
-
-			LoadingState.prepareToSong();
-			LoadingState.loadAndSwitchState(new PlayState());
-    
-            FlxG.sound.music.stop();
-            return;
+                    var directory = StageData.forceNextDirectory;
+                    LoadingState.loadNextDirectory();
+                    StageData.forceNextDirectory = directory;
+        
+                    @:privateAccess
+                    if(PlayState._lastLoadedModDirectory != Mods.currentModDirectory)
+                    {
+                        trace('CHANGED MOD DIRECTORY, RELOADING STUFF');
+                        Paths.freeGraphicsFromMemory();
+                    }
+        
+                    LoadingState.prepareToSong();
+                    LoadingState.loadAndSwitchState(new PlayState());
+            
+                    FlxG.sound.music.stop();
+                    return;
+                });
+            }
         }
 
         sprItemsGroup.forEach(function(spr:FlxSprite)
@@ -215,18 +274,23 @@ class GalleryState extends MusicBeatState
                     :
                     FlxMath.lerp(spr.scale.x, 0.3, FlxMath.bound(elapsed * 10.2, 0, 1))
             );
-            spr.alpha = (
-                spr.ID == curSelected ?
-                    FlxMath.lerp(spr.alpha, 1, FlxMath.bound(elapsed * 5, 0, 1))
-                    :
-                    FlxMath.lerp(spr.alpha, 0.25, FlxMath.bound(elapsed * 5, 0, 1))
-            );
+
+            if(canDo)
+            {
+                spr.alpha = (
+                    spr.ID == curSelected ?
+                        FlxMath.lerp(spr.alpha, 1, FlxMath.bound(elapsed * 5, 0, 1))
+                        :
+                        FlxMath.lerp(spr.alpha, 0.25, FlxMath.bound(elapsed * 5, 0, 1))
+                );
+            }
         });
 
-        mouseWheel += (FlxG.mouse.wheel / 10);
+        if(canDo) mouseWheel += (FlxG.mouse.wheel / 10);
 
-        if(controls.BACK)
+        if(controls.BACK && canDo)
         {
+            canDo = false;
             FlxG.sound.play(Paths.sound('cancelMenu'));
 			FlxG.sound.playMusic(Paths.music('freakyMenu'), 0.7, true);
             MusicBeatState.switchState(new MainMenuState());
@@ -248,15 +312,17 @@ class GalleryState extends MusicBeatState
 
         mouseWheel -= mouseWheel;
 
-        if(curSelected == 7 || curSelected == 8)
+        if(FlxG.save.data.beatUnfuck && (curSelected == 15 || curSelected == 16) && !FlxG.save.data.unlockedSong.contains('exerection'))
         {
             debug.text = "Press ENTER...";
             FlxG.sound.music.volume = 0;
+            debug.screenCenter(X);
         }
         else
         {
             debug.text = "You can use the mouse wheel to zoom in and out of the picture!";
             FlxG.sound.music.volume = 1;
+            debug.screenCenter(X);
         }
     }
 
@@ -277,6 +343,17 @@ class GalleryState extends MusicBeatState
             {
                 pathname.text = paths[j];
             }
+        }
+
+        if(pathname.text == 'Comics')
+        {
+            name.visible = false;
+            author.visible = false;
+        }
+        else
+        {
+            name.visible = true;
+            author.visible = true;
         }
     }
 }

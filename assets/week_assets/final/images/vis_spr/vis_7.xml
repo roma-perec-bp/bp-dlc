@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="vis_7.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="70000" x="10" y="10" width="134" height="458"/>
+	<SubTexture name="70001" x="10" y="478" width="134" height="458"/>
+	<SubTexture name="70002" x="10" y="946" width="134" height="458"/>
+	<SubTexture name="70003" x="10" y="1414" width="134" height="458"/>
+	<SubTexture name="70004" x="154" y="10" width="134" height="458"/>
+	<SubTexture name="70005" x="154" y="478" width="134" height="458"/>
+	<SubTexture name="70006" x="154" y="946" width="134" height="458"/>
+	<SubTexture name="70007" x="154" y="1414" width="134" height="458"/>
+	<SubTexture name="70008" x="298" y="10" width="134" height="458"/>
+	<SubTexture name="70009" x="298" y="478" width="134" height="458"/>
+	<SubTexture name="70010" x="298" y="946" width="134" height="458"/>
+	<SubTexture name="70011" x="298" y="1414" width="134" height="458"/>
+	<SubTexture name="70012" x="442" y="10" width="134" height="458"/>
+	<SubTexture name="70013" x="442" y="478" width="134" height="458"/>
+	<SubTexture name="70014" x="442" y="946" width="134" height="458"/>
+	<SubTexture name="70015" x="442" y="1414" width="134" height="458"/>
+	<SubTexture name="70016" x="586" y="10" width="134" height="458"/>
+	<SubTexture name="70017" x="586" y="478" width="134" height="458"/>
+	<SubTexture name="70018" x="586" y="946" width="134" height="458"/>
+	<SubTexture name="70019" x="586" y="1414" width="134" height="458"/>
+	<SubTexture name="70020" x="730" y="10" width="134" height="458"/>
+	<SubTexture name="70021" x="730" y="478" width="134" height="458"/>
+	<SubTexture name="70022" x="730" y="946" width="134" height="458"/>
+	<SubTexture name="70023" x="730" y="1414" width="134" height="458"/>
+</TextureAtlas>

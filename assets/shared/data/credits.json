@@ -5,9 +5,7 @@
         "body": [
           { "line": "An official DLC created by" },
           { "line": "Small part of PeaTV Basement." },
-          { "line": "Made in modified PSYCH ENGINE v1.0.3." },
-          { "line": "Based of the song in Mario Madness v2" },
-          { "line": "original UNBEATABLE By RedTV53, Ironik, Scrumbo_, theWAHbox and FriedRick" }
+          { "line": "Made in modified PSYCH ENGINE v1.0.3." }
         ]
       },
       {
@@ -16,9 +14,12 @@
           { "line": "ROMA PEREC" },
           { "line": "PeaTV" },
           { "line": "Umbra" },
-          { "line": "Foxxizm" },
+          { "line": "Poet_Digitalniy" },
           { "line": "Ender69" },
+          { "line": "Toster" },
+          { "line": "DustGalaxy" },
           { "line": "N" },
+          { "line": "Raldman" },
           { "line": "Hedgehog Gamer" }
         ]
       },
@@ -67,62 +68,64 @@
         ]
       },
       {
-        "header": "Most of the art by",
+        "header": "Additional art by",
         "body": [
           { "line": "Umbra" }
         ]
       },
       {
-        "header": "Banner art by",
+        "header": "Banners by",
         "body": [
-          { "line": "N" }
+          { "line": "N" },
+          { "line": "Toster" }
         ]
       },
       {
         "header": "LOGO by",
         "body": [
           { "line": "Ioika (original logo)" },
-          { "line": "ROMA PEREC (DLC text)" },
-          { "line": "PeaTV (Guys behind logo in Title Screen)" }
+          { "line": "ROMA PEREC (the rest of the edit)" }
         ]
       },
       {
         "header": "Pixel Art",
         "body": [
-          { "line": "Foxxizm" }
+          { "line": "Poet_Digitalniy" },
+          { "line": "ROMA PEREC" }
         ]
       },
       {
-        "header": "Special Thanks for Events",
+        "header": "Special Thanks for some Events",
         "body": [
           { "line": "Ender69" }
-        ]
-      },
-      {
-        "header": "BF Icon that i stole from BP",
-        "body": [
-          { "line": "SMixels2" }
-        ]
-      },
-      {
-        "header": "Rokkie Chromatic Scale By",
-        "body": [
-          { "line": "Hedgehog Gamer" }
         ]
       },
       {
         "header": "Soundtracks for the mod",
         "body": [
           { "line": "UNFUCKABLE (Unbeatable BP mix) - ROMA PEREC" },
-          { "line": "ZP (Menu Theme) - ROMA PEREC" },
-          { "line": "Condome (Other Menu Theme) - ROMA PEREC" },
-          { "line": "Garden Stop (Pause Theme) - ROMA PEREC" },
+          { "line": "ZP (Main Menu Theme) - ROMA PEREC" },
+          { "line": "Condome (Second Main Menu Theme) - ROMA PEREC" },
+          { "line": "Garden Stop (DLC Pause Theme) - ROMA PEREC" },
           { "line": "Pizdec (original BP Pause Theme) - TheRat" },
-          { "line": "FuckYo (Credits Theme) - ROMA PEREC (even VA)" },
-          { "line": "EXERECTION (Expurgation BP mix) - ROMA PEREC" },
+          { "line": "FuckYo (Main Ending Credits Theme) - ROMA PEREC (even VA)" },
+          { "line": "?????????? - ROMA PEREC" },
+          { "line": "??'? ? ?? (cover) - ROMA PEREC" },
+          { "line": "??????? ???????? (cover) - ROMA PEREC" },
+          { "line": "?.?.? - ROMA PEREC" },
+          { "line": "??????? ?????? - Caramell feat.ROMA PEREC" },
+          { "line": "???? ???? - ROMA PEREC" },
+          { "line": "???? ???? - ROMA PEREC" },
+          { "line": "?? ??? ?? ???????? ???? (True Ending Credits Theme) - ROMA PEREC (also VA)" },
+          { "line": "Devil's Theme - ROMA PEREC" },
+          { "line": "Last Words - ROMA PEREC" },
+          { "line": "Gay-Over - Raldman" },
+          { "line": "P.R.O.E.B.A.L - DustGalaxy" },
+          { "line": "Game Over (Pico BP Mix) - ROMA PEREC" },
+          { "line": "Prepare - ROMA PEREC" },
+          { "line": "cedziP - ROMA PEREC" },
           { "line": "Choose Your Seeds (Gallery Theme) - PVZ Nintendo DS" },
-          { "line": "ezqsvf (Fitin Cover) - ROMA PEREC" },
-          { "line": "It's A Me (Rokkie.exe vs PeaTV Cover) - ROMA PEREC" }
+          { "line": "ezqsvf (Fitin Cover) - ROMA PEREC" }
         ]
       },
       {
@@ -161,10 +164,10 @@
           { "line": "ZarX" },
           { "line": "M4rio_Lol" },
           { "line": "Glebiloid" },
-          { "line": "Foxxizm" },
+          { "line": "Poet_Digitalniy" },
           { "line": "Danill (Miieeii)" },
           { "line": "Random Short" },
-          { "line": "HWAW???" },
+          { "line": "How What And Why" },
           { "line": "Rostan" },
           { "line": "N" },
           { "line": "Legumi" },
@@ -175,7 +178,6 @@
           { "line": "ElectroPea" },
           { "line": "Fadow" },
           { "line": "Mlaofmd" },
-          { "line": "SpookyHerSelf" },
           { "line": "Dionysus" },
           { "line": "Rasul (sadly u might never see it)" },
           { "line": "Tanuki228" },
@@ -189,7 +191,21 @@
           { "line": "mister kirpi4" },
           { "line": "Hedgehog Gamer" },
           { "line": "ZombiePunk" },
-          { "line": "meowiriska" },
+          { "line": "NyaIriska" },
+          { "line": "Raldman" },
+          { "line": "Toster" },
+          { "line": "Renas" },
+          { "line": "Stif" },
+          { "line": "Agent In Blue" },
+          { "line": "gmd glzfmann" },
+          { "line": "Badtime1207" },
+          { "line": "GlebDX" },
+          { "line": "glavnifanatlexibeybleydera" },
+          { "line": "PigParappa" },
+          { "line": "Kay_jey" },
+          { "line": "к4tя" },
+          { "line": "kvosyx" },
+          { "line": "Aleg 黑人" },
           { "line": "MM v2 team" },
           { "line": "Funkin Crew" }
         ]

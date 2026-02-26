@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="vis_8.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="80000" x="10" y="10" width="153" height="461"/>
+	<SubTexture name="80001" x="173" y="10" width="153" height="461"/>
+	<SubTexture name="80002" x="336" y="10" width="153" height="461"/>
+	<SubTexture name="80003" x="499" y="10" width="153" height="461"/>
+	<SubTexture name="80004" x="662" y="10" width="153" height="461"/>
+	<SubTexture name="80005" x="825" y="10" width="153" height="461"/>
+	<SubTexture name="80006" x="988" y="10" width="153" height="461"/>
+	<SubTexture name="80007" x="1151" y="10" width="153" height="461"/>
+	<SubTexture name="80008" x="1314" y="10" width="153" height="461"/>
+	<SubTexture name="80009" x="1477" y="10" width="153" height="461"/>
+	<SubTexture name="80010" x="1640" y="10" width="153" height="461"/>
+	<SubTexture name="80011" x="1803" y="10" width="153" height="461"/>
+	<SubTexture name="80012" x="10" y="481" width="153" height="461"/>
+	<SubTexture name="80013" x="173" y="481" width="153" height="461"/>
+	<SubTexture name="80014" x="336" y="481" width="153" height="461"/>
+	<SubTexture name="80015" x="499" y="481" width="153" height="461"/>
+	<SubTexture name="80016" x="662" y="481" width="153" height="461"/>
+	<SubTexture name="80017" x="825" y="481" width="153" height="461"/>
+	<SubTexture name="80018" x="988" y="481" width="153" height="461"/>
+	<SubTexture name="80019" x="1151" y="481" width="153" height="461"/>
+	<SubTexture name="80020" x="1314" y="481" width="153" height="461"/>
+	<SubTexture name="80021" x="1477" y="481" width="153" height="461"/>
+	<SubTexture name="80022" x="1640" y="481" width="153" height="461"/>
+	<SubTexture name="80023" x="1803" y="481" width="153" height="461"/>
+</TextureAtlas>

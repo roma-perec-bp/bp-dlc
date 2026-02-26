@@ -76,12 +76,12 @@ class EndingState extends MusicBeatState
   /**
    * The speed the credits scroll at, in pixels per second.
    */
-  static final CREDITS_SCROLL_BASE_SPEED = 27.0;
+  static final CREDITS_SCROLL_BASE_SPEED = 29.0;
 
   /**
    * The speed the credits scroll at while the button is held, in pixels per second.
    */
-  static final CREDITS_SCROLL_FAST_SPEED = CREDITS_SCROLL_BASE_SPEED * 2.0;
+  static final CREDITS_SCROLL_FAST_SPEED = CREDITS_SCROLL_BASE_SPEED * 12.0;
 
   /**
    * The actual sprites and text used to display the credits.
@@ -188,7 +188,7 @@ class EndingState extends MusicBeatState
 
   var lyricsArray:Array<String> = 
   [
-    'THE END',
+    'THE END - (Main Ending)',
     'Playing now: FuckYo - By ROMA PEREC',
     'Как же жарко, да и ярко',
     'Но в итоге всё пропало',
@@ -275,6 +275,8 @@ class EndingState extends MusicBeatState
     '',
   ];
 
+  var him:Bool = false;
+
   public function new()
   {
     super();
@@ -283,6 +285,11 @@ class EndingState extends MusicBeatState
   public override function create():Void
   {
     super.create();
+
+    #if DISCORD_ALLOWED
+		// Updating Discord Rich Presence
+		DiscordClient.changePresence("Credits (Main Ending)", null);
+		#end
 
     credits_data = findJson();
 
@@ -323,9 +330,11 @@ class EndingState extends MusicBeatState
     // Music
     FlxG.sound.playMusic(Paths.music('fuckYo'), 1, false);
 
-    for (i in 0...11) Paths.image('ending/'+i);
+    for (i in 0...16) Paths.image('ending/'+i);
 
-    if(Init.fun >= 87 && Init.fun <= 99) Paths.image('ending/10x'); //FUN VALUE MOMENT
+    if(FlxG.random.bool(6)) him = true;
+
+    if(him) Paths.image('ending/10x'); //FUN VALUE MOMENT
 
     for(i in 0...lyricsTimingArray.length){ //пришлось так, так как курбеат насрал десинком жёстким
       new FlxTimer().start(lyricsTimingArray[i], function(tmr:FlxTimer){
@@ -354,7 +363,7 @@ class EndingState extends MusicBeatState
             shishi++;
             if(shishi == 10)
             {
-              if(Init.fun >= 87 && Init.fun <= 99)
+              if(him)
                 drawing.loadGraphic(Paths.image('ending/'+shishi+'x', 'embed'));
               else
                 drawing.loadGraphic(Paths.image('ending/'+shishi));
@@ -412,10 +421,12 @@ class EndingState extends MusicBeatState
     var userNameEnd:String = '';
     var userTxt:String = getUsername();
 
+    if(DiscordClient.username != 'Unknown') userTxt = DiscordClient.username;
+
     if(userTxt != 'User')
       userNameEnd = "\n\nand of course YOU " + userTxt + "!";
     else
-      userNameEnd = "\n\nand of course YOU... God what kind of weird name is that?";
+      userNameEnd = "\n\nand of course YOU... User.... seriously?";
 
     var entryEND = buildCreditsLine(userNameEnd, y, false, CreditsSide.Center);
     creditsGroup.add(entryEND);
@@ -449,6 +460,12 @@ class EndingState extends MusicBeatState
   public override function update(elapsed:Float):Void
   {
     super.update(elapsed);
+
+    if (FlxG.keys.pressed.ENTER || FlxG.keys.pressed.SPACE)
+    {
+        // Move the whole group by the base scroll speed.
+        creditsGroup.y -= CREDITS_SCROLL_FAST_SPEED * elapsed;
+    }
 
     if (FlxG.sound.music != null)
 			Conductor.songPosition = FlxG.sound.music.time;
@@ -498,6 +515,10 @@ class EndingState extends MusicBeatState
   function exit():Void
   {
     if(ended) return;
+    FlxTween.cancelTweensOf(drawing);
+    FlxTween.tween(drawing, {alpha: 0}, 1);
+    FlxTween.tween(lyrics, {alpha: 0}, 1);
+    FlxG.sound.music.fadeOut(3);
     ended = true;
     lyrics.text = '';
     FlxTween.tween(end, {alpha: 1}, 3, {onComplete:
@@ -506,9 +527,15 @@ class EndingState extends MusicBeatState
         FlxTween.tween(end, {alpha: 0}, 5, {startDelay: 6, onComplete:
           function (twn:FlxTween)
           {
-            generateTextFile('Хорошая игра была не так ли? Надеюсь больше не встретимся ХВАВ, ты меня уже заебал         -Зомби Перцы', 'GG');
-            FlxG.sound.playMusic(Paths.music('freakyMenu'));
-            MusicBeatState.switchState(new MainMenuState());
+            if(FlxG.save.data.talkDevil == false)
+              MusicBeatState.switchState(new DevilState());
+            else
+            {
+              MusicBeatState.switchState(new MainMenuState());
+              FlxG.sound.playMusic(Paths.music('freakyMenu'));
+            }
+ 
+            //generateTextFile('Хорошая игра была не так ли? Надеюсь больше не встретимся ХВАВ, ты меня уже заебал         -Зомби Перцы', 'GG');
           }
         });
       }

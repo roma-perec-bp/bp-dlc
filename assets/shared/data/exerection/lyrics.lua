@@ -3,17 +3,19 @@ local balls = false
 function onCreate()
     luaDebugMode = true
 
-    makeLuaText("lyrics", nil, 600, 500, 500);
+    makeLuaText("lyrics", nil, 600, 800, 500);
     setTextSize('lyrics', 48)
+    setTextColor('lyrics', 'FF0000')
     setTextFont("lyrics", 'HouseofTerrorRus.ttf')
     setObjectCamera("lyrics", "camHUD")
     addLuaText("lyrics");
     setProperty('lyrics.alpha', 0)
     screenCenter('lyrics', 'x')
+    setProperty('lyrics.y', 650)
 end
 
 function onBeatHit()
-    if curBeat == 480 or curBeat == 508 or curBeat == 516 or curBeat == 544 or curBeat == 560 or curBeat == 576 or curBeat == 592 or curBeat == 604 or curBeat == 612 or curBeat == 620 or curBeat == 628 or curBeat == 636 or curBeat == 644 or curBeat == 652 or curBeat == 660 or curBeat == 666 then
+    if curBeat == 480 or curBeat == 508 or curBeat == 516 or curBeat == 544 or curBeat == 560 or curBeat == 576 or curBeat == 592 or curBeat == 604 or curBeat == 612 or curBeat == 620 or curBeat == 628 or curBeat == 636 or curBeat == 644 or curBeat == 652 or curBeat == 660 then
         doTweenAlpha('byeLyrics', 'lyrics', 0, 0.5)
     end
 
@@ -53,11 +55,12 @@ function onBeatHit()
         setProperty('lyrics.alpha', 1)
     end
     if curBeat == 532 then
-        setTextString("lyrics", "HWAW")
+        setTextString("lyrics", "")
         setTextSize('lyrics', 64)
         setProperty('lyrics.alpha', 1)
     end
     if curBeat == 536 then
+        setProperty('lyrics.y', 500)
         setTextString("lyrics", "Вот и час настал")
         setTextSize('lyrics', 48)
         setProperty('lyrics.alpha', 1)
@@ -127,21 +130,7 @@ function onBeatHit()
         setTextString("lyrics", "НЕТ")
         setProperty('lyrics.alpha', 1)
     end
-    if curBeat >= 680 and curBeat < 744 then
-        setProperty('lyrics.alpha', 1)
-        setTextSize('lyrics', 100)
-        setTextString("lyrics", "DON'T MISS")
-        screenCenter('lyrics', 'xy')
-    
-        if balls then
-            setProperty('lyrics.visible', false)
-        else
-            setProperty('lyrics.visible', true)
-        end
-
-        balls = not balls
-    end
-    if curBeat == 744 then
-        removeLuaText('lyrics')
+    if curBeat == 664 then
+        removeLuaText("lyrics")
     end
 end

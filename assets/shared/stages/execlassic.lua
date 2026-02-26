@@ -29,11 +29,6 @@ function onCreate()
 	
 	 makeLuaSprite('box above', 'EXE1/CLadrillosPapus', -605, -745);
 
-	makeLuaSprite('black', 'EXE1/black', 0, 0);
-	scaleObject('black', 10, 10)
-	setObjectOrder('black', 3)
-	setProperty('black.alpha', 0)
-
 	addLuaSprite('sky', false);
 
   if not lowQuality then
@@ -84,97 +79,9 @@ end
     
     if curStep == 2336 then
     
-    doTweenAlpha('blacktween1', 'black', 1, 3.5, 'linear');
-    
     doTweenAlpha('smoketween2', 'smoke', 0, 3.5, 'linear');
     
     doTweenAlpha('darktween2', 'dark', 0, 3.5, 'linear');
     
     end
-
-function onBeatHit() -- Camera Zoom thingy
-   if curBeat == 204 then
-     setProperty('defaultCamZoom', 0.675);
-   end
-   
-   if curBeat == 236 then
-   setProperty('defaultCamZoom', 0.55);
-   end
-   
-   if curBeat == 268 then
-   setProperty('defaultCamZoom', 0.425);
-   end
-   
-   if curBeat == 272 then
-   setProperty('defaultCamZoom', 0.55);
-   end
-   
-   if curBeat == 304 then
-   setProperty('defaultCamZoom', 0.485);
-   end
-   
-   if curBeat == 340 then
-   setProperty('defaultCamZoom', 0.55);
-   end
-   
-   if curBeat == 344 then
-   setProperty('defaultCamZoom', 0.435);
-   end
-   
-   if curBeat == 356 then
-   setProperty('defaultCamZoom', 0.485);
-   end
-   
-   if curBeat == 388 then
-   setProperty('defaultCamZoom', 0.55);
-   end
-   
-   if curBeat == 452 then
-   setProperty('defaultCamZoom', 0.485);
-   end
-   
-   if curBeat == 484 then
-   setProperty('defaultCamZoom', 0.575);
-   end
-   
-   if curBeat == 488 then
-   setProperty('defaultCamZoom', 0.625);
-   end
-   
-   if curBeat == 492 then
-   setProperty('defaultCamZoom', 0.675);
-   end
-   
-   if curBeat == 496 then
-   setProperty('defaultCamZoom', 0.7);
-   end
-   
-   if curBeat == 500 then
-   setProperty('defaultCamZoom', 0.55);
-   end
-   
-   if curBeat == 504 then
-   setProperty('defaultCamZoom', 0.5);
-   end
-   
-   if curBeat == 508 then
-   setProperty('defaultCamZoom', 0.45);
-   end
-   
-   if curBeat == 512 then
-   setProperty('defaultCamZoom', 0.44);
-   end
-   
-   if curBeat == 516 then
-   setProperty('defaultCamZoom', 0.55);
-   end
-   
-   if curBeat == 520 then
-   setProperty('defaultCamZoom', 0.485);
-   end
-   
-   if curBeat == 552 then
-   setProperty('defaultCamZoom', 0.7);
-   end
- end
 end

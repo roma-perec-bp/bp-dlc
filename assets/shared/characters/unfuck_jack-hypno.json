@@ -1,7 +1,7 @@
 {
 	"animations": [
 		{
-			"offsets": [-85, 6],
+			"offsets": [-25, 42],
 			"loop": false,
 			"fps": 24,
 			"anim": "idle",
@@ -9,36 +9,36 @@
 			"name": "idle-hypno"
 		},
 		{
-			"offsets": [215, -141],
-			"indices": [],
-			"fps": 40,
+			"loop": false,
+			"offsets": [45, -91],
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "down-hypno"
+			"fps": 24,
+			"name": "down-hypno",
+			"indices": []
 		},
 		{
-			"offsets": [-168, -104],
-			"indices": [],
-			"fps": 40,
+			"loop": false,
+			"offsets": [-115, -33],
 			"anim": "singRIGHT",
-			"loop": false,
-			"name": "right-hypno"
+			"fps": 24,
+			"name": "right-hypno",
+			"indices": []
 		},
 		{
-			"offsets": [140, 61],
-			"indices": [],
-			"fps": 40,
+			"loop": false,
+			"offsets": [169, 111],
 			"anim": "singUP",
-			"loop": false,
-			"name": "up-hypno"
+			"fps": 24,
+			"name": "up-hypno",
+			"indices": []
 		},
 		{
-			"offsets": [132, -99],
-			"indices": [],
-			"fps": 40,
-			"anim": "singLEFT",
 			"loop": false,
-			"name": "left-hypno"
+			"offsets": [165, -27],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left-hypno",
+			"indices": []
 		}
 	],
 	"vocals_file": "",

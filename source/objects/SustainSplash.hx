@@ -5,6 +5,7 @@ class SustainSplash extends FlxSprite {
   public static var startCrochet:Float;
   public static var frameRate:Int;
   public var destroyTimer:FlxTimer;
+  public var playedEnd:Bool = false;
 
   var strumMove:StrumNote;
 
@@ -16,8 +17,10 @@ class SustainSplash extends FlxSprite {
     animation.addByPrefix('hold', 'hold', 24, true);
     animation.addByPrefix('end', 'end', 24, false);
     animation.play('hold', true, false, 0);
-    animation.curAnim.frameRate = frameRate;
     animation.curAnim.looped = true;
+
+    antialiasing = ClientPrefs.data.antialiasing;
+    if (PlayState.isPixelStage) antialiasing = false;
 
     destroyTimer = new FlxTimer();
 
@@ -42,7 +45,7 @@ class SustainSplash extends FlxSprite {
 
     strumMove = strum;
 
-    clipRect = new flixel.math.FlxRect(0, -210, frameWidth, frameHeight);
+    clipRect = new flixel.math.FlxRect(0, !PlayState.isPixelStage ? 0 : -210, frameWidth, frameHeight);
 
     if (daNote.shader != null) {
       shader = new objects.NoteSplash.PixelSplashShaderRef().shader;
@@ -53,26 +56,33 @@ class SustainSplash extends FlxSprite {
     }
 
     setPosition(strum.x, strum.y);
-    offset.set(112.5, 100);
+    offset.set(PlayState.isPixelStage ? 112.5 : 106.25, 100);
 
     if (!daNote.mustPress) 
       alpha = daNote.alpha;
 
     destroyTimer.start(timeThingy, (idk:FlxTimer) -> {
       if (tailEnd.mustPress && !(daNote.isSustainNote ? daNote.parent.noteSplashData.disabled : daNote.noteSplashData.disabled) && ClientPrefs.data.splashAlpha != 0) {
-        alpha = ClientPrefs.data.splashAlpha;
-        animation.play('end', true, false, 0);
-        animation.curAnim.looped = false;
-        animation.curAnim.frameRate = 24;
-        clipRect = null;
-        animation.finishCallback = (idkEither:Dynamic) -> {
-          die(tailEnd);
-        }
+        playEnd(tailEnd);
         return;
       }
       die(tailEnd);
     });
 
+  }
+
+  public function playEnd(tailEnd:Note):Void {
+    if(!playedEnd)
+    {
+      alpha = ClientPrefs.data.splashAlpha;
+      animation.play('end', true, false, 0);
+      animation.curAnim.looped = false;
+      clipRect = null;
+      playedEnd = true;
+      animation.finishCallback = (idkEither:Dynamic) -> {
+        die(tailEnd);
+      }
+    }
   }
 
   public function die(?end:Note = null):Void {

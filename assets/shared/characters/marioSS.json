@@ -1,0 +1,71 @@
+{
+	"animations": [
+		{
+			"offsets": [108, -100],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "MarioDown0"
+		},
+		{
+			"offsets": [263, 30],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "MarioLeft0"
+		},
+		{
+			"offsets": [273, 332],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "MarioUp0"
+		},
+		{
+			"offsets": [-143, -8],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "MarioRight0"
+		},
+		{
+			"offsets": [-110, -60],
+			"loop": true,
+			"fps": 24,
+			"anim": "xd",
+			"indices": [],
+			"name": "MarioFalling"
+		},
+		{
+			"offsets": [-64, 156],
+			"indices": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+			"fps": 24,
+			"anim": "danceLeft",
+			"loop": false,
+			"name": "MarioIdle0"
+		},
+		{
+			"offsets": [-64, 156],
+			"indices": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+			"fps": 24,
+			"anim": "danceRight",
+			"loop": false,
+			"name": "MarioIdle0"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/SS_AltMario_Assets",
+	"position": [-120, 30],
+	"healthicon": "rok",
+	"flip_x": false,
+	"healthbar_colors": [181, 54, 14],
+	"camera_position": [20, -50],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

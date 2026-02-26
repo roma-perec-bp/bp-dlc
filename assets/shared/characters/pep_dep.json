@@ -1,0 +1,63 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [0, 0],
+			"anim": "idle",
+			"fps": 24,
+			"name": "p-idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [106, -11],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "p-left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, -37],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "p-down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [2, 158],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "p-up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "p-right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [339, 101],
+			"anim": "break",
+			"fps": 24,
+			"name": "p-break",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/pep_dep_assets",
+	"position": [0, 0],
+	"healthicon": "pep-sketch",
+	"flip_x": false,
+	"healthbar_colors": [0, 0, 0],
+	"camera_position": [-140, -20],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

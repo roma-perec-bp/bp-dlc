@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pea_happy_assets.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down-happy0000" x="4084" y="1813" width="295" height="614"/>
+	<SubTexture name="down-happy0001" x="4084" y="1813" width="295" height="614"/>
+	<SubTexture name="down-happy0002" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="down-happy0003" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="down-happy0004" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="down-happy0005" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="down-happy0006" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="down-happy0007" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="down-happy0008" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="down-happy0009" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="down-happy0010" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="down-happy0011" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="down-happy0012" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="down-happy0013" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="down-happy0014" x="4727" y="1922" width="295" height="614"/>
+	<SubTexture name="idle-happy0000" x="4412" y="20" width="295" height="615" frameX="0" frameY="0" frameWidth="295" frameHeight="616" rotated="false"/>
+	<SubTexture name="idle-happy0001" x="4412" y="2557" width="292" height="614" frameX="-1" frameY="-2" frameWidth="295" frameHeight="616" rotated="false"/>
+	<SubTexture name="idle-happy0002" x="4724" y="3190" width="290" height="612" frameX="-2" frameY="-4" frameWidth="295" frameHeight="616" rotated="false"/>
+	<SubTexture name="left-happy0000" x="4412" y="1923" width="295" height="614"/>
+	<SubTexture name="left-happy0001" x="4412" y="1923" width="295" height="614"/>
+	<SubTexture name="left-happy0002" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="left-happy0003" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="left-happy0004" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="left-happy0005" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="left-happy0006" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="left-happy0007" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="left-happy0008" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="left-happy0009" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="left-happy0010" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="left-happy0011" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="left-happy0012" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="left-happy0013" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="left-happy0014" x="4727" y="2556" width="295" height="614"/>
+	<SubTexture name="right-happy0000" x="4412" y="655" width="295" height="614"/>
+	<SubTexture name="right-happy0001" x="4412" y="655" width="295" height="614"/>
+	<SubTexture name="right-happy0002" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="right-happy0003" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="right-happy0004" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="right-happy0005" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="right-happy0006" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="right-happy0007" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="right-happy0008" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="right-happy0009" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="right-happy0010" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="right-happy0011" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="right-happy0012" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="right-happy0013" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="right-happy0014" x="4084" y="1179" width="295" height="614"/>
+	<SubTexture name="sadness0000" x="4727" y="20" width="295" height="614" frameX="-71" frameY="0" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0001" x="4727" y="20" width="295" height="614" frameX="-71" frameY="0" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0002" x="4727" y="654" width="295" height="614" frameX="-71" frameY="0" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0003" x="4727" y="654" width="295" height="614" frameX="-71" frameY="0" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0004" x="4727" y="654" width="295" height="614" frameX="-71" frameY="0" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0005" x="4083" y="2980" width="309" height="599" frameX="-64" frameY="-15" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0006" x="3757" y="2980" width="306" height="611" frameX="-68" frameY="0" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0007" x="3757" y="2980" width="306" height="611" frameX="-68" frameY="0" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0008" x="1950" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0009" x="1950" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0010" x="2287" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0011" x="2287" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0012" x="2318" y="1795" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0013" x="2318" y="1795" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0014" x="1950" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0015" x="1950" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0016" x="2287" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0017" x="2287" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0018" x="2318" y="1795" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0019" x="2318" y="1795" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0020" x="1950" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0021" x="1950" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0022" x="2287" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0023" x="2287" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0024" x="2318" y="1795" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0025" x="2318" y="1795" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0026" x="1950" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0027" x="1950" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0028" x="2287" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0029" x="2287" y="1174" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0030" x="2318" y="1795" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0031" x="2318" y="1795" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0032" x="2311" y="20" width="317" height="601" frameX="-62" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0033" x="2624" y="641" width="318" height="599" frameX="-61" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0034" x="2648" y="20" width="318" height="597" frameX="-61" frameY="-10" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0035" x="2655" y="1260" width="319" height="594" frameX="-60" frameY="-11" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0036" x="2962" y="637" width="320" height="592" frameX="-59" frameY="-11" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0037" x="2986" y="20" width="321" height="590" frameX="-58" frameY="-12" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0038" x="2655" y="1874" width="322" height="588" frameX="-57" frameY="-12" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0039" x="3302" y="630" width="323" height="585" frameX="-56" frameY="-13" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0040" x="3327" y="20" width="324" height="583" frameX="-55" frameY="-13" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0041" x="2688" y="2482" width="325" height="581" frameX="-54" frameY="-14" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0042" x="2997" y="1825" width="326" height="579" frameX="-53" frameY="-14" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0043" x="3033" y="2424" width="327" height="577" frameX="-52" frameY="-14" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0044" x="3055" y="3021" width="328" height="574" frameX="-51" frameY="-15" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0045" x="3380" y="2401" width="329" height="572" frameX="-50" frameY="-15" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0046" x="3354" y="1235" width="330" height="570" frameX="-49" frameY="-16" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0047" x="3645" y="623" width="331" height="568" frameX="-48" frameY="-16" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0048" x="1138" y="3511" width="332" height="565" frameX="-47" frameY="-17" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0049" x="3671" y="20" width="333" height="563" frameX="-46" frameY="-17" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0050" x="3403" y="2993" width="334" height="561" frameX="-45" frameY="-18" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0051" x="3729" y="2401" width="335" height="559" frameX="-44" frameY="-18" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0052" x="3996" y="603" width="336" height="556" frameX="-43" frameY="-19" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0053" x="3704" y="1211" width="337" height="555" frameX="-42" frameY="-19" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0054" x="3702" y="1825" width="337" height="556" frameX="-42" frameY="-19" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0055" x="20" y="3521" width="338" height="555" frameX="-41" frameY="-20" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0056" x="3343" y="1825" width="339" height="556" frameX="-40" frameY="-20" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0057" x="2994" y="1249" width="340" height="556" frameX="-39" frameY="-21" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0058" x="777" y="3520" width="341" height="556" frameX="-38" frameY="-21" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0059" x="415" y="3520" width="342" height="556" frameX="-37" frameY="-22" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0060" x="1947" y="20" width="343" height="557" frameX="-36" frameY="-22" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0061" x="1570" y="3500" width="344" height="556" frameX="-35" frameY="-23" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0062" x="1946" y="597" width="345" height="557" frameX="-34" frameY="-23" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0063" x="1580" y="597" width="346" height="558" frameX="-33" frameY="-23" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0064" x="1580" y="20" width="347" height="557" frameX="-32" frameY="-24" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0065" x="2687" y="3497" width="348" height="558" frameX="-31" frameY="-24" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0066" x="1944" y="3499" width="349" height="557" frameX="-30" frameY="-25" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0067" x="2317" y="3497" width="350" height="558" frameX="-29" frameY="-25" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0068" x="2317" y="2919" width="351" height="558" frameX="-28" frameY="-26" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0069" x="1946" y="2341" width="352" height="558" frameX="-27" frameY="-26" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0070" x="1944" y="2921" width="353" height="558" frameX="-26" frameY="-27" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0071" x="1570" y="2921" width="354" height="559" frameX="-25" frameY="-27" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0072" x="1575" y="1182" width="355" height="558" frameX="-24" frameY="-28" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0073" x="1574" y="1762" width="356" height="559" frameX="-23" frameY="-28" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0074" x="1570" y="2341" width="356" height="560" frameX="-23" frameY="-28" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0075" x="1197" y="1762" width="357" height="559" frameX="-22" frameY="-29" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0076" x="1197" y="1182" width="358" height="560" frameX="-21" frameY="-29" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0077" x="1191" y="2351" width="359" height="559" frameX="-20" frameY="-30" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0078" x="1190" y="2931" width="360" height="560" frameX="-19" frameY="-30" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0079" x="809" y="2931" width="361" height="560" frameX="-18" frameY="-31" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0080" x="809" y="2351" width="362" height="560" frameX="-17" frameY="-31" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0081" x="1197" y="20" width="363" height="560" frameX="-16" frameY="-32" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0082" x="1196" y="601" width="364" height="561" frameX="-15" frameY="-32" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0083" x="811" y="601" width="365" height="561" frameX="-14" frameY="-32" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0084" x="811" y="20" width="366" height="561" frameX="-13" frameY="-33" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0085" x="810" y="1186" width="367" height="562" frameX="-12" frameY="-33" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0086" x="809" y="1770" width="368" height="561" frameX="-11" frameY="-34" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0087" x="422" y="20" width="369" height="562" frameX="-10" frameY="-34" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0088" x="421" y="605" width="370" height="561" frameX="-9" frameY="-35" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0089" x="419" y="1188" width="371" height="562" frameX="-8" frameY="-35" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0090" x="417" y="1772" width="372" height="562" frameX="-7" frameY="-36" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0091" x="416" y="2355" width="373" height="562" frameX="-6" frameY="-36" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0092" x="415" y="2938" width="374" height="562" frameX="-5" frameY="-37" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0093" x="20" y="2938" width="375" height="563" frameX="-4" frameY="-37" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0094" x="20" y="2355" width="376" height="563" frameX="-4" frameY="-37" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0095" x="20" y="1772" width="377" height="563" frameX="-3" frameY="-38" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0096" x="20" y="1188" width="379" height="564" frameX="-2" frameY="-38" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0097" x="20" y="605" width="381" height="563" frameX="-1" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0098" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0099" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0100" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0101" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0102" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0103" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0104" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0105" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0106" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0107" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0108" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0109" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0110" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0111" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0112" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0113" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="sadness0114" x="20" y="20" width="382" height="565" frameX="0" frameY="-39" frameWidth="382" frameHeight="614" rotated="false"/>
+	<SubTexture name="up-happy0000" x="4727" y="1288" width="295" height="614"/>
+	<SubTexture name="up-happy0001" x="4727" y="1288" width="295" height="614"/>
+	<SubTexture name="up-happy0002" x="4412" y="1289" width="295" height="614"/>
+	<SubTexture name="up-happy0003" x="4412" y="1289" width="295" height="614"/>
+	<SubTexture name="up-happy0004" x="4412" y="1289" width="295" height="614"/>
+	<SubTexture name="up-happy0005" x="4412" y="1289" width="295" height="614"/>
+	<SubTexture name="up-happy0006" x="4412" y="1289" width="295" height="614"/>
+	<SubTexture name="up-happy0007" x="4412" y="1289" width="295" height="614"/>
+	<SubTexture name="up-happy0008" x="4412" y="1289" width="295" height="614"/>
+	<SubTexture name="up-happy0009" x="4412" y="1289" width="295" height="614"/>
+	<SubTexture name="up-happy0010" x="4412" y="1289" width="295" height="614"/>
+	<SubTexture name="up-happy0011" x="4412" y="1289" width="295" height="614"/>
+	<SubTexture name="up-happy0012" x="4412" y="1289" width="295" height="614"/>
+	<SubTexture name="up-happy0013" x="4412" y="1289" width="295" height="614"/>
+	<SubTexture name="up-happy0014" x="4412" y="1289" width="295" height="614"/>
+</TextureAtlas>

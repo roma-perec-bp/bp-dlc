@@ -19,6 +19,12 @@ class DiscordClient
 	// hides this field from scripts and reflection in general
 	@:unreflective private static var __thread:Thread;
 
+	/**
+	 * The string value of the currently connected discord user.
+	 * Only used for gags in individual mods, it serves no real purpose.
+	 */
+	 public static var username:String = 'Unknown';
+
 	public static function check()
 	{
 		if(ClientPrefs.data.discordRPC) initialize();
@@ -51,6 +57,8 @@ class DiscordClient
 			message += '($user#$discriminator)';
 		else //New Discord IDs/Discriminator system
 			message += '($user)';
+
+		username = discriminator != '0' ? '$user#$discriminator' : '$user';
 
 		trace(message);
 		changePresence();

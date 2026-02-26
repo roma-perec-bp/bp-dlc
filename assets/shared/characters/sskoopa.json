@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"offsets": [161, -331],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Idle"
+		},
+		{
+			"offsets": [199, -328],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Left"
+		},
+		{
+			"offsets": [206, -275],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Up"
+		},
+		{
+			"offsets": [60, -338],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Right"
+		},
+		{
+			"offsets": [144, -335],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Down"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/SS_Koopa_Assets",
+	"position": [-210, -230],
+	"healthicon": "terence",
+	"flip_x": false,
+	"healthbar_colors": [255, 3, 0],
+	"camera_position": [-60, -70],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

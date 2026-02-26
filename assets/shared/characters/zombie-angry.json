@@ -1,0 +1,63 @@
+{
+	"animations": [
+		{
+			"offsets": [29, -119],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "idle-angry"
+		},
+		{
+			"offsets": [79, -75],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left-angry"
+		},
+		{
+			"offsets": [30, -226],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down angry"
+		},
+		{
+			"offsets": [37, 10],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up angry"
+		},
+		{
+			"offsets": [1, -112],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right angry"
+		},
+		{
+			"offsets": [388, -23],
+			"indices": [],
+			"fps": 24,
+			"anim": "intro",
+			"loop": false,
+			"name": "transition-news"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/angry_newspaper_zombie_assets",
+	"position": [0, 0],
+	"healthicon": "zombies",
+	"flip_x": false,
+	"healthbar_colors": [255, 0, 0],
+	"camera_position": [0, 230],
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

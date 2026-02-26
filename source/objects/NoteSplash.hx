@@ -235,7 +235,8 @@ class NoteSplash extends FlxSprite
 						{
 							if (i > 2) break;
 
-							var arr:Array<FlxColor> = ClientPrefs.data.arrowRGBPixel[noteData % Note.colArray.length];
+							var arr:Array<FlxColor> = ClientPrefs.data.arrowRGB[noteData % Note.colArray.length];
+							if (PlayState.isPixelStage) arr = ClientPrefs.data.arrowRGBPixel[noteData % Note.colArray.length];
 
 							var rgb = colors[i];
 							if (rgb == null)
@@ -273,7 +274,8 @@ class NoteSplash extends FlxSprite
 			}
 		}
 		rgbShader.copyValues(tempShader);
-		rgbShader.pixelAmount = 6;
+		if (!config.allowPixel) rgbShader.pixelAmount = 1;
+		else if (PlayState.isPixelStage) rgbShader.pixelAmount = 6;
 
 		offset.set(10, 10);
 		var conf:NoteSplashAnim = config.animations.get(anim);
@@ -295,7 +297,7 @@ class NoteSplash extends FlxSprite
 
 		antialiasing = ClientPrefs.data.antialiasing;
 		if (note != null) antialiasing = note.noteSplashData.antialiasing;
-		antialiasing = false;
+		if (PlayState.isPixelStage && config.allowPixel) antialiasing = false;
 
 		var minFps:Int = 22;
 		var maxFps:Int = 26;
@@ -469,7 +471,8 @@ class PixelSplashShaderRef
 		reset();
 		enabled = true;
 
-		pixelAmount = PlayState.daPixelZoom;
+		if (!PlayState.isPixelStage) pixelAmount = 1;
+		else pixelAmount = PlayState.daPixelZoom;
 		//trace('Created shader ' + Conductor.songPosition);
 	}
 }

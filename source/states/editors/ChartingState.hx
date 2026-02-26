@@ -75,11 +75,13 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		['Dadbattle Spotlight', "Used in Dad Battle,\nValue 1: 0/1 = ON/OFF,\n2 = Target Dad\n3 = Target BF"],
 		['Hey!', "Plays the \"Hey!\" animation from Bopeebo,\nValue 1: BF = Only Boyfriend, GF = Only Girlfriend,\nSomething else = Both.\nValue 2: Custom animation duration,\nleave it blank for 0.6s"],
 		['Set GF Speed', "Sets GF head bopping speed,\nValue 1: 1 = Normal speed,\n2 = 1/2 speed, 4 = 1/4 speed etc.\nUsed on Fresh during the beatbox parts.\n\nWarning: Value must be integer!"],
+		['Set ICON Speed', "Sets GF head bopping speed,\nValue 1: 1 = Normal speed,\n2 = 1/2 speed, 4 = 1/4 speed etc.\n\nWarning: Value must be integer!"],
 		['Set DAD Speed', "Sets DAD head bopping speed,\nValue 1: 1 = Normal speed,\n2 = 1/2 speed, 4 = 1/4 speed etc.\n\nWarning: Value must be integer!"],
 		['Set BF Speed', "Sets DAD head bopping speed,\nValue 1: 1 = Normal speed,\n2 = 1/2 speed, 4 = 1/4 speed etc.\n\nWarning: Value must be integer!"],
 		['Set MOM Speed', "Sets MOM head bopping speed,\nValue 1: 1 = Normal speed,\n2 = 1/2 speed, 4 = 1/4 speed etc.\n\nWarning: Value must be integer!"],
 		['Set BRO Speed', "Sets BRO head bopping speed,\nValue 1: 1 = Normal speed,\n2 = 1/2 speed, 4 = 1/4 speed etc.\n\nWarning: Value must be integer!"],
 		['Show Song', 'Value 1 for placing numbers if more info texts'],
+		['Show Song Default', 'idk lol'],
 		['Philly Glow', "Exclusive to Week 3\nValue 1: 0/1/2 = OFF/ON/Reset Gradient\n \nNo, i won't add it to other weeks."],
 		['Kill Henchmen', "For Mom's songs, don't use this please, i love them :("],
 		['Add Camera Zoom', "Used on MILF on that one \"hard\" part\nValue 1: Camera zoom add (Default: 0.015)\nValue 2: UI zoom add (Default: 0.03)\nLeave the values blank if you want to use Default."],
@@ -108,6 +110,8 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		['Add Health Tween', "value 1: Value\n value 2: Time\nValue 3: Ease"],
 		['Camera rotate on', "1: Speed multiplier\n2: Range"],
 		['Camera rotate off', ""],
+		['Add trail', 'Adds trail behind character\nValue 1: Trails length, delay, alpha, diff Variables (Example: 4, 24, 0.3, 0.069)\nValue 2: Which Character add trail (DAD, BF, GF)\nValue 3: Color in hex (can be NULL if you dont want color)\nValue 4: Blend (Can be empty)'],
+		['Remove trail', "Value 1: Character trail to remove (DAD, BF, GF)"],
 		['Cinematic Bars', "Value 1: True or False\nValue 2: TIme\nValue 3: Offsets"],
 		['Singing Shakes', "Singing causes screen shaking\n\nValue 1: On/Off\nValue 2: Character"],
 		['Opponent Drain', "Opponent singing causes health drain\n\nValue 1: On/Off\nValue 2: Amount, 0.023 is default (same health you gain from hitting a 'sick' note)"],
@@ -127,6 +131,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		['Set Property', "Value 1: Variable name\nValue 2: New value"],
 		['Play Sound', "Value 1: Sound file name\nValue 2: Volume (Default: 1), ranges from 0 to 1"],
 		['Play Video', "Value 1: Video file\nWhich camera (game, hud, other, hud, overlay back, overlay front, video)"],
+		['Hide Video', "well it does what it says"],
 		['ycbu text', 'Type shit here duh, also spaces are ;'],
 		['UNFUCK TRIGGERS', 'Value 1: Trigger Int\nValue 2: Extra shit'],
 		['BEATUS TRIGGERS', 'Value 1: Trigger Int'],
@@ -151,7 +156,11 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		['Fire BOOM', 'does the thing'],
 		['Respawn Clear', 'things for respawning'],
 		['Reset Icon', 'fix icon on wave 5'],
-		['Wave', 'oh well']
+		['Wave', 'oh well'],
+		['Caramel Triggers', 'Value 1: Trigger Int\nValue 2: Extra shit'],
+		['Exerection Triggers', 'Value 1: Trigger Int\nValue 2: Extra shit'],
+		['Hard Triggers', 'Value 1: Trigger Int\nValue 2: Extra shit'],
+		['Final Triggers', 'Value 1: Trigger Int\nValue 2: Extra shit']
 	];
 	
 	public static var keysArray:Array<FlxKey> = []; //Used for Vortex Editor
@@ -3202,14 +3211,14 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 			if(sec != null) sec.followTime = timeValue.value;
 		};
 
-		exX = new PsychUINumericStepper(objX + 100, objY, 1, 0, 0, 9999, 1);
+		exX = new PsychUINumericStepper(objX + 100, objY, 1, 0, -9999, 9999, 1);
 		exX.onValueChange = function()
 		{
 			var sec = getCurChartSection();
 			if(sec != null) sec.followX = exX.value;
 		};
 
-		exY = new PsychUINumericStepper(objX + 200, objY, 1, 0, 0, 9999, 1);
+		exY = new PsychUINumericStepper(objX + 200, objY, 1, 0, -9999, 9999, 1);
 		exY.onValueChange = function()
 		{
 			var sec = getCurChartSection();

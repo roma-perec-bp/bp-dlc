@@ -1,0 +1,32 @@
+{
+	"directory": "hard",
+	"defaultZoom": 0.75,
+	"stageUI": "",
+
+	"boyfriend": [670, 0],
+	"girlfriend": [50, -150],
+	"opponent": [-450, 0],
+	"hide_girlfriend": false,
+
+	"camera_boyfriend": [-100, 0],
+	"camera_opponent": [150, -50],
+	"camera_girlfriend": [0, -100],
+	"camera_speed": 1,
+
+	"_editorMeta": {
+		"dad": "dad",
+		"boyfriend": "bf",
+		"gf": "gf"
+	},
+
+	"preload": {
+		"images/bg-hard": 3,
+		"images/sky-hard": 3,
+		"images/RedVG": 3,
+
+		"images/zombie_buckethead": 2,
+		"images/zombie_conehead": 2,
+		"images/zombie_default": 2,
+		"images/zombie_purple": 2
+	}
+}

@@ -1,0 +1,127 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [961, 10],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14],
+			"name": "left"
+		},
+		{
+			"offsets": [160, -130],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14],
+			"name": "down"
+		},
+		{
+			"offsets": [280, 700],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [360, 130],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14],
+			"name": "right"
+		},
+		{
+			"offsets": [360, 130],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHT-loop",
+			"indices": [10, 11, 12, 14],
+			"name": "right"
+		},
+		{
+			"offsets": [280, 700],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP-loop",
+			"indices": [10, 11, 13, 14],
+			"name": "up"
+		},
+		{
+			"offsets": [160, -130],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWN-loop",
+			"indices": [10, 11, 13, 14],
+			"name": "down"
+		},
+		{
+			"offsets": [961, 10],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT-loop",
+			"indices": [10, 11, 13, 14],
+			"name": "left"
+		},
+		{
+			"offsets": [307, 225],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "hey"
+		},
+		{
+			"offsets": [307, 225],
+			"loop": true,
+			"fps": 24,
+			"anim": "hey-loop",
+			"indices": [9, 10, 11, 12],
+			"name": "hey"
+		},
+		{
+			"offsets": [510, 360],
+			"loop": false,
+			"fps": 24,
+			"anim": "laugh",
+			"indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14],
+			"name": "laugh"
+		},
+		{
+			"offsets": [510, 360],
+			"loop": true,
+			"fps": 24,
+			"anim": "laugh-loop",
+			"indices": [10, 11, 12, 14],
+			"name": "laugh"
+		},
+		{
+			"offsets": [500, 250],
+			"indices": [],
+			"fps": 24,
+			"anim": "sequence",
+			"loop": false,
+			"name": "sequence"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/ex_perec_assets, characters/ex_perec_misc_assets, characters/ex_perec_sequence_assets",
+	"position": [0, 0],
+	"healthicon": "exerection_pep",
+	"flip_x": false,
+	"healthbar_colors": [185, 10, 11],
+	"camera_position": [-200, -120],
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

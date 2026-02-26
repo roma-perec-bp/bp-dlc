@@ -12,6 +12,9 @@ class CoolUtil
 		return (m / snap);
 	}
 
+	inline public static function spaceToDash(string:String):String
+		return string.replace(" ", "-");
+
 	inline public static function capitalize(text:String)
 		return text.charAt(0).toUpperCase() + text.substr(1).toLowerCase();
 

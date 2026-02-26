@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="vis_11.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="110000" x="10" y="10" width="283" height="454"/>
+	<SubTexture name="110001" x="10" y="474" width="283" height="454"/>
+	<SubTexture name="110002" x="10" y="938" width="283" height="454"/>
+	<SubTexture name="110003" x="10" y="1402" width="283" height="454"/>
+	<SubTexture name="110004" x="303" y="10" width="283" height="454"/>
+	<SubTexture name="110005" x="303" y="474" width="283" height="454"/>
+	<SubTexture name="110006" x="303" y="938" width="283" height="454"/>
+	<SubTexture name="110007" x="303" y="1402" width="283" height="454"/>
+	<SubTexture name="110008" x="596" y="10" width="283" height="454"/>
+	<SubTexture name="110009" x="889" y="10" width="283" height="454"/>
+	<SubTexture name="110010" x="1182" y="10" width="283" height="454"/>
+	<SubTexture name="110011" x="1475" y="10" width="283" height="454"/>
+	<SubTexture name="110012" x="596" y="474" width="283" height="454"/>
+	<SubTexture name="110013" x="596" y="938" width="283" height="454"/>
+	<SubTexture name="110014" x="596" y="1402" width="283" height="454"/>
+	<SubTexture name="110015" x="889" y="474" width="283" height="454"/>
+	<SubTexture name="110016" x="1182" y="474" width="283" height="454"/>
+	<SubTexture name="110017" x="1475" y="474" width="283" height="454"/>
+	<SubTexture name="110018" x="889" y="938" width="283" height="454"/>
+	<SubTexture name="110019" x="889" y="1402" width="283" height="454"/>
+	<SubTexture name="110020" x="1182" y="938" width="283" height="454"/>
+	<SubTexture name="110021" x="1182" y="1402" width="283" height="454"/>
+	<SubTexture name="110022" x="1475" y="938" width="283" height="454"/>
+	<SubTexture name="110023" x="1475" y="1402" width="283" height="454"/>
+</TextureAtlas>

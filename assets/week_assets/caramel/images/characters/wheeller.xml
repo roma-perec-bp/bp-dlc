@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="wheeller.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="singer0000" x="20" y="20" width="268" height="306" frameX="0" frameY="-3" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0001" x="20" y="20" width="268" height="306" frameX="0" frameY="-3" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0002" x="20" y="20" width="268" height="306" frameX="0" frameY="-3" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0003" x="20" y="20" width="268" height="306" frameX="0" frameY="-3" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0004" x="20" y="20" width="268" height="306" frameX="0" frameY="-3" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0005" x="20" y="20" width="268" height="306" frameX="0" frameY="-3" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0006" x="20" y="20" width="268" height="306" frameX="0" frameY="-3" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0007" x="20" y="20" width="268" height="306" frameX="0" frameY="-3" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0008" x="20" y="20" width="268" height="306" frameX="0" frameY="-3" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0009" x="308" y="20" width="264" height="310" frameX="-10" frameY="0" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0010" x="308" y="20" width="264" height="310" frameX="-10" frameY="0" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0011" x="308" y="20" width="264" height="310" frameX="-10" frameY="0" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0012" x="308" y="20" width="264" height="310" frameX="-10" frameY="0" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0013" x="308" y="20" width="264" height="310" frameX="-10" frameY="0" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0014" x="308" y="20" width="264" height="310" frameX="-10" frameY="0" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0015" x="308" y="20" width="264" height="310" frameX="-10" frameY="0" frameWidth="274" frameHeight="310" rotated="false"/>
+	<SubTexture name="singer0016" x="308" y="20" width="264" height="310" frameX="-10" frameY="0" frameWidth="274" frameHeight="310" rotated="false"/>
+</TextureAtlas>

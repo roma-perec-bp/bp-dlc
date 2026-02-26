@@ -49,7 +49,6 @@ class CutsceneState extends MusicBeatState
 				if(!ClientPrefs.data.optimize) LoadingState.prepareToSong();
 
 				LoadingState.loadAndSwitchState(new PlayState());
-				Init.fun = -1;
 			}
 
 			videoCutscene.finishCallback = onVideoEnd;
@@ -75,7 +74,6 @@ class CutsceneState extends MusicBeatState
 		if(!ClientPrefs.data.optimize) LoadingState.prepareToSong();
 
 		LoadingState.loadAndSwitchState(new PlayState());
-		Init.fun = -1;
 		#end
     }
 

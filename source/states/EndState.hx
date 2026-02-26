@@ -12,21 +12,6 @@ class EndState extends MusicBeatState
 
 	var press:Bool = false;
 
-	var randomLike:Array<String> =
-	[
-		'https://www.youtube.com/watch?v=3tlo6PQKefk',
-		'https://www.youtube.com/watch?v=1Qm7QmLVrc4',
-		'https://www.youtube.com/watch?v=kq4oUKQBRys',
-		'https://www.youtube.com/watch?v=1Wytn-_MSBo',
-		'https://www.youtube.com/watch?v=VUuM6Iw14II',
-		'https://www.youtube.com/watch?v=9iCN34CDHV4',
-		'https://www.youtube.com/watch?v=Dmvsy2xnon8',
-		'https://www.youtube.com/watch?v=fwdV2vWNvZw',
-		'https://www.youtube.com/watch?v=SyI3kJoKRk4',
-		'https://www.youtube.com/watch?v=Ie-I24W5DNs',
-		'https://www.youtube.com/watch?v=l7GObEWKTwA'
-	];
-
 	override function create()
 	{
 		super.create();
@@ -35,10 +20,13 @@ class EndState extends MusicBeatState
 
 		var bg:FlxSprite = new FlxSprite();
 
-		if(PlayState.changedDifficulty == false)
+		if(PlayState.usedBotplay == false)
 		{
-			if(Init.fun >= 67 && Init.fun <= 68)
+			if(FlxG.random.bool(6))
+			{
 				bg.loadGraphic(Paths.image('end', 'embed'));
+				FlxG.sound.play(Paths.sound('comatose'));
+			}
 			else
 				bg.loadGraphic(Paths.image('end'));
 			bg.screenCenter();
@@ -67,37 +55,27 @@ class EndState extends MusicBeatState
 			// Updating Discord Rich Presence
 			DiscordClient.changePresence("Won... But at what cost?", null);
 			#end
-
-			if(Init.fun >= 67 && Init.fun <= 68) FlxG.sound.play(Paths.sound('comatose'));
 	
 			ClientPrefs.saveSettings();
 		}
 		else
 		{
-			if(Init.fun == 100)
-			{
-				Sys.command('mshta vbscript:Execute("msgbox ""LMAO YOU DID IT WITH BOTPLAY??? XDDDDDDDDDD YOU SUCK LMAO GO FUCK YOURSELF BETA CUCK"":close")');
-				CoolUtil.browserLoad(randomLike[FlxG.random.int(0, 10)]);
-				Sys.exit(1);
-			}
-			else
-			{
-				bg.loadGraphic(Paths.image('botEnd'));
-				bg.screenCenter();
-				bg.alpha = 1;
-				add(bg);
-	
-				FlxG.sound.play(Paths.sound('botplay_ending'), 1, false, null, true, function() {
-					PlayState.changedDifficulty = false;
-					MusicBeatState.switchState(new PlayState());
-				});
-			}
-		}
+			bg.loadGraphic(Paths.image('botEnd'));
+			bg.screenCenter();
+			bg.alpha = 1;
+			add(bg);
 
-		#if DISCORD_ALLOWED
-		// Updating Discord Rich Presence
-		DiscordClient.changePresence("Won... But in unfair way...", null);
-		#end
+			#if DISCORD_ALLOWED
+			// Updating Discord Rich Presence
+			DiscordClient.changePresence("Won... But in unfair way...", null);
+			#end
+	
+			FlxG.sound.play(Paths.sound('botplay_ending'), 1, false, null, true, function() {
+				PlayState.changedDifficulty = false;
+				PlayState.usedBotplay = false;
+				MusicBeatState.switchState(new PlayState());
+			});
+		}
 	}
 
 	override function update(elapsed:Float)
@@ -110,7 +88,7 @@ class EndState extends MusicBeatState
 				FlxG.camera.fade(FlxColor.BLACK, 3);
 				new FlxTimer().start(5, function(tmr:FlxTimer)
 				{
-					if(Init.fun == 66)
+					if(FlxG.random.bool(1))
 					{
 						FlxTransitionableState.skipNextTransIn = true;
 						MusicBeatState.switchState(new SmileState());

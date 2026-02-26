@@ -1,0 +1,63 @@
+{
+	"animations": [
+		{
+			"offsets": [40, -120],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "idle-foot"
+		},
+		{
+			"offsets": [301, -181],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left-foot"
+		},
+		{
+			"offsets": [29, -286],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down-foot"
+		},
+		{
+			"offsets": [194, -82],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up-foot"
+		},
+		{
+			"offsets": [-20, -179],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right-foot"
+		},
+		{
+			"offsets": [38, -120],
+			"indices": [],
+			"fps": 24,
+			"anim": "intro",
+			"loop": false,
+			"name": "intro-foot"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/football_assets",
+	"position": [0, 0],
+	"healthicon": "zombies",
+	"flip_x": false,
+	"healthbar_colors": [255, 0, 0],
+	"camera_position": [0, 230],
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

@@ -1,0 +1,52 @@
+{
+	"directory": "final",
+	"defaultZoom": 1,
+	"stageUI": "",
+
+	"boyfriend": [770, 100],
+	"girlfriend": [400, 130],
+	"opponent": [100, 100],
+	"hide_girlfriend": true,
+
+	"camera_boyfriend": [0, 0],
+	"camera_opponent": [0, 0],
+	"camera_girlfriend": [0, 0],
+	"camera_speed": 1,
+
+	"_editorMeta": {
+		"dad": "dad",
+		"boyfriend": "bf",
+		"gf": "gf"
+	},
+
+	"preload": {
+		"images/defeat_floor_lmao": 3,
+		"images/text_hard": 3,
+		"images/text_normal": 3,
+
+		"images/red_shit": 2,
+		"images/particle": 2,
+		"images/light_dev": 2,
+
+		"images/vis_spr/vis_1": 2,
+		"images/vis_spr/vis_2": 2,
+		"images/vis_spr/vis_3": 2,
+		"images/vis_spr/vis_4": 2,
+		"images/vis_spr/vis_5": 2,
+		"images/vis_spr/vis_6": 2,
+		"images/vis_spr/vis_7": 2,
+		"images/vis_spr/vis_8": 2,
+		"images/vis_spr/vis_9": 2,
+		"images/vis_spr/vis_10": 2,
+		"images/vis_spr/vis_11": 2,
+
+		"images/flashback/flash_0": 3,
+		"images/flashback/flash_1": 3,
+		"images/flashback/flash_2": 3,
+		"images/flashback/flash_3": 3,
+		"images/flashback/flash_4": 3,
+		"images/flashback/flash_5": 3,
+		"images/flashback/flash_6": 3,
+		"images/flashback/flash_7": 3
+	}
+}

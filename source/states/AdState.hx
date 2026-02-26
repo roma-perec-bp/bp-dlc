@@ -34,7 +34,7 @@ class AdState extends MusicBeatState
 
     override function create()
 	{
-		text = new Alphabet(0, 160, 'Wanna watch an AD\nto respawn in previous wave?', true);
+		text = new Alphabet(0, 160, 'Watch an ad\nTo respawn in current wave', true);
 		text.screenCenter(X);
 		alphabetArray.push(text);
 		text.alpha = 1;
@@ -53,13 +53,13 @@ class AdState extends MusicBeatState
 
 		super.create();
 
-		ad = FlxG.random.int(0,9);
+		ad = FlxG.random.int(0,11);
 
 		switch(ad)
 		{
 			case 0:
 				videoShow = 'ads/0';
-				link = 'https://discord.gg/9crVmT7dfA';
+				link = 'https://t.me/PoebotinaRaldmana';
 				imageThing = 'ads/0';
 			case 1:
 				videoShow = 'ads/1';
@@ -83,20 +83,28 @@ class AdState extends MusicBeatState
 				imageThing = 'ads/5';
 			case 6:
 				videoShow = 'ads/6';
-				link = null;
-				imageThing = null;
+				link = 'https://gamebanana.com/mods/585401';
+				imageThing = 'ads/6';
 			case 7:
 				videoShow = 'ads/7';
 				link = 't.me/romcock';
 				imageThing = 'ads/7';
 			case 8:
 				videoShow = 'ads/8';
-				link = 'https://rom4chek.itch.io/protect-me';
+				link = 'https://ogrecrew.itch.io';
 				imageThing = 'ads/8';
 			case 9:
 				videoShow = 'ads/9';
-				link = 't.me/umbrapvz';
+				link = 't.me/Umbramon';
 				imageThing = 'ads/9';
+			case 10:
+				videoShow = 'ads/10';
+				link = 'https://www.youtube.com/@RomExtraBP';
+				imageThing = 'ads/10';
+			case 11:
+				videoShow = 'ads/11';
+				link = null;
+				imageThing = null;
 		}
 
 		ban = new FlxSprite(0, 0).loadGraphic(Paths.image(imageThing));
@@ -129,6 +137,7 @@ class AdState extends MusicBeatState
 				if(onYes)
 				{
 					PlayState.respawned = true;
+					PlayState.watched_ad = true;
 	
 					switch(PlayState.respawnPoint)
 					{
@@ -139,7 +148,6 @@ class AdState extends MusicBeatState
 						case 3:
 							PlayState.startOnTime = 499908.189969542;
 					}
-	
 					canChoose = false;
 					text.alpha = 0;
 					yesText.alpha = 0;
@@ -148,8 +156,8 @@ class AdState extends MusicBeatState
 				}
 				else
 				{
+					PlayState.watched_ad = false;
 					PlayState.respawnPoint = 0;
-
 					MusicBeatState.switchState(new PlayState());
 				}
 			}
@@ -210,7 +218,7 @@ class AdState extends MusicBeatState
 
 		if (foundFile)
 		{
-			videoCutscene = new VideoSprite(fileName, false, true, false);
+			videoCutscene = new VideoSprite(fileName, false, false, false);
 
 			function onVideoEnd()
 			{

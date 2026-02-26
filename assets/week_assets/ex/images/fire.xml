@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fire.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fire0000" x="10" y="10" width="3042" height="2032"/>
+	<SubTexture name="fire0001" x="10" y="10" width="3042" height="2032"/>
+	<SubTexture name="fire0002" x="3062" y="10" width="3042" height="2032"/>
+	<SubTexture name="fire0003" x="3062" y="10" width="3042" height="2032"/>
+	<SubTexture name="fire0004" x="10" y="2052" width="3042" height="2032"/>
+	<SubTexture name="fire0005" x="10" y="2052" width="3042" height="2032"/>
+	<SubTexture name="fire0006" x="10" y="4094" width="3042" height="2032"/>
+	<SubTexture name="fire0007" x="10" y="4094" width="3042" height="2032"/>
+	<SubTexture name="fire0008" x="3062" y="2052" width="3042" height="2032"/>
+	<SubTexture name="fire0009" x="3062" y="2052" width="3042" height="2032"/>
+</TextureAtlas>

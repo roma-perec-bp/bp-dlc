@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="vis_2.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="20000" x="10" y="10" width="237" height="462"/>
+	<SubTexture name="20001" x="257" y="10" width="237" height="462"/>
+	<SubTexture name="20002" x="504" y="10" width="237" height="462"/>
+	<SubTexture name="20003" x="751" y="10" width="237" height="462"/>
+	<SubTexture name="20004" x="998" y="10" width="237" height="462"/>
+	<SubTexture name="20005" x="1245" y="10" width="237" height="462"/>
+	<SubTexture name="20006" x="1492" y="10" width="237" height="462"/>
+	<SubTexture name="20007" x="1739" y="10" width="237" height="462"/>
+	<SubTexture name="20008" x="10" y="482" width="237" height="462"/>
+	<SubTexture name="20009" x="257" y="482" width="237" height="462"/>
+	<SubTexture name="20010" x="504" y="482" width="237" height="462"/>
+	<SubTexture name="20011" x="751" y="482" width="237" height="462"/>
+	<SubTexture name="20012" x="998" y="482" width="237" height="462"/>
+	<SubTexture name="20013" x="1245" y="482" width="237" height="462"/>
+	<SubTexture name="20014" x="1492" y="482" width="237" height="462"/>
+	<SubTexture name="20015" x="1739" y="482" width="237" height="462"/>
+	<SubTexture name="20016" x="10" y="954" width="237" height="462"/>
+	<SubTexture name="20017" x="257" y="954" width="237" height="462"/>
+	<SubTexture name="20018" x="504" y="954" width="237" height="462"/>
+	<SubTexture name="20019" x="751" y="954" width="237" height="462"/>
+	<SubTexture name="20020" x="998" y="954" width="237" height="462"/>
+	<SubTexture name="20021" x="1245" y="954" width="237" height="462"/>
+	<SubTexture name="20022" x="1492" y="954" width="237" height="462"/>
+	<SubTexture name="20023" x="1739" y="954" width="237" height="462"/>
+</TextureAtlas>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="angry_newspaper_zombie_assets.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down angry0000" x="1502" y="2983" width="508" height="568" frameX="0" frameY="-8" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0001" x="1502" y="2983" width="508" height="568" frameX="0" frameY="-8" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0002" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0003" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0004" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0005" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0006" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0007" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0008" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0009" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0010" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0011" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0012" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0013" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="down angry0014" x="4110" y="2062" width="477" height="580" frameX="-12" frameY="0" frameWidth="508" frameHeight="580" rotated="false"/>
+	<SubTexture name="idle-angry0000" x="3672" y="2054" width="428" height="648" frameX="-14" frameY="-31" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0001" x="3672" y="2054" width="428" height="648" frameX="-14" frameY="-31" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0002" x="3353" y="1340" width="436" height="651" frameX="-3" frameY="-29" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0003" x="3353" y="1340" width="436" height="651" frameX="-3" frameY="-29" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0004" x="610" y="2431" width="430" height="677" frameX="0" frameY="-3" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0005" x="610" y="2431" width="430" height="677" frameX="0" frameY="-3" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0006" x="2454" y="2980" width="425" height="678" frameX="0" frameY="-2" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0007" x="2454" y="2980" width="425" height="678" frameX="0" frameY="-2" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0008" x="2020" y="2983" width="424" height="680" frameX="0" frameY="0" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0009" x="2020" y="2983" width="424" height="680" frameX="0" frameY="0" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0010" x="2020" y="2983" width="424" height="680" frameX="0" frameY="0" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0011" x="2020" y="2983" width="424" height="680" frameX="0" frameY="0" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0012" x="2020" y="2983" width="424" height="680" frameX="0" frameY="0" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0013" x="2020" y="2983" width="424" height="680" frameX="0" frameY="0" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="idle-angry0014" x="2020" y="2983" width="424" height="680" frameX="0" frameY="0" frameWidth="442" frameHeight="680" rotated="false"/>
+	<SubTexture name="left-angry0000" x="1852" y="805" width="430" height="775" frameX="0" frameY="-1" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0001" x="1852" y="805" width="430" height="775" frameX="0" frameY="-1" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0002" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0003" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0004" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0005" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0006" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0007" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0008" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0009" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0010" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0011" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0012" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0013" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="left-angry0014" x="1406" y="805" width="436" height="776" frameX="-8" frameY="0" frameWidth="444" frameHeight="776" rotated="false"/>
+	<SubTexture name="right angry0000" x="10" y="3196" width="616" height="687" frameX="-11" frameY="0" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0001" x="10" y="3196" width="616" height="687" frameX="-11" frameY="0" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0002" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0003" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0004" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0005" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0006" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0007" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0008" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0009" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0010" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0011" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0012" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0013" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="right angry0014" x="4060" y="10" width="580" height="684" frameX="0" frameY="-3" frameWidth="627" frameHeight="687" rotated="false"/>
+	<SubTexture name="transition-news0000" x="3379" y="10" width="671" height="615" frameX="-252" frameY="-147" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0001" x="3379" y="10" width="671" height="615" frameX="-252" frameY="-147" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0002" x="2628" y="10" width="741" height="625" frameX="-211" frameY="-139" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0003" x="10" y="819" width="922" height="817" frameX="-49" frameY="0" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0004" x="10" y="819" width="922" height="817" frameX="-49" frameY="0" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0005" x="10" y="10" width="984" height="799" frameX="-8" frameY="-26" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0006" x="10" y="10" width="984" height="799" frameX="-8" frameY="-26" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0007" x="1004" y="10" width="993" height="785" frameX="0" frameY="-29" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0008" x="1004" y="10" width="993" height="785" frameX="0" frameY="-29" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0009" x="2007" y="10" width="611" height="777" frameX="-175" frameY="-37" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0010" x="2007" y="10" width="611" height="777" frameX="-175" frameY="-37" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0011" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0012" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0013" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0014" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0015" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0016" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0017" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0018" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0019" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0020" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0021" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0022" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0023" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0024" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0025" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0026" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0027" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0028" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0029" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0030" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0031" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0032" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0033" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0034" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0035" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0036" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0037" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0038" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0039" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0040" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0041" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0042" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0043" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0044" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0045" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0046" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0047" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0048" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0049" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0050" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0051" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0052" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0053" x="10" y="1646" width="611" height="775" frameX="-175" frameY="-39" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0054" x="10" y="2431" width="590" height="755" frameX="-196" frameY="-57" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0055" x="10" y="2431" width="590" height="755" frameX="-196" frameY="-57" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0056" x="631" y="1646" width="539" height="673" frameX="-260" frameY="-133" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0057" x="4110" y="2652" width="440" height="625" frameX="-381" frameY="-152" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0058" x="3214" y="2037" width="448" height="621" frameX="-378" frameY="-156" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0059" x="3799" y="1403" width="436" height="641" frameX="-371" frameY="-137" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0060" x="4245" y="1403" width="430" height="649" frameX="-373" frameY="-129" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0061" x="1180" y="1591" width="428" height="684" frameX="-366" frameY="-95" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0062" x="2719" y="645" width="432" height="687" frameX="-368" frameY="-92" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0063" x="4038" y="704" width="425" height="689" frameX="-366" frameY="-90" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0064" x="2925" y="1342" width="418" height="685" frameX="-369" frameY="-94" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0065" x="1071" y="3024" width="421" height="689" frameX="-368" frameY="-90" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0066" x="3161" y="645" width="429" height="685" frameX="-364" frameY="-94" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0067" x="2491" y="1579" width="424" height="687" frameX="-366" frameY="-92" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0068" x="2350" y="2286" width="423" height="684" frameX="-369" frameY="-95" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0069" x="2889" y="2973" width="421" height="684" frameX="-368" frameY="-95" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0070" x="3600" y="635" width="428" height="686" frameX="-364" frameY="-93" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0071" x="1618" y="1591" width="427" height="685" frameX="-366" frameY="-94" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0072" x="2783" y="2276" width="421" height="687" frameX="-369" frameY="-92" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0073" x="1484" y="2286" width="424" height="684" frameX="-368" frameY="-95" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0074" x="636" y="3118" width="425" height="684" frameX="-364" frameY="-95" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0075" x="2055" y="1590" width="426" height="686" frameX="-366" frameY="-93" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0076" x="1050" y="2329" width="424" height="685" frameX="-369" frameY="-94" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="transition-news0077" x="1918" y="2286" width="422" height="687" frameX="-368" frameY="-92" frameWidth="993" frameHeight="825" rotated="false"/>
+	<SubTexture name="up angry0000" x="2292" y="797" width="417" height="772" frameX="-17" frameY="0" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0001" x="2292" y="797" width="417" height="772" frameX="-17" frameY="0" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0002" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0003" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0004" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0005" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0006" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0007" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0008" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0009" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0010" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0011" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0012" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0013" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+	<SubTexture name="up angry0014" x="942" y="819" width="454" height="755" frameX="0" frameY="-17" frameWidth="454" frameHeight="772" rotated="false"/>
+</TextureAtlas>

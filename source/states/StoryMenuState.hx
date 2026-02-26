@@ -153,9 +153,6 @@ class StoryMenuState extends MusicBeatState
 
 			if (controls.ACCEPT)
 			{
-				Init.fun = FlxG.random.int(0, 100);
-				//Init.fun = 100;
-
 				choosen = true;
 				var selectedItem:FlxText;
 				selectedItem = textGroup.members[curSelected];
@@ -206,7 +203,7 @@ class StoryMenuState extends MusicBeatState
 		if(ClientPrefs.data.tvEffect)
 		{
 			vcr.update(elapsed);
-			ShadersHandler.setChrome(FlxG.random.int(2,6)/1000);
+			ShadersHandler.setChrome(FlxG.random.int(1,3)/1000);
 			ShadersHandler.setRadialBlur(640, 360,  FlxG.random.float(0.001, 0.01));
 		}
 	}
@@ -217,7 +214,7 @@ class StoryMenuState extends MusicBeatState
 
 	function start()
 	{
-		if(Init.fun >= 25 && Init.fun <= 42)
+		if(FlxG.random.bool(50))
 		{
 			MusicBeatState.switchState(new cutscenes.CutsceneState());
 		}

@@ -21,6 +21,7 @@ import openfl.filters.BlurFilter;
 
 import shaders.VCRMario85;
 import shaders.ShadersHandler;
+import shaders.ChromaticWarp;
 
 typedef TitleData =
 {
@@ -37,6 +38,8 @@ class TitleState extends MusicBeatState
 
 	var credTextShit:Alphabet;
 
+	public var caShader:ChromaticWarp = null;
+
 	public static var initialized:Bool = false;
 	public static var gotFromTitle:Bool = true;
 
@@ -48,8 +51,11 @@ class TitleState extends MusicBeatState
 		super.create();
 		Paths.clearUnusedMemory();
 
-		FlxG.save.data.firstTime = false;
-		FlxG.save.flush();
+		if (FlxG.save.data.firstTime == true)
+		{
+			FlxG.save.data.firstTime = false;
+			FlxG.save.flush();
+		}
 
 		if(!initialized)
 		{
@@ -81,11 +87,18 @@ class TitleState extends MusicBeatState
 
 		vcr = new VCRMario85();
 
+		caShader = new ChromaticWarp();
+		caShader.warpStrength = 0;
+		var filter:ShaderFilter = new ShaderFilter(caShader);
+		//FlxG.camera.filters = [filter];
+
 		if(ClientPrefs.data.tvEffect)
 		{
-			FlxG.camera.setFilters([ShadersHandler.chromaticAberration, ShadersHandler.radialBlur, new ShaderFilter(vcr)]);
+			FlxG.camera.setFilters([filter, ShadersHandler.chromaticAberration, ShadersHandler.radialBlur, new ShaderFilter(vcr)]);
 			ShadersHandler.setChrome(0);
 		}
+		else
+			FlxG.camera.setFilters([filter]);
 	}
 
 	var logoBl:FlxSprite;
@@ -99,13 +112,13 @@ class TitleState extends MusicBeatState
 			FlxG.sound.playMusic(Paths.music('ZondriePerec'), 0.7);
 			FlxG.sound.music.time = 78866;
 
-			FlxG.camera.shake(0.03, 4, function() //я гений
+			FlxG.camera.shake(0.01, 4, function() //я гений
 			{
-				FlxG.camera.shake(0.02, 0.15, function() 
+				FlxG.camera.shake(0.005, 0.15, function() 
 				{
-					FlxG.camera.shake(0.01, 0.15, function() 
+					FlxG.camera.shake(0.003, 0.15, function() 
 					{
-						FlxG.camera.shake(0.005, 0.15);
+						FlxG.camera.shake(0.001, 0.15);
 					});
 				});
 			});
@@ -122,7 +135,11 @@ class TitleState extends MusicBeatState
 
 		FlxG.camera.flash(FlxColor.RED, 4);
 
-		FlxTween.tween(FlxG.camera, {zoom: 3}, 8, {ease: FlxEase.expoIn});
+		new FlxTimer().start(7, function(tmr:FlxTimer)
+		{
+			FlxTween.tween(FlxG.camera, {zoom: 3}, 0.8, {ease: FlxEase.expoIn});
+			FlxTween.tween(caShader, {warpStrength: -16}, 0.8, {ease: FlxEase.expoIn});
+		});
 
 		new FlxTimer().start(7.8, function(tmr:FlxTimer)
 		{

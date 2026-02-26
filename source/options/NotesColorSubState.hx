@@ -18,7 +18,7 @@ class NotesColorSubState extends MusicBeatSubstate
 	var onModeColumn:Bool = true;
 	var curSelectedMode:Int = 0;
 	var curSelectedNote:Int = 0;
-	var onPixel:Bool = true;
+	var onPixel:Bool = false;
 	var dataArray:Array<Array<FlxColor>>;
 
 	var hexTypeLine:FlxSprite;
@@ -54,6 +54,7 @@ class NotesColorSubState extends MusicBeatSubstate
 		DiscordClient.changePresence("NOTE COLORS OPTIONS", null);
 		#end
 		
+		onPixel = PlayState.isPixelStage;
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.color = 0xFFEA71FD;
 		bg.screenCenter();
@@ -88,6 +89,11 @@ class NotesColorSubState extends MusicBeatSubstate
 		var bg:FlxSprite = new FlxSprite(750, 160).makeGraphic(FlxG.width - 780, 540, FlxColor.BLACK);
 		bg.alpha = 0.25;
 		add(bg);
+		
+		var text:Alphabet = new Alphabet(50, 86, 'CTRL', false);
+		text.alignment = CENTERED;
+		text.setScale(0.4);
+		add(text);
 
 		copyButton = new FlxSprite(760, 50).loadGraphic(Paths.image('noteColorMenu/copy'));
 		copyButton.alpha = 0.6;
@@ -236,6 +242,14 @@ class NotesColorSubState extends MusicBeatSubstate
 		}
 		var controllerPressed:Bool = (controls.controllerMode && controls.ACCEPT);
 		//
+
+		if(FlxG.keys.justPressed.CONTROL)
+		{
+			onPixel = !onPixel;
+			spawnNotes();
+			updateNotes(true);
+			FlxG.sound.play(Paths.sound('scrollMenu'), 0.6);
+		}
 
 		if(hexTypeNum > -1)
 		{
@@ -396,6 +410,13 @@ class NotesColorSubState extends MusicBeatSubstate
 				FlxG.sound.play(Paths.sound('scrollMenu'), 0.6);
 				updateColors();
 			}
+			else if (pointerOverlaps(skinNote))
+			{
+				onPixel = !onPixel;
+				spawnNotes();
+				updateNotes(true);
+				FlxG.sound.play(Paths.sound('scrollMenu'), 0.6);
+			}
 			else if(pointerY() >= hexTypeLine.y && pointerY() < hexTypeLine.y + hexTypeLine.height &&
 					Math.abs(pointerX() - 1000) <= 84)
 			{
@@ -453,7 +474,8 @@ class NotesColorSubState extends MusicBeatSubstate
 				for (i in 0...3)
 				{
 					var strumRGB:RGBShaderReference = myNotes.members[curSelectedNote].rgbShader;
-					var color:FlxColor = ClientPrefs.defaultData.arrowRGBPixel[curSelectedNote][i];
+					var color:FlxColor = !onPixel ? ClientPrefs.defaultData.arrowRGB[curSelectedNote][i] :
+													ClientPrefs.defaultData.arrowRGBPixel[curSelectedNote][i];
 					switch(i)
 					{
 						case 0:
@@ -466,7 +488,7 @@ class NotesColorSubState extends MusicBeatSubstate
 					dataArray[curSelectedNote][i] = color;
 				}
 			}
-			setShaderColor(ClientPrefs.defaultData.arrowRGBPixel[curSelectedNote][curSelectedMode]);
+			setShaderColor(!onPixel ? ClientPrefs.defaultData.arrowRGB[curSelectedNote][curSelectedMode] : ClientPrefs.defaultData.arrowRGBPixel[curSelectedNote][curSelectedMode]);
 			FlxG.sound.play(Paths.sound('cancelMenu'), 0.6);
 			updateColors();
 		}
@@ -549,13 +571,14 @@ class NotesColorSubState extends MusicBeatSubstate
 	}
 
 	// notes sprites functions
+	var skinNote:FlxSprite;
 	var modeNotes:FlxTypedGroup<FlxSprite>;
 	var myNotes:FlxTypedGroup<StrumNote>;
 	var bigNote:Note;
 	public function spawnNotes()
 	{
-		dataArray = ClientPrefs.data.arrowRGBPixel;
-		PlayState.stageUI = "pixel";
+		dataArray = !onPixel ? ClientPrefs.data.arrowRGB : ClientPrefs.data.arrowRGBPixel;
+		if (onPixel) PlayState.stageUI = "pixel";
 
 		// clear groups
 		modeNotes.forEachAlive(function(note:FlxSprite) {
@@ -569,7 +592,11 @@ class NotesColorSubState extends MusicBeatSubstate
 		modeNotes.clear();
 		myNotes.clear();
 
-
+		if(skinNote != null)
+		{
+			remove(skinNote);
+			skinNote.destroy();
+		}
 		if(bigNote != null)
 		{
 			remove(bigNote);
@@ -577,17 +604,27 @@ class NotesColorSubState extends MusicBeatSubstate
 		}
 
 		// respawn stuff
-		var res:Int = 17;
+		var res:Int = onPixel ? 160 : 17;
+		skinNote = new FlxSprite(48, 24).loadGraphic(Paths.image('noteColorMenu/' + (onPixel ? 'note' : 'notePixel')), true, res, res);
+		skinNote.antialiasing = ClientPrefs.data.antialiasing;
+		skinNote.setGraphicSize(68);
+		skinNote.updateHitbox();
+		skinNote.animation.add('anim', [0], 24, true);
+		skinNote.animation.play('anim', true);
+		if(!onPixel) skinNote.antialiasing = false;
+		add(skinNote);
+
+		var res:Int = !onPixel ? 160 : 17;
 		for (i in 0...3)
 		{
-			var newNote:FlxSprite = new FlxSprite(230 + (100 * i), 100).loadGraphic(Paths.image('noteColorMenu/notePixel'), true, res, res);
+			var newNote:FlxSprite = new FlxSprite(230 + (100 * i), 100).loadGraphic(Paths.image('noteColorMenu/' + (!onPixel ? 'note' : 'notePixel')), true, res, res);
 			newNote.antialiasing = ClientPrefs.data.antialiasing;
 			newNote.setGraphicSize(85);
 			newNote.updateHitbox();
 			newNote.animation.add('anim', [i], 24, true);
 			newNote.animation.play('anim', true);
 			newNote.ID = i;
-			newNote.antialiasing = false;
+			if(onPixel) newNote.antialiasing = false;
 			modeNotes.add(newNote);
 		}
 
@@ -611,7 +648,8 @@ class NotesColorSubState extends MusicBeatSubstate
 		bigNote.shader = Note.globalRgbShaders[curSelectedNote].shader;
 		for (i in 0...Note.colArray.length)
 		{
-			bigNote.animation.add('note$i', [i + 4], 24, true);
+			if(!onPixel) bigNote.animation.addByPrefix('note$i', Note.colArray[i] + '0', 24, true);
+			else bigNote.animation.add('note$i', [i + 4], 24, true);
 		}
 		insert(members.indexOf(myNotes) + 1, bigNote);
 		_storedColor = getShaderColor();

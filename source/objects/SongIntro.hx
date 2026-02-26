@@ -58,7 +58,7 @@ class SongIntro extends FlxSpriteGroup
         var text4 = new FlxText(text2.x, text3.y + 25, 0, "", fontSize);
         text4.setFormat(Paths.font("mariones.ttf"), fontSize, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 
-        text.text = splitText[0];
+        text.text = splitText[0].replace('-', '\n');
         text2.text = splitText[1];
         text3.text = splitText[2];
         text4.text = splitText[3];

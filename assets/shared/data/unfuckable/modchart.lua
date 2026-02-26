@@ -19,7 +19,7 @@ local Meow4 = 112 * 3
 local balls = false
 local dance = false
 local shit = true
-local shitScroll
+local finalLol = false
 local scaleShit
 
 local downscrollMoment = false
@@ -108,19 +108,6 @@ function onSongStart()
 	end
 end
 
-function onSpawnNote(membersIndex, noteData, noteType, isSustainNote)
-    if shitScroll then
-        if isSustainNote then
-            flipY = getPropertyFromGroup('notes', membersIndex, 'flipY')
-            if flipY == true then
-                setPropertyFromGroup('notes', membersIndex, 'flipY', false)
-            else
-                setPropertyFromGroup('notes', membersIndex, 'flipY', true)
-            end
-        end
-    end
-end
-
 local staticArrowWave = 0
 local upShit = 0
 local staticArrowWave = 0
@@ -194,8 +181,8 @@ function onUpdate(elapsed)
 
     if curBeat >= 645 and curBeat <= 675 then --пока идет парт ноты летают
         for i =0,3 do
-            setPropertyFromGroup('strumLineNotes', i, 'y',  _G['defaultOpponentStrumY'..i] + 10 *math.cos((currentBeatAlt + i*0.25) * math.pi))
-            setPropertyFromGroup('strumLineNotes', i + 4, 'y',  _G['defaultPlayerStrumY'..i] + 10 *math.cos((currentBeatAlt + i*0.25) * math.pi))
+            setPropertyFromGroup('strumLineNotes', i, 'y',  _G['defaultOpponentStrumY'..i] + 25 *math.cos((currentBeatAlt + i*0.25) * math.pi))
+            setPropertyFromGroup('strumLineNotes', i + 4, 'y',  _G['defaultPlayerStrumY'..i] + 25 *math.cos((currentBeatAlt + i*0.25) * math.pi))
         end
     end
 
@@ -248,20 +235,7 @@ function onUpdate(elapsed)
         end
     end
 
-    if curBeat >= 952 and curBeat < 982 then --во время парта с еще одним видео ноты идут бум шагают
-        for i=0,3 do
-            setPropertyFromGroup('opponentStrums', i, 'x', getPropertyFromGroup('opponentStrums', i, 'x') + 16 * (elapsed/(1/60)))
-            if getPropertyFromGroup('opponentStrums', i, 'x') > screenWidth then
-                setPropertyFromGroup('opponentStrums', i, 'x', 0 - getPropertyFromGroup('opponentStrums', i, 'width'))
-            end
-            setPropertyFromGroup('playerStrums', i, 'x', getPropertyFromGroup('playerStrums', i, 'x') + 16 * (elapsed/(1/60)))
-            if getPropertyFromGroup('playerStrums', i, 'x') > screenWidth then 
-                setPropertyFromGroup('playerStrums', i, 'x', 0 - getPropertyFromGroup('playerStrums', i, 'width'))
-            end
-        end
-    end
-
-    if curBeat >= 968 and curBeat <= 982 then --пока идет парт ноты летают
+    if curBeat >= 952 and curBeat <= 982 then --пока идет парт ноты летают
         for i =0,3 do
             setPropertyFromGroup('strumLineNotes', i, 'y',  _G['defaultOpponentStrumY'..i] + 10 *math.cos((currentBeatAlt + i*0.25) * math.pi))
             setPropertyFromGroup('strumLineNotes', i + 4, 'y',  _G['defaultPlayerStrumY'..i] + 10 *math.cos((currentBeatAlt + i*0.25) * math.pi))
@@ -293,7 +267,7 @@ function onUpdate(elapsed)
 		end
     end
 
-    if curBeat >= 1268 and curBeat <= 1299 or curBeat >= 1333 and curBeat <= 1363 or curBeat >= 1396 and curBeat <= 1427 then --ХАРД СТАЙЛ
+    if curBeat >= 1268 and curBeat <= 1299 or curBeat >= 1333 and curBeat <= 1362 or curBeat >= 1397 and curBeat <= 1427 then --ХАРД СТАЙЛ
         for i = 0,3 do
             local noteX = 120 * i
             local offsetX = 320
@@ -306,18 +280,6 @@ function onUpdate(elapsed)
             setPropertyFromGroup("strumLineNotes", i + 4, "x", getPropertyFromGroup('strumLineNotes', 0, 'x')+noteX+offsetX+(thingy*staticArrowWave)*0.7)
           end
           staticArrowWave = lerp(staticArrowWave,0,elapsed*8) 
-    end
-
-    if shitScroll then
-        for i=0, getProperty('notes.length')-1 do
-            dy = getPropertyFromGroup('notes', i, 'distance')
-            if getPropertyFromGroup('notes', i, 'isSustainNote') == true then
-                setPropertyFromGroup('notes', i, 'offsetY', -dy*2)
-            elseif getPropertyFromGroup('notes', i, 'sustainLength') == 0 then
-            else
-                setPropertyFromGroup('notes', i, 'offsetY', -dy*2)
-            end
-        end
     end
 
     if songPosFinal >= 622852 then
@@ -340,7 +302,7 @@ end
 
 function opponentNoteHit(membersIndex, noteData, noteType, isSustainNote) --для шайки не было зомби перца
     if curBeat >= 573 and curBeat <= 579 then
-        funni(getRandomFloat(15, 25))
+        funni(getRandomFloat(5, 15))
     end
 
     if curBeat >= 588 and curBeat <= 595 then
@@ -349,19 +311,19 @@ function opponentNoteHit(membersIndex, noteData, noteType, isSustainNote) --дл
 
     if curBeat >= 596 and curBeat <= 603 then
         if noteData == 0 then
-            setPropertyFromGroup('opponentStrums', 0, 'x',  _G['defaultOpponentStrumX0'] - 30)
+            setPropertyFromGroup('opponentStrums', 0, 'x',  _G['defaultOpponentStrumX0'] - 15)
             noteTweenX('leftoP', 0, _G['defaultOpponentStrumX0'], 0.5, 'quadOut')
         end
         if noteData == 1 then
-            setPropertyFromGroup('opponentStrums', 1, 'y',  _G['defaultOpponentStrumY1'] + 30)
+            setPropertyFromGroup('opponentStrums', 1, 'y',  _G['defaultOpponentStrumY1'] + 15)
             noteTweenY('downoP', 1, _G['defaultOpponentStrumY1'], 0.5, 'quadOut')
         end
         if noteData == 2 then
-            setPropertyFromGroup('opponentStrums', 2, 'y',  _G['defaultOpponentStrumY2'] - 30)
+            setPropertyFromGroup('opponentStrums', 2, 'y',  _G['defaultOpponentStrumY2'] - 15)
             noteTweenY('upoP', 2, _G['defaultOpponentStrumY2'], 0.5, 'quadOut')
         end
         if noteData == 3 then
-            setPropertyFromGroup('opponentStrums', 3, 'x',  _G['defaultOpponentStrumX3'] + 30)
+            setPropertyFromGroup('opponentStrums', 3, 'x',  _G['defaultOpponentStrumX3'] + 15)
             noteTweenX('rightoP', 3, _G['defaultOpponentStrumX3'], 0.5, 'quadOut')
         end
     end
@@ -369,7 +331,7 @@ end
 
 function goodNoteHit(membersIndex, noteData, noteType, isSustainNote) --для шайки не было зомби перца
     if curBeat >= 573 and curBeat <= 587 or curBeat >= 589 and curBeat <= 595 then
-        funni(getRandomFloat(15, 25))
+        funni(getRandomFloat(5, 15))
     end
 
     if curBeat >= 588 and curBeat <= 595 then
@@ -378,19 +340,19 @@ function goodNoteHit(membersIndex, noteData, noteType, isSustainNote) --для �
 
     if curBeat >= 596 and curBeat <= 603 then
         if noteData == 0 then
-            setPropertyFromGroup('playerStrums', 0, 'x',  _G['defaultPlayerStrumX0'] - 30)
+            setPropertyFromGroup('playerStrums', 0, 'x',  _G['defaultPlayerStrumX0'] - 15)
             noteTweenX('leftP', 4, _G['defaultPlayerStrumX0'], 0.5, 'quadOut')
         end
         if noteData == 1 then
-            setPropertyFromGroup('playerStrums', 1, 'y',  _G['defaultPlayerStrumY1'] + 30)
+            setPropertyFromGroup('playerStrums', 1, 'y',  _G['defaultPlayerStrumY1'] + 15)
             noteTweenY('downP', 5, _G['defaultPlayerStrumY1'], 0.5, 'quadOut')
         end
         if noteData == 2 then
-            setPropertyFromGroup('playerStrums', 2, 'y',  _G['defaultPlayerStrumY2'] - 30)
+            setPropertyFromGroup('playerStrums', 2, 'y',  _G['defaultPlayerStrumY2'] - 15)
             noteTweenY('upP', 6, _G['defaultPlayerStrumY2'], 0.5, 'quadOut')
         end
         if noteData == 3 then
-            setPropertyFromGroup('playerStrums', 3, 'x',  _G['defaultPlayerStrumX3'] + 30)
+            setPropertyFromGroup('playerStrums', 3, 'x',  _G['defaultPlayerStrumX3'] + 15)
             noteTweenX('rightP', 7, _G['defaultPlayerStrumX3'], 0.5, 'quadOut')
         end
     end
@@ -439,11 +401,11 @@ function onStepHit()
 
     for i = 0, 7 do --ПРИ ЗВУКАХ ПАУЗЫ ИЗ ПВЗ
         if curStep == 636 or curStep == 700 or curStep == 764 then --лефт
-            setPropertyFromGroup('strumLineNotes', i, 'angle', -45)
+            setPropertyFromGroup('strumLineNotes', i, 'angle', -35)
         end
     
         if curStep == 638 or curStep == 702 or curStep == 766 then --райт
-            setPropertyFromGroup('strumLineNotes', i, 'angle', 45)
+            setPropertyFromGroup('strumLineNotes', i, 'angle', 35)
         end
     
         if curStep == 640 or curStep == 704 or curStep == 768 then --впизду
@@ -471,18 +433,18 @@ function onStepHit()
 
     --АХХ ЭХХ У И АХХ
     if curStep == 1520 or curStep == 1524 or curStep == 1528 or curStep == 1530 or curStep == 1532 or curStep == 1552 or curStep == 1556 or curStep == 1560 or curStep == 1562 or curStep == 1564 then --АА ЭЭ У И ААХ~
-        staticArrowWave = 120
+        staticArrowWave = 50
 
         if balls then
             for i = 0, 7 do
-                noteSquish(i, 'x', 2, 0.3)
+                noteSquish(i, 'x', 2, 0.5)
 
                 setPropertyFromGroup('strumLineNotes', i, 'angle', 30)
                 noteTweenAngle("angleLeft"..i, i, 0, 0.2, "quadOut")
             end
         else
             for i = 0, 7 do
-                noteSquish(i, 'y', 2, 0.3)
+                noteSquish(i, 'y', 2, 0.5)
 
                 setPropertyFromGroup('strumLineNotes', i, 'angle', -30)
                 noteTweenAngle("angleRight"..i, i, 0, 0.2, "quadOut")
@@ -495,7 +457,7 @@ function onStepHit()
     end
 
     if curStep >= 1536 and curStep < 1551 then --тряска во втором парте хард стайля
-		funni(16)
+		funni(12)
 	end
 
     if curStep == 1584 then --ВРАГ ЕБОШИТ АХХХ ОХХХ ААА
@@ -714,14 +676,14 @@ function onBeatHit()
             for i = 0, 7 do
                 noteSquish(i, 'x', 2, 0.3)
 
-                setPropertyFromGroup('strumLineNotes', i, 'angle', 30)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', 20)
                 noteTweenAngle("angleLeft"..i, i, 0, 0.2, "quadOut")
             end
         else
             for i = 0, 7 do
                 noteSquish(i, 'y', 2, 0.3)
 
-                setPropertyFromGroup('strumLineNotes', i, 'angle', -30)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', -20)
                 noteTweenAngle("angleRight"..i, i, 0, 0.2, "quadOut")
             end
         end
@@ -732,21 +694,21 @@ function onBeatHit()
             if dance then
                 for i=0,3 do
                     if i % 2 == 0 then
-                        noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] + 30, 0.5, 'elasticOut')
-                        noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] + 30, 0.5, 'elasticOut')
+                        noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] + 24, 0.5, 'elasticOut')
+                        noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] + 24, 0.5, 'elasticOut')
                     else
-                        noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] - 30, 0.5, 'elasticOut')
-                        noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] - 30, 0.5, 'elasticOut')
+                        noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] - 24, 0.5, 'elasticOut')
+                        noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] - 24, 0.5, 'elasticOut')
                     end
                 end
             else
                 for i=0,3 do
                     if i % 2 == 0 then
-                        noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] - 30, 0.5, 'elasticOut')
-                        noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] - 30, 0.5, 'elasticOut')
+                        noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] - 24, 0.5, 'elasticOut')
+                        noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] - 24, 0.5, 'elasticOut')
                     else
-                        noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] + 30, 0.5, 'elasticOut')
-                        noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] + 30, 0.5, 'elasticOut')
+                        noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] + 24, 0.5, 'elasticOut')
+                        noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] + 24, 0.5, 'elasticOut')
                     end
                 end
             end
@@ -817,34 +779,34 @@ function onBeatHit()
             for i=0,3 do
                 scaleShit = i + 4
                 if i % 2 == 0 then
-                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX + 1.0, 0.3, 'elasticOut')
-                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX + 1.0, 0.3, 'elasticOut')
+                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX + 1.0, 0.5, 'elasticOut')
+                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX + 1.0, 0.5, 'elasticOut')
 
-                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY - 1.0, 0.3, 'elasticOut')
-                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY - 1.0, 0.3, 'elasticOut')
+                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY - 1.0, 0.5, 'elasticOut')
+                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY - 1.0, 0.5, 'elasticOut')
                 else
-                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX - 1.0, 0.3, 'elasticOut')
-                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX - 1.0, 0.3, 'elasticOut')
+                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX - 1.0, 0.5, 'elasticOut')
+                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX - 1.0, 0.5, 'elasticOut')
 
-                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY + 1.0, 0.3, 'elasticOut')
-                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY + 1.0, 0.3, 'elasticOut')
+                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY + 1.0, 0.5, 'elasticOut')
+                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY + 1.0, 0.5, 'elasticOut')
                 end
             end
         else
             for i=0,3 do
                 scaleShit = i + 4
                 if i % 2 == 0 then
-                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX - 1.0, 0.3, 'elasticOut')
-                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX - 1.0, 0.3, 'elasticOut')
+                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX - 1.0, 0.5, 'elasticOut')
+                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX - 1.0, 0.5, 'elasticOut')
 
-                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY + 1.0, 0.3, 'elasticOut')
-                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY + 1.0, 0.3, 'elasticOut')
+                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY + 1.0, 0.5, 'elasticOut')
+                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY + 1.0, 0.5, 'elasticOut')
                 else
-                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX + 1.0, 0.3, 'elasticOut')
-                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX + 1.0, 0.3, 'elasticOut')
+                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX + 1.0, 0.5, 'elasticOut')
+                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX + 1.0, 0.5, 'elasticOut')
 
-                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY - 1.0, 0.3, 'elasticOut')
-                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY - 1.0, 0.3, 'elasticOut')
+                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY - 1.0, 0.5, 'elasticOut')
+                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY - 1.0, 0.5, 'elasticOut')
                 end
             end
         end
@@ -854,8 +816,8 @@ function onBeatHit()
 
     if curBeat == 215 or curBeat == 231 or curBeat == 247 or curBeat == 263 then --ТЫ НЕ ЕБЕШЬ НАС, БРУТАЛ ЕБЕШЬ НАС
         for i=0,3 do
-            noteTweenY('goUp'..i, i, _G['defaultOpponentStrumY'..i] - 25, 0.4, 'quadOut')
-            noteTweenY('goUp'..i + 4, i + 4, _G['defaultPlayerStrumY'..i]- 25, 0.4, 'quadOut')
+            noteTweenY('goUp'..i, i, _G['defaultOpponentStrumY'..i] - 20, 0.4, 'quadOut')
+            noteTweenY('goUp'..i + 4, i + 4, _G['defaultPlayerStrumY'..i]- 20, 0.4, 'quadOut')
     
             noteTweenX('resetX'..i, i, _G['defaultOpponentStrumX'..i], 0.3, 'elasticOut')
             noteTweenX('resetX'..i + 4, i + 4, _G['defaultPlayerStrumX'..i], 0.3, 'elasticOut')
@@ -871,8 +833,8 @@ function onBeatHit()
     
     if curBeat >= 216 and curBeat <= 224 or curBeat >= 232 and curBeat <= 240 or curBeat >= 248 and curBeat <= 256 then ----МЫ МЫ БРУТАЛ ЭКС МЫ МЫ БРУТАЛ ЭКС 
         for i=0,3 do
-            setPropertyFromGroup('strumLineNotes', i, 'y',  _G['defaultOpponentStrumY'..i] + 30)
-            setPropertyFromGroup('strumLineNotes', i + 4, 'y',  _G['defaultPlayerStrumY'..i] + 30)
+            setPropertyFromGroup('strumLineNotes', i, 'y',  _G['defaultOpponentStrumY'..i] + 35)
+            setPropertyFromGroup('strumLineNotes', i + 4, 'y',  _G['defaultPlayerStrumY'..i] + 35)
 
             noteTweenY('dance'..i, i, _G['defaultOpponentStrumY'..i], 0.5, 'quadOut')
             noteTweenY('dance'..i + 4, i + 4, _G['defaultPlayerStrumY'..i], 0.5, 'quadOut')
@@ -881,8 +843,8 @@ function onBeatHit()
 
     if curBeat >= 264 and curBeat <= 271 then ----МЫ МЫ БРУТАЛ ЭКС МЫ МЫ БРУТАЛ ЭКС ПОСЛЕДНИЙ
         for i=0,3 do
-            setPropertyFromGroup('strumLineNotes', i, 'y',  _G['defaultOpponentStrumY'..i] + 30)
-            setPropertyFromGroup('strumLineNotes', i + 4, 'y',  _G['defaultPlayerStrumY'..i] + 30)
+            setPropertyFromGroup('strumLineNotes', i, 'y',  _G['defaultOpponentStrumY'..i] + 35)
+            setPropertyFromGroup('strumLineNotes', i + 4, 'y',  _G['defaultPlayerStrumY'..i] + 35)
 
             noteTweenY('dance'..i, i, _G['defaultOpponentStrumY'..i], 0.5, 'quadOut')
             noteTweenY('dance'..i + 4, i + 4, _G['defaultPlayerStrumY'..i], 0.5, 'quadOut')
@@ -890,12 +852,12 @@ function onBeatHit()
 
         if balls then
             for i = 0, 7 do
-                setPropertyFromGroup('strumLineNotes', i, 'angle', 30)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', 15)
                 noteTweenAngle("angleLeft"..i, i, 0, 0.2, "quadOut")
             end
         else
             for i = 0, 7 do
-                setPropertyFromGroup('strumLineNotes', i, 'angle', -30)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', -15)
                 noteTweenAngle("angleRight"..i, i, 0, 0.2, "quadOut")
             end
         end
@@ -905,8 +867,8 @@ function onBeatHit()
 
     if curBeat == 272 then --Перемена
         for i=0,3 do
-            setPropertyFromGroup('strumLineNotes', i, 'y',  _G['defaultOpponentStrumY'..i] + 50)
-            setPropertyFromGroup('strumLineNotes', i + 4, 'y',  _G['defaultPlayerStrumY'..i] + 50)
+            setPropertyFromGroup('strumLineNotes', i, 'y',  _G['defaultOpponentStrumY'..i] + 40)
+            setPropertyFromGroup('strumLineNotes', i + 4, 'y',  _G['defaultPlayerStrumY'..i] + 40)
 
             noteTweenY('dance'..i, i, _G['defaultOpponentStrumY'..i], 1.5, 'quadOut')
             noteTweenY('dance'..i + 4, i + 4, _G['defaultPlayerStrumY'..i], 1.5, 'quadOut')
@@ -932,15 +894,15 @@ function onBeatHit()
     end
     
     if curBeat >= 304 and curBeat < 336 then --парт перед пиздецом
-        funni(32)
+        funni(25)
 
         if balls then
             for i = 0, 7 do
-                noteSquish(i, 'x', 2, 0.3)
+                noteSquish(i, 'x', 2, 0.5)
             end
         else
             for i = 0, 7 do
-                noteSquish(i, 'y', 2, 0.3)
+                noteSquish(i, 'y', 2, 0.5)
             end
         end
 
@@ -994,14 +956,14 @@ function onBeatHit()
     if curBeat >= 392 and curBeat < 396 then --последний парт 2
         if balls then
             for i = 0, 7 do
-                noteSquish(i, 'x', 3, 0.3)
+                noteSquish(i, 'x', 2, 0.5)
 
                 setPropertyFromGroup('strumLineNotes', i, 'angle', 25)
                 noteTweenAngle("angleLeft"..i, i, 0, 0.2, "quadOut")
             end
         else
             for i = 0, 7 do
-                noteSquish(i, 'y', 3, 0.3)
+                noteSquish(i, 'y', 2, 0.5)
 
                 setPropertyFromGroup('strumLineNotes', i, 'angle', -25)
                 noteTweenAngle("angleRight"..i, i, 0, 0.2, "quadOut")
@@ -1048,7 +1010,7 @@ function onBeatHit()
     if curBeat >= 477 and curBeat <= 505 then --типа в начале под бит yk
         if curBeat % 2 == 0 then
             for i = 0, 7 do
-                setPropertyFromGroup('strumLineNotes', i, 'angle', 45)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', 35)
                 noteTweenAngle("note"..i, i, 0, 0.5, "quartOut")
             end
         end
@@ -1066,18 +1028,18 @@ function onBeatHit()
     if curBeat >= 507 and curBeat <= 523 or curBeat >= 525 and curBeat <= 539 then --Творят жесть после первого партишки
 
         for i = 0, 7 do
-            noteSquish(i, 'x', 2, 0.3)
-            noteSquish(i, 'y', 2, 0.3)
+            noteSquish(i, 'x', 2, 0.5)
+            noteSquish(i, 'y', 2, 0.5)
         end
 
         if balls then
             for i = 0, 7 do
-                setPropertyFromGroup('strumLineNotes', i, 'angle', 30)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', 25)
                 noteTweenAngle("angleLeft"..i, i, 0, 0.2, "quadOut")
             end
         else
             for i = 0, 7 do
-                setPropertyFromGroup('strumLineNotes', i, 'angle', -30)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', -25)
                 noteTweenAngle("angleRight"..i, i, 0, 0.2, "quadOut")
             end
         end
@@ -1110,18 +1072,18 @@ function onBeatHit()
     if curBeat >= 557 and curBeat <= 572 then --в моменте где видео крутят размер и тд короче ухх
 
         for i = 0, 7 do
-            noteSquish(i, 'x', 2, 0.3)
-            noteSquish(i, 'y', 2, 0.3)
+            noteSquish(i, 'x', 2, 0.5)
+            noteSquish(i, 'y', 2, 0.5)
         end
 
         if balls then
             for i = 0, 7 do
-                setPropertyFromGroup('strumLineNotes', i, 'angle', 30)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', 25)
                 noteTweenAngle("angleLeft"..i, i, 0, stepCrochet * 0.0038, "expoIn")
             end
         else
             for i = 0, 7 do
-                setPropertyFromGroup('strumLineNotes', i, 'angle', -30)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', -25)
                 noteTweenAngle("angleRight"..i, i, 0, stepCrochet * 0.0038, "expoIn")
             end
         end
@@ -1147,18 +1109,18 @@ function onBeatHit()
             if middlescroll then
                 for i = 0, 3 do
                     if l then
-                        setPropertyFromGroup('strumLineNotes', i+4, 'x',  _G['defaultPlayerStrumX'..i] - 75)
+                        setPropertyFromGroup('strumLineNotes', i+4, 'x',  _G['defaultPlayerStrumX'..i] - 50)
                         noteTweenX('wigle'..i+4, i+4, _G['defaultPlayerStrumX'..i], 0.3, 'quadOut')
                     else
-                        setPropertyFromGroup('strumLineNotes', i+4, 'x',  _G['defaultPlayerStrumX'..i] + 75)
+                        setPropertyFromGroup('strumLineNotes', i+4, 'x',  _G['defaultPlayerStrumX'..i] + 50)
                         noteTweenX('wigleBack'..i+4, i+4, _G['defaultPlayerStrumX'..i], 0.3, 'quadOut')
                     end
                 end
             else
                 if l then
-                    wiggleThing = -250--WIGGLE_AMPLITUDE
+                    wiggleThing = -200--WIGGLE_AMPLITUDE
                 else
-                    wiggleThing = 250--WIGGLE_AMPLITUDE
+                    wiggleThing = 200--WIGGLE_AMPLITUDE
                 end
             end
 
@@ -1180,11 +1142,11 @@ function onBeatHit()
     end
 
     if curBeat >= 692 and curBeat <= 707 then --перец манипуляция и происхоит пиздец
-        upShit = 40
+        upShit = 30
 
         for i = 0, 7 do
-            noteSquish(i, 'x', 2, 0.3)
-            noteSquish(i, 'y', 2, 0.3)
+            noteSquish(i, 'x', 2, 0.5)
+            noteSquish(i, 'y', 2, 0.5)
         end
     end
 
@@ -1210,15 +1172,15 @@ function onBeatHit()
             noteTweenY('resetY'..i + 4, i + 4, _G['defaultPlayerStrumY'..i], 0.4, 'elasticOut')
         end
 
-        noteTweenX('foxTween1', 4, _G['defaultPlayerStrumX3'], 0.4, 'elasticOut');
-        noteTweenX('foxTween2', 5, _G['defaultPlayerStrumX2'], 0.4,'elasticOut');
-        noteTweenX('foxTween3', 6, _G['defaultPlayerStrumX1'], 0.4, 'elasticOut');
-        noteTweenX('foxTween4', 7, _G['defaultPlayerStrumX0'], 0.4, 'elasticOut');
+        noteTweenX('foxTween1', 4, _G['defaultPlayerStrumX1'], 0.8, 'elasticOut');
+        noteTweenX('foxTween2', 5, _G['defaultPlayerStrumX0'], 0.8,'elasticOut');
+        noteTweenX('foxTween3', 6, _G['defaultPlayerStrumX3'], 0.8, 'elasticOut');
+        noteTweenX('foxTween4', 7, _G['defaultPlayerStrumX2'], 0.8, 'elasticOut');
 
-        noteTweenX('foxTween12', 0, _G['defaultOpponentStrumX3'], 0.4, 'elasticOut');
-        noteTweenX('foxTween22', 1, _G['defaultOpponentStrumX2'],  0.4, 'elasticOut');
-        noteTweenX('foxTween322', 2, _G['defaultOpponentStrumX1'], 0.4, 'elasticOut');
-        noteTweenX('foxTween42', 3, _G['defaultOpponentStrumX0'], 0.4, 'elasticOut');
+        noteTweenX('foxTween12', 0, _G['defaultOpponentStrumX1'], 0.8, 'elasticOut');
+        noteTweenX('foxTween22', 1, _G['defaultOpponentStrumX0'],  0.8, 'elasticOut');
+        noteTweenX('foxTween322', 2, _G['defaultOpponentStrumX3'], 0.8, 'elasticOut');
+        noteTweenX('foxTween42', 3, _G['defaultOpponentStrumX2'], 0.8, 'elasticOut');
     end
 
     if curBeat == 716 or curBeat == 732 then --в боих случаях в пизду
@@ -1236,17 +1198,17 @@ function onBeatHit()
             for i=0,3 do
                 scaleShit = i + 4
                 if i % 2 == 0 then
-                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX + 1.0, 0.3, 'elasticOut')
-                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX + 1.0, 0.3, 'elasticOut')
+                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX + 1.0, 0.5, 'elasticOut')
+                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX + 1.0, 0.5, 'elasticOut')
 
-                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY - 1.0, 0.3, 'elasticOut')
-                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY - 1.0, 0.3, 'elasticOut')
+                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY - 1.0, 0.5, 'elasticOut')
+                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY - 1.0, 0.5, 'elasticOut')
                 else
-                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX - 1.0, 0.3, 'elasticOut')
-                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX - 1.0, 0.3, 'elasticOut')
+                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX - 1.0, 0.5, 'elasticOut')
+                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX - 1.0, 0.5, 'elasticOut')
 
-                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY + 1.0, 0.3, 'elasticOut')
-                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY + 1.0, 0.3, 'elasticOut')
+                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY + 1.0, 0.5, 'elasticOut')
+                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY + 1.0, 0.5, 'elasticOut')
                 end
             end
 
@@ -1258,21 +1220,21 @@ function onBeatHit()
             for i=0,3 do
                 scaleShit = i + 4
                 if i % 2 == 0 then
-                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX - 1.0, 0.3, 'elasticOut')
-                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX - 1.0, 0.3, 'elasticOut')
+                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX - 1.0, 0.5, 'elasticOut')
+                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX - 1.0, 0.5, 'elasticOut')
 
-                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY + 1.0, 0.3, 'elasticOut')
-                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY + 1.0, 0.3, 'elasticOut')
+                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY + 1.0, 0.5, 'elasticOut')
+                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY + 1.0, 0.5, 'elasticOut')
                 else
-                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX + 1.0, 0.3, 'elasticOut')
-                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX + 1.0, 0.3, 'elasticOut')
+                    doTweenX('noteSquishx'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleX + 1.0, 0.5, 'elasticOut')
+                    doTweenX('noteSquishx'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleX + 1.0, 0.5, 'elasticOut')
 
-                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY - 1.0, 0.3, 'elasticOut')
-                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY - 1.0, 0.3, 'elasticOut')
+                    doTweenY('noteSquishy'..i, 'strumLineNotes.members['..i..'].scale', defaultScaleY - 1.0, 0.5, 'elasticOut')
+                    doTweenY('noteSquishy'..i + 4, 'strumLineNotes.members['..scaleShit..'].scale', defaultScaleY - 1.0, 0.5, 'elasticOut')
                 end
             end
             for i=0,7 do
-                setPropertyFromGroup('strumLineNotes', i, 'angle', -30)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', -20)
                 noteTweenAngle("angleLeft"..i, i, 0, 0.2, "quadOut")
             end
         end
@@ -1284,21 +1246,21 @@ function onBeatHit()
         if dance then
             for i=0,3 do
                 if i % 2 == 0 then
-                    noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] + 30, 0.5, 'elasticOut')
-                    noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] + 30, 0.5, 'elasticOut')
+                    noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] + 20, 0.5, 'elasticOut')
+                    noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] + 20, 0.5, 'elasticOut')
                 else
-                    noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] - 30, 0.5, 'elasticOut')
-                    noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] - 30, 0.5, 'elasticOut')
+                    noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] - 20, 0.5, 'elasticOut')
+                    noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] - 20, 0.5, 'elasticOut')
                 end
             end
         else
             for i=0,3 do
                 if i % 2 == 0 then
-                    noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] - 30, 0.5, 'elasticOut')
-                    noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] - 30, 0.5, 'elasticOut')
+                    noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] - 20, 0.5, 'elasticOut')
+                    noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] - 20, 0.5, 'elasticOut')
                 else
-                    noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] + 30, 0.5, 'elasticOut')
-                    noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] + 30, 0.5, 'elasticOut')
+                    noteTweenY('y'..i, i, _G['defaultOpponentStrumY'..i] + 20, 0.5, 'elasticOut')
+                    noteTweenY('y'..i + 4, i + 4, _G['defaultPlayerStrumY'..i] + 20, 0.5, 'elasticOut')
                 end
             end
         end
@@ -1342,7 +1304,7 @@ function onBeatHit()
     end
 
     if curBeat >= 776 and curBeat <= 807 then --ТЫ НЕ ЕБЕШЬ НАС
-        staticArrowWave = 69
+        staticArrowWave = 42
     end
 
     if curBeat == 808 then --переход нв 3 волну
@@ -1388,13 +1350,29 @@ function onBeatHit()
         end
     end
 
+    if curBeat >= 952 and curBeat <= 981 then --ОВЕРХАУЛ МОДЧАРТ ЧТОООООООООО
+        if curBeat % 2 == 0 then
+            turn2 = turn2 * -1
+            for i = 0,7 do
+                local uhhh = curBeat % 8 * (i + i)
+                local swag = i % 4 * 2.5 - uhhh
+                if i > 3 then
+                    x =  getPropertyFromGroup('opponentStrums', i - 4, 'x');
+                else
+                    x =  getPropertyFromGroup('playerStrums', i, 'x');
+                end
+                noteTweenX("wheeeleft"..i, i, x + turn2, crochet * 0.002, "sineInOut")
+            end
+        end
+    end
+
     if curBeat >= 856 and curBeat <= 918 then --БУМ
         if curBeat % 2 == 1 then
             for i = 0, 7 do
                 noteSquish(i, 'x', 2, 0.87)
                 noteSquish(i, 'y', 2, 0.87)
 
-                setPropertyFromGroup('strumLineNotes', i, 'angle', getRandomFloat(-100, 100))
+                setPropertyFromGroup('strumLineNotes', i, 'angle', getRandomFloat(-75, 75))
                 noteTweenAngle("note"..i, i, 0, 0.87, "quintOut")
             end
         end
@@ -1437,8 +1415,8 @@ function onBeatHit()
 
     if curBeat >= 920 and curBeat <= 951 then --ЕБЕШЬ ТЫ НЕ ЕБЕШЬ
         for i=0,3 do
-            setPropertyFromGroup('strumLineNotes', i, 'y',  _G['defaultOpponentStrumY'..i] + 30)
-            setPropertyFromGroup('strumLineNotes', i + 4, 'y',  _G['defaultPlayerStrumY'..i] + 30)
+            setPropertyFromGroup('strumLineNotes', i, 'y',  _G['defaultOpponentStrumY'..i] + 20)
+            setPropertyFromGroup('strumLineNotes', i + 4, 'y',  _G['defaultPlayerStrumY'..i] + 20)
     
             noteTweenY('dance'..i, i, _G['defaultOpponentStrumY'..i], 0.5, 'quadOut')
             noteTweenY('dance'..i + 4, i + 4, _G['defaultPlayerStrumY'..i], 0.5, 'quadOut')
@@ -1453,12 +1431,12 @@ function onBeatHit()
 
         if balls then
             for i = 0, 7 do
-                setPropertyFromGroup('strumLineNotes', i, 'angle', 30)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', 20)
                 noteTweenAngle("angleLeft"..i, i, 0, 0.2, "quadOut")
             end
         else
             for i = 0, 7 do
-                setPropertyFromGroup('strumLineNotes', i, 'angle', -30)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', -20)
                 noteTweenAngle("angleRight"..i, i, 0, 0.2, "quadOut")
             end
         end
@@ -1478,7 +1456,7 @@ function onBeatHit()
 
     if curBeat >= 992 and curBeat <= 1019 then --фаннни
         if curBeat % 2 == 1 then
-            funni(getRandomFloat(15, 25))
+            funni(getRandomFloat(10, 20))
         end
     end
 
@@ -1508,7 +1486,7 @@ function onBeatHit()
     end
 
     if curBeat >= 1024 and curBeat <= 1055 or curBeat >= 1088 and curBeat <= 1103 then --ТЫ НЕ ЕБЕШЬ НАС
-        staticArrowWave = 69
+        staticArrowWave = 42
     end
 
     if curBeat == 1131 then --просто ресет
@@ -1533,11 +1511,11 @@ function onBeatHit()
 
     if curBeat == 1200 then --просто ресет
         for i=0,3 do
-            noteTweenY('resetY'..i, i, _G['defaultOpponentStrumY'..i], 1, 'bounceInOut')
-            noteTweenY('resetY'..i + 4, i + 4, _G['defaultPlayerStrumY'..i], 1, 'bounceInOut')
+            noteTweenY('resetY'..i, i, _G['defaultOpponentStrumY'..i], 1, 'bounceOut')
+            noteTweenY('resetY'..i + 4, i + 4, _G['defaultPlayerStrumY'..i], 1, 'bounceOut')
 
-            noteTweenX('resetX'..i, i, _G['defaultOpponentStrumX'..i], 1, 'bounceInOut')
-            noteTweenX('resetX'..i + 4, i + 4, _G['defaultPlayerStrumX'..i], 1, 'bounceInOut')
+            noteTweenX('resetX'..i, i, _G['defaultOpponentStrumX'..i], 1, 'bounceOut')
+            noteTweenX('resetX'..i + 4, i + 4, _G['defaultPlayerStrumX'..i], 1, 'bounceOut')
         end
 
         runHaxeCode([[
@@ -1561,7 +1539,7 @@ function onBeatHit()
 
         if curBeat % 4 == 2 then
             for i = 0, 7 do
-                setPropertyFromGroup('strumLineNotes', i, 'angle', 45)
+                setPropertyFromGroup('strumLineNotes', i, 'angle', 35)
                 noteTweenAngle("note"..i, i, 0, 0.5, "quartOut")
             end
         end
@@ -1587,21 +1565,33 @@ function onBeatHit()
         InitscrollChangeFinal()
     end
 
-    if curBeat == 1364 then
-        noteTweenY('foxTween1', 4, 310, 1, 'elasticOut');
-        noteTweenY('foxTween2', 5, 310, 1, 'elasticOut');
-        noteTweenY('foxTween3', 6, 310, 1, 'elasticOut');
-        noteTweenY('foxTween4', 7, 310, 1, 'elasticOut');
+    if curBeat >= 1365 and curBeat <= 1395 then --ОВЕРХАУЛ МОДЧАРТ ЧТОООООООООО #2
+        if curBeat % 2 == 0 then
+            if not finalLol then
+                noteTweenX('shit', 4, 85 + Meow1, crochet * 0.002, 'sineInOut');
+                noteTweenX('ass', 5, 85 + Meow2, crochet * 0.002, 'sineInOut');
+                noteTweenX('oh', 6, 85 + Meow3, crochet * 0.002, 'sineInOut');
+                noteTweenX('my', 7, 85 + Meow4, crochet * 0.002, 'sineInOut');
+            else
+                noteTweenX('shit', 4, 740 + Meow1, crochet * 0.002, 'sineInOut');
+                noteTweenX('ass', 5, 740 + Meow2, crochet * 0.002, 'sineInOut');
+                noteTweenX('oh', 6, 740 + Meow3, crochet * 0.002, 'sineInOut');
+                noteTweenX('my', 7, 740 + Meow4, crochet * 0.002, 'sineInOut');
+            end
 
-        shitScroll = true
+            finalLol = not finalLol
+        end
     end
 
-    if curBeat == 1396 then
-        shitScroll = false
+    if curBeat == 1396 then 
+        for i=0,3 do
+            noteTweenX('resetX'..i, i, _G['defaultOpponentStrumX'..i], 1, 'elasticOut')
+            noteTweenX('resetX'..i + 4, i + 4, _G['defaultPlayerStrumX'..i], 1, 'elasticOut')
+        end
     end
 
-    if curBeat >= 1268 and curBeat <= 1299 or curBeat >= 1333 and curBeat <= 1363 or curBeat >= 1396 and curBeat <= 1427 then --ХАРД СТАЙЛ
-        staticArrowWave = 69
+    if curBeat >= 1268 and curBeat <= 1299 or curBeat >= 1333 and curBeat <= 1362 or curBeat >= 1397 and curBeat <= 1427 then --ХАРД СТАЙЛ
+        staticArrowWave = 42
     end
 
     if curBeat == 1300 or curBeat == 1364 or curBeat == 1428 then 
@@ -1611,6 +1601,22 @@ function onBeatHit()
         end
     end
 
+    if curBeat == 1428 then
+        --setProperty('healthBar.visible', false)
+        setProperty('timeTxt.visible', false)
+        setProperty('timeBar.visible', false)
+        --setProperty('iconP1.visible', false)
+        --setProperty('iconP2.visible', false)
+        --setProperty('scoreTxt.visible', false)
+        --setProperty('accuracyShit.visible', false)
+        --setProperty('healthBarBGOverlay.visible', false)
+        setProperty('timeTxt.visible', false)
+        setProperty('iconPEP.visible', false)
+        setProperty('iconPOLE.visible', false)
+        setProperty('iconJACK.visible', false)
+        setProperty('ratingTxt.visible', false)
+    end
+
     if curBeat == 1434 then
         if not middlescroll then
             noteTweenX('foxTween1', 4, 415 + Meow1, 1, 'cubeInOut');
@@ -1618,20 +1624,6 @@ function onBeatHit()
             noteTweenX('foxTween3', 6, 415 + Meow3, 1, 'cubeInOut');
             noteTweenX('foxTween4', 7, 415 + Meow4, 1, 'cubeInOut');
         end
-
-        setProperty('healthBar.visible', false)
-        setProperty('timeTxt.visible', false)
-        setProperty('timeBar.visible', false)
-        setProperty('iconP1.visible', false)
-        setProperty('iconP2.visible', false)
-        setProperty('scoreTxt.visible', false)
-        setProperty('accuracyShit.visible', false)
-        setProperty('healthBarBGOverlay.visible', false)
-        setProperty('timeTxt.visible', false)
-        setProperty('iconPEP.visible', false)
-        setProperty('iconPOLE.visible', false)
-        setProperty('iconJACK.visible', false)
-        setProperty('ratingTxt.visible', false)
 
         for i = 0, 3 do
             noteTweenAlpha("note"..i, i, 0, 1, "quadInOut")
@@ -1644,10 +1636,6 @@ function onBeatHit()
         end
     end
 
-    if curBeat == 1552 then
-        setProperty('scoreTxt.visible', true)
-    end
-
     if curBeat == 1556 then --и...
         setProperty('updateTime', false)
         setProperty('timeTxt.text', 'YOU CANNOT FUCK US')
@@ -1655,30 +1643,16 @@ function onBeatHit()
         setProperty('timeBar.visible', true)
     end
 
-    if curBeat == 1560 then
-        setProperty('ratingTxt.visible', true)
-        setProperty('accuracyShit.visible', true)
-    end
-
-    if curBeat == 1562 then
-        setProperty('healthBar.visible', true)
-        setProperty('healthBarBGOverlay.visible', true)
-    end
-
-    if curBeat == 1564 then
+    if curBeat == 1565 then
         setProperty('iconPEP.visible', true)
     end
 
-    if curBeat == 1565 then
+    if curBeat == 1566 then
         setProperty('iconPOLE.visible', true)
     end
 
-    if curBeat == 1566 then
-        setProperty('iconJACK.visible', true)
-    end
-
     if curBeat == 1567 then
-        setProperty('iconP1.visible', true)
+        setProperty('iconJACK.visible', true)
     end
 
     if curBeat >= 1568 and curBeat < 1600 then
@@ -1838,10 +1812,10 @@ function scaleHitNote(noteData) --я ненавижу свою жизнь
     cancelTween('noteSquishx'..noteData)
     cancelTween('noteSquishy'..noteData)
 
-    setPropertyFromGroup('strumLineNotes', noteData, 'scale.x', defaultScaleX - 10)
+    setPropertyFromGroup('strumLineNotes', noteData, 'scale.x', defaultScaleX - 8)
     doTweenX('noteSquishx'..noteData, 'strumLineNotes.members['..noteData..'].scale', defaultScaleX, 0.5, 'elasticOut')
 
-    setPropertyFromGroup('strumLineNotes', noteData, 'scale.y', defaultScaleY - 10)
+    setPropertyFromGroup('strumLineNotes', noteData, 'scale.y', defaultScaleY - 8)
     doTweenY('noteSquishy'..noteData, 'strumLineNotes.members['..noteData..'].scale', defaultScaleY, 0.5, 'elasticOut')
 end
 

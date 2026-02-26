@@ -1,0 +1,21 @@
+{
+	"directory": "shared",
+	"defaultZoom": 1,
+	"stageUI": "",
+
+	"boyfriend": [850, -115],
+	"girlfriend": [400, 130],
+	"opponent": [300, 0],
+	"hide_girlfriend": false,
+
+	"camera_boyfriend": [250, 0],
+	"camera_opponent": [-300, 0],
+	"camera_girlfriend": [150, -100],
+	"camera_speed": 1,
+
+	"_editorMeta": {
+		"dad": "dad",
+		"boyfriend": "bf",
+		"gf": "gf"
+	}
+}

@@ -119,11 +119,14 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.changeValue = 0.1;
 		addOption(option);
 
-		var option:Option = new Option('Download Free Mario Madness V2 Content',
-			'No)',
+		if (FlxG.save.data.beatUnfuck && !FlxG.save.data.unlockedSong.contains('starman-slaughter'))
+		{
+			var option:Option = new Option('Mario Madness Mode',
+			'Activates secret mode that will open something?',
 			'downscoll',
 			BOOL);
-		addOption(option);
+			addOption(option);
+		}
 
 		super();
 	}

@@ -18,7 +18,7 @@ class SetTvEffectState extends MusicBeatState
 	{
 		super();
 
-		var text:Alphabet = new Alphabet(0, 160, "Enable TV Effect?\nWarning, might crash on low pc or AMD\ni hate flixel", true);
+		var text:Alphabet = new Alphabet(0, 160, "Enable TV Effect?", true);
 		alphabetArray.push(text);
 		text.scaleX = 0.7;
 		text.scaleY = 0.7;
@@ -51,7 +51,17 @@ class SetTvEffectState extends MusicBeatState
 				ClientPrefs.data.tvEffect = false;
 			}
 			ClientPrefs.saveSettings();
-			MusicBeatState.switchState(new TitleState());
+
+			if(FlxG.save.data.finalSong)
+			{
+				Init.fog = false;
+				FlxG.sound.playMusic(Paths.music('final_mus'), 0.7);
+				TitleState.gotFromTitle = false;
+				FlxTransitionableState.skipNextTransOut = false;
+				MusicBeatState.switchState(new MainMenuState());
+			}
+			else
+				MusicBeatState.switchState(new TitleState());
 		}
 		super.update(elapsed);
 	}

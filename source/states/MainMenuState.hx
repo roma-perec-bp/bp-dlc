@@ -5,7 +5,10 @@ import flixel.effects.FlxFlicker;
 import lime.app.Application;
 import states.editors.MasterEditorMenu;
 import options.OptionsState;
+import backend.StageData;
 import backend.Song;
+
+import flixel.input.keyboard.FlxKey;
 
 import openfl.filters.ShaderFilter;
 import openfl.filters.BlurFilter;
@@ -20,20 +23,45 @@ class MainMenuState extends MusicBeatState
 
 	var menuItems:FlxTypedGroup<FlxText>;
 
-	var no:Bool = false;
-
 	var optionShit:Array<String> = [
-		'play',
+		'start',
+		'freeplay',
 		'gallery',
 		'credits',
 		'hall of fame',
+		'awards',
 		'options'
 	];
+
+	var firstOptions:Array<String> = [
+		'start',
+		'credits',
+		'options'
+	];
+
+	var finalOptions:Array<String> = [
+		'final battle',
+		'gallery',
+		'credits',
+		'hall of fame',
+		'awards',
+		'options'
+	];
+
+	var curOption:Array<String> = ['start'];
 
 	public var vcr:VCRMario85;
 
 	var selectorLeft:FlxText;
 	var selectorRight:FlxText;
+
+	var note:FlxSprite;
+
+	var easterEggKeys:Array<String> = [
+		'BEEDAY'
+	];
+	var allowedKeys:String = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	var easterEggKeysBuffer:String = '';
 
 	override function create()
 	{
@@ -61,10 +89,17 @@ class MainMenuState extends MusicBeatState
 		menuItems = new FlxTypedGroup<FlxText>();
 		add(menuItems);
 
-		for (num => option in optionShit)
+		if (FlxG.save.data.beatUnfuck == false)
+			curOption = firstOptions;
+		else if (FlxG.save.data.finalSong == true)
+			curOption = finalOptions;
+		else
+			curOption = optionShit;
+
+		for (num => option in curOption)
 		{
-			var item:FlxText = createMenuItem(option, 0, (num * 140) + 90);
-			item.y += (4 - optionShit.length) * 70; // Offsets for when you have anything other than 4 items
+			var item:FlxText = createMenuItem(option, 0, (num * 85) + 265);
+			item.y += (4 - curOption.length) * 70; // Offsets for when you have anything other than 4 items
 			item.screenCenter(X);
 		}
 
@@ -74,6 +109,18 @@ class MainMenuState extends MusicBeatState
 		selectorRight = new FlxText(0, 0, 0, '<');
 		selectorRight.setFormat(Paths.font("mariones.ttf"), 48, FlxColor.WHITE);
 		add(selectorRight);
+
+		if(FlxG.save.data.secretSongs == true && FlxG.save.data.finalSong == false && FlxG.save.data.ending == false && !FlxG.save.data.unlockedSong.contains('hard-mode'))
+		{
+			note = new FlxSprite(FlxG.width - 300, 300);
+			note.frames = Paths.getSparrowAtlas('note_menu');
+			note.animation.addByPrefix('idle', "idle", 24, true);
+			note.animation.play('idle');
+			note.antialiasing = ClientPrefs.data.antialiasing;
+			add(note);
+
+			FlxG.mouse.visible = true;
+		}
 
 		super.create();
 
@@ -91,6 +138,18 @@ class MainMenuState extends MusicBeatState
 
 		changeItem();
 
+		#if ACHIEVEMENTS_ALLOWED
+		var leDate = Date.now();
+		
+		// Unlocks "Freaky on a Friday Night" achievement if it's a Friday and between 18:00 PM and 23:59 PM
+		if (leDate.getDay() == 5 && leDate.getHours() >= 18)
+			Achievements.unlock('friday_night_play');
+
+		#if MODS_ALLOWED
+		Achievements.reloadList();
+		#end
+		#end
+
 		FlxTransitionableState.skipNextTransOut = false;
 
 		vcr = new VCRMario85();
@@ -103,35 +162,18 @@ class MainMenuState extends MusicBeatState
 			FlxG.camera.flash(FlxColor.RED, 2);
 		}
 
-		new FlxTimer().start(69, function(tmr:FlxTimer)
-		{
-			no = true;
-			FlxTween.tween(FlxG.sound.music, {volume: 0.0}, 10);
-			new FlxTimer().start(15, function(tmr:FlxTimer)
-			{
-				FlxG.sound.play(Paths.soundEmbed('arg'), 1, false, null, true, function() {
-					new FlxTimer().start(5, function(tmr:FlxTimer)
-					{
-						no = false;
-					});
-				});
-			});
-		});
-
 		if(ClientPrefs.data.tvEffect)
 		{
 			FlxG.camera.setFilters([ShadersHandler.chromaticAberration, ShadersHandler.radialBlur, new ShaderFilter(vcr)]);
 			ShadersHandler.setChrome(0);
 		}
-
-		Init.fun = -1;
 	}
 
 	function createMenuItem(name:String, x:Float, y:Float):FlxText
 	{
 		var menuItem:FlxText = new FlxText(x, y, 0);
 		menuItem.text = name;
-		menuItem.setFormat(Paths.font("mariones.ttf"), 48, FlxColor.WHITE, CENTER);
+		menuItem.setFormat(Paths.font("mariones.ttf"), 42, FlxColor.WHITE, CENTER);
 		menuItems.add(menuItem);
 		return menuItem;
 	}
@@ -139,14 +181,17 @@ class MainMenuState extends MusicBeatState
 	var selectedSomethin:Bool = false;
 	override function update(elapsed:Float)
 	{
-		if(!no)
-		{
-			if (FlxG.sound.music.volume < 0.8)
-				FlxG.sound.music.volume = Math.min(FlxG.sound.music.volume + 0.5 * elapsed, 0.8);
-		}
-
 		if (FlxG.sound.music != null)
 			Conductor.songPosition = FlxG.sound.music.time;
+
+		if(FlxG.save.data.secretSongs == true && !FlxG.save.data.unlockedSong.contains('hard-mode'))
+		{
+			if(FlxG.mouse.justPressed && FlxG.mouse.overlaps(note) && selectedSomethin == false)
+			{
+				//FlxG.sound.music.fadeOut(1);
+				MusicBeatState.switchState(new NoteState());
+			}
+		}
 
 		if (!selectedSomethin)
 		{
@@ -166,14 +211,42 @@ class MainMenuState extends MusicBeatState
 				var item:FlxText;
 				var option:String;
 
-				option = optionShit[curSelected];
+				option = curOption[curSelected];
 				item = menuItems.members[curSelected];
 
 				switch (option)
 				{
-					case 'play':
+					case 'start':
 						FlxTween.tween(FlxG.sound.music, {pitch: 0.01}, 1, {ease: FlxEase.quadOut});
 						MusicBeatState.switchState(new StoryMenuState());
+
+					case 'final battle':
+						PlayState.storyPlaylist = ['holy-hell'];
+          				PlayState.isStoryMode = true;
+    
+           				Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '', PlayState.storyPlaylist[0].toLowerCase());
+
+            			var directory = StageData.forceNextDirectory;
+						LoadingState.loadNextDirectory();
+						StageData.forceNextDirectory = directory;
+
+            			@:privateAccess
+						if(PlayState._lastLoadedModDirectory != Mods.currentModDirectory)
+						{
+							trace('CHANGED MOD DIRECTORY, RELOADING STUFF');
+							Paths.freeGraphicsFromMemory();
+						}
+
+						LoadingState.prepareToSong();
+						LoadingState.loadAndSwitchState(new PlayState());
+    
+            			FlxG.sound.music.stop();
+
+					case 'awards':
+						MusicBeatState.switchState(new AchievementsMenuState());
+
+					case 'freeplay':
+						MusicBeatState.switchState(new FreeplayState());
 
 					case 'gallery':
 						MusicBeatState.switchState(new GalleryState());
@@ -189,6 +262,14 @@ class MainMenuState extends MusicBeatState
 						MusicBeatState.switchState(new EndState());
 						Init.fog = false;
 
+					case 'second ending debug':
+						MusicBeatState.switchState(new EndDialogueState());
+						Init.fog = false;
+
+					case 'devil sequence':
+						MusicBeatState.switchState(new DevilState());
+						Init.fog = false;
+
 					case 'options':
 						MusicBeatState.switchState(new OptionsState());
 						OptionsState.onPlayState = false;
@@ -200,6 +281,52 @@ class MainMenuState extends MusicBeatState
 						}
 				}
 			}
+
+			if (FlxG.keys.firstJustPressed() != FlxKey.NONE)
+			{
+				var keyPressed:FlxKey = FlxG.keys.firstJustPressed();
+				var keyName:String = Std.string(keyPressed);
+				if(allowedKeys.contains(keyName)) {
+					easterEggKeysBuffer += keyName;
+					if(easterEggKeysBuffer.length >= 32) easterEggKeysBuffer = easterEggKeysBuffer.substring(1);
+					//trace('Test! Allowed Key pressed!!! Buffer: ' + easterEggKeysBuffer);
+
+					for (wordRaw in easterEggKeys)
+					{
+						var word:String = wordRaw.toUpperCase(); //just for being sure you're doing it right
+						if (easterEggKeysBuffer.contains(word))
+						{
+							//trace('YOOO! ' + word);
+							if (FlxG.save.data.psychDevsEasterEgg == word)
+								FlxG.save.data.psychDevsEasterEgg = '';
+							else
+								FlxG.save.data.psychDevsEasterEgg = word;
+							FlxG.save.flush();
+
+							FlxG.sound.play(Paths.sound('secret'));
+
+							var black:FlxSprite = new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+							black.alpha = 0;
+							add(black);
+
+							FlxTween.tween(black, {alpha: 1}, 1, {onComplete:
+								function(twn:FlxTween) {
+									MusicBeatState.switchState(new BdayState());
+									Init.fog = false;
+								}
+							});
+							selectedSomethin = true;
+							FlxG.sound.music.fadeOut();
+							if(FreeplayState.vocals != null)
+							{
+								FreeplayState.vocals.fadeOut();
+							}
+							easterEggKeysBuffer = '';
+							break;
+						}
+					}
+				}
+			}
 		}
 
 		super.update(elapsed);
@@ -209,7 +336,7 @@ class MainMenuState extends MusicBeatState
 		if(ClientPrefs.data.tvEffect)
 		{
 			vcr.update(elapsed);
-			ShadersHandler.setChrome(FlxG.random.int(2,6)/1000);
+			ShadersHandler.setChrome(FlxG.random.int(1,3)/1000);
 			ShadersHandler.setRadialBlur(640, 360,  FlxG.random.float(0.001, 0.01));
 		}
 	}
@@ -224,7 +351,7 @@ class MainMenuState extends MusicBeatState
 	{
 		var prevEntry:Int = curSelected;
 
-		curSelected = FlxMath.wrap(curSelected + change, 0, optionShit.length - 1);
+		curSelected = FlxMath.wrap(curSelected + change, 0, curOption.length - 1);
 
 		if (curSelected != prevEntry)
 			FlxG.sound.play(Paths.sound('scrollMenu'));

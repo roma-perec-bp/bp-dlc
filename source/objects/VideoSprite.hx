@@ -42,11 +42,8 @@ class VideoSprite extends FlxSpriteGroup {
 		// initialize sprites
 		videoSprite = new FlxVideoSprite();
 		videoSprite.antialiasing = ClientPrefs.data.antialiasing;
-		add(videoSprite);
-		if(canSkip) this.canSkip = true;
-
-		// callbacks
 		if(!shouldLoop) videoSprite.bitmap.onEndReached.add(finishVideo);
+		videoSprite.load(videoName, shouldLoop ? ['input-repeat=65545'] : null);
 
 		videoSprite.bitmap.onFormatSetup.add(function()
 		{
@@ -63,8 +60,8 @@ class VideoSprite extends FlxSpriteGroup {
 			videoSprite.screenCenter();
 		});
 
-		// start video and adjust resolution to screen size
-		videoSprite.load(videoName, shouldLoop ? ['input-repeat=65545'] : null);
+		add(videoSprite);
+		if(canSkip) this.canSkip = true;
 	}
 
 	var alreadyDestroyed:Bool = false;

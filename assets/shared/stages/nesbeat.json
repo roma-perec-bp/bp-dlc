@@ -1,7 +1,7 @@
 {
 	"directory": "death",
 	"defaultZoom": 0.9,
-	"stageUI": "",
+	"stageUI": "pixel",
 
 	"boyfriend": [300, 100],
 	"girlfriend": [500, 50],
@@ -24,10 +24,16 @@
 
 		"images/wave1/youAreOne": 2,
         "images/wave2/pepBehind": 2,
+		"images/wave4/weSex": 2,
 
 		"images/wave4/static": 3,
 		"images/wave4/grassStat": 3,
 		"images/wave4/roofStat": 3,
+
+		"images/wave4/Fyre": 2,
+		"images/wave4/notes": 2,
+		"images/wave4/sparkles": 2,
+		"images/wave4/fall": 2,
 
 		"images/beatuses/ycbu_lightning": 3,
 		"images/beatuses/YouCannotBeatUS_Fellas_Assets": 3,

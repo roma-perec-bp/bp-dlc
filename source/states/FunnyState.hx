@@ -17,5 +17,10 @@ class FunnyState extends MusicBeatState
 		});
 
 		super.create();
+
+		#if DISCORD_ALLOWED
+		// Updating Discord Rich Presence
+		DiscordClient.changePresence("telezhka", null);
+		#end
 	}
 }

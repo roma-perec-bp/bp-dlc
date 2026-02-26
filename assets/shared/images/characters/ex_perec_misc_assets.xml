@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ex_perec_misc_assets.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="hey0000" x="3055" y="4451" width="696" height="862" frameX="-148" frameY="-196" frameWidth="1018" frameHeight="1254" rotated="false"/>
+	<SubTexture name="hey0001" x="3055" y="3532" width="736" height="909" frameX="-129" frameY="-172" frameWidth="1018" frameHeight="1254" rotated="false"/>
+	<SubTexture name="hey0002" x="3566" y="10" width="776" height="958" frameX="-111" frameY="-148" frameWidth="1018" frameHeight="1254" rotated="false"/>
+	<SubTexture name="hey0003" x="2739" y="10" width="817" height="1008" frameX="-92" frameY="-123" frameWidth="1018" frameHeight="1254" rotated="false"/>
+	<SubTexture name="hey0004" x="1872" y="10" width="857" height="1057" frameX="-74" frameY="-98" frameWidth="1018" frameHeight="1254" rotated="false"/>
+	<SubTexture name="hey0005" x="10" y="3655" width="897" height="1106" frameX="-55" frameY="-74" frameWidth="1018" frameHeight="1254" rotated="false"/>
+	<SubTexture name="hey0006" x="10" y="2489" width="937" height="1156" frameX="-37" frameY="-49" frameWidth="1018" frameHeight="1254" rotated="false"/>
+	<SubTexture name="hey0007" x="10" y="1274" width="977" height="1205" frameX="-19" frameY="-24" frameWidth="1018" frameHeight="1254" rotated="false"/>
+	<SubTexture name="hey0008" x="10" y="10" width="1018" height="1254"/>
+	<SubTexture name="hey0009" x="4276" y="978" width="409" height="831" frameX="-306" frameY="-208" frameWidth="1018" frameHeight="1254" rotated="false"/>
+	<SubTexture name="hey0010" x="4388" y="2980" width="399" height="813" frameX="-308" frameY="-226" frameWidth="1018" frameHeight="1254" rotated="false"/>
+	<SubTexture name="hey0011" x="3855" y="978" width="411" height="839" frameX="-304" frameY="-205" frameWidth="1018" frameHeight="1254" rotated="false"/>
+	<SubTexture name="hey0012" x="4352" y="10" width="404" height="836" frameX="-302" frameY="-206" frameWidth="1018" frameHeight="1254" rotated="false"/>
+	<SubTexture name="laugh0000" x="1610" y="2656" width="824" height="1129" frameX="0" frameY="-22" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0001" x="1038" y="10" width="824" height="1130" frameX="-28" frameY="-69" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0002" x="3116" y="1028" width="729" height="1107" frameX="-182" frameY="-141" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0003" x="2444" y="2371" width="722" height="1151" frameX="-185" frameY="-121" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0004" x="2329" y="3795" width="716" height="1196" frameX="-188" frameY="-100" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0005" x="1610" y="3795" width="709" height="1240" frameX="-191" frameY="-80" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0006" x="2403" y="1077" width="703" height="1284" frameX="-194" frameY="-60" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0007" x="1697" y="1150" width="696" height="1327" frameX="-197" frameY="-40" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0008" x="997" y="1274" width="690" height="1372" frameX="-200" frameY="-20" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0009" x="917" y="3655" width="683" height="1416" frameX="-203" frameY="0" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0010" x="957" y="2656" width="623" height="829" frameX="-248" frameY="-265" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0011" x="3801" y="2145" width="615" height="825" frameX="-252" frameY="-267" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0012" x="3761" y="4451" width="617" height="833" frameX="-248" frameY="-263" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0013" x="917" y="3655" width="683" height="1416" frameX="-242" frameY="-261" frameWidth="911" frameHeight="1416" rotated="false"/>
+	<SubTexture name="laugh0014" x="3176" y="2145" width="615" height="835" frameX="-244" frameY="-261" frameWidth="911" frameHeight="1416" rotated="false"/>
+</TextureAtlas>

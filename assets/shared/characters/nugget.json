@@ -1,0 +1,71 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [0, -350],
+			"anim": "idle",
+			"fps": 24,
+			"name": "nugget what",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [18, -357],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "nugget right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [14, -365],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "nugget down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [2, -328],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "nugget up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-4, -364],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "nugget left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [510, -345],
+			"anim": "death",
+			"fps": 24,
+			"name": "nugget death",
+			"indices": []
+		},
+		{
+			"offsets": [29, 529],
+			"indices": [],
+			"fps": 24,
+			"anim": "appear",
+			"loop": false,
+			"name": "nugget appear"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/nugget_exe",
+	"position": [40, 0],
+	"healthicon": "nug",
+	"flip_x": true,
+	"healthbar_colors": [51, 51, 51],
+	"camera_position": [-20, 10],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

@@ -19,11 +19,11 @@ function onBeatHit()
 
     if curBeat == 38 then
         setProperty('qwerty.visible', true)
-        cameraShake("other", 0.05, 1)
+        doTweenAlpha('qwqw', 'qwerty', 0, 1)
+        cameraShake("other", 0.04, 0.1)
     end
 
     if curBeat == 40 then
-        doTweenAlpha('qwqw', 'qwerty', 0, 1)
         doTweenAlpha('huh', 'camHUD', 1, 0.5)
     end
 
@@ -35,6 +35,5 @@ end
 function onEvent(name, value1, value2)
 	if name == 'Fade UI Complete' then
         doTweenAlpha('qwqw', 'black', 1, 6, "quartInOut")
-        doTweenAlpha('huh', 'camHUD', 0, 6, "quartInOut")
 	end
 end

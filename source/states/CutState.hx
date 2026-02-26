@@ -97,7 +97,6 @@ class CutState extends MusicBeatState
 
 	function startDialogue(dialogueList:Array<String>):Void
 	{
-		trace('startDialogue');
 		swagDialogue.alpha = 1;
 		swagDialogue.resetText(dialogueList[0]);
 

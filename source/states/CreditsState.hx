@@ -4,8 +4,13 @@ import objects.AttachedSprite;
 import openfl.filters.ShaderFilter;
 import openfl.filters.BlurFilter;
 
+import backend.StageData;
+import backend.Song;
+
 import shaders.VCRMario85;
 import shaders.ShadersHandler;
+
+import states.FreeplayState;
 
 class CreditsState extends MusicBeatState
 {
@@ -14,13 +19,19 @@ class CreditsState extends MusicBeatState
 	private var grpOptions:FlxTypedGroup<FlxText>;
 	private var creditsStuff:Array<Array<String>> = [];
 
+	var blackOVerlay:FlxSprite;
+
 	var bg:FlxSprite;
 	var descText:FlxText;
 	var descBox:AttachedSprite;
 	public var vcr:VCRMario85;
 	var offsetThing:Float = -75;
 
+	var textDep:FlxText;
+
 	var debug:FlxText;
+
+	var dust:FlxSprite;
 
 	override function create()
 	{
@@ -40,14 +51,18 @@ class CreditsState extends MusicBeatState
 		add(grpOptions);
 
 		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			["Roma Perec",		"rom",		"Main Coder, composer, credits art, Peppers/Lawnmower/Box VA and 3D model creator", 't.me/romcock'],
-			["PeaTV",		"pea",		"Zombies behind logo in title, It's a me cover icons and Zombie Pole Vaulter VA", 't.me/peatvofficial'],
-			["Umbra",		"umbra",		"Main artist, Zombie Dancer VA", 't.me/umbrapvz'],
-			["Foxxizm",		"fox",		"Song intro hands in NES style", 't.me/foxizzm'],
-			["N",		"m",		"Banner art", 't.me/theeternalnight'],
-			["Ender69",		"ender",		"Help with modchart", 't.me/ender69bunker'],
-			["Hedgehog Gamer",		"hedgehog",		"Rokkie chromatic and pepper memes", 'https://youtube.com/@hui-s-kotletkami?si=esJGgE6oDDnYwj0o'],
-			["SMixels2",		"smixels",		"BF icons lolz", 'https://youtube.com/@SMixels2']
+			["Roma Perec",		"rom",		"Director, Coder, Artist, Animator, Charter, 3D modelling and etc", 't.me/romcock'],
+			["PeaTV",		"pea",		"Samples for Rockie Week and Zombie Pole Vaulter VA", 't.me/peatvofficial'],
+			["Umbra",		"umbra",		"Artist, Zombie Dancer VA", 't.me/Umbramon'],
+			["Toster",		"toster",		"Second Banner art and some arts for some songs", 't.me/ZG_YtugTefal'],
+			["DustGalaxy",		"dustgalaxy",		"Artist and Composer", 'https://www.youtube.com/@DustGalaxy_Real'],
+			["С1tr4m0n",		"citramon",		"Exerection Pepper freeplay art and icon", 't.me/c1tr4m0n'],
+			["Poet_Digitalniy",		"fox",		"Song intro hands assets", null],
+			["N",		"m",		"First Banner art", 't.me/theeternalnight'],
+			["Ender69",		"ender",		"Help with modchart and other coding stuff", 't.me/ender69flock'],
+			["Hedgehog Gamer",		"hedgehog",		"Rokkie chromatic, dust chromatic and pepper memes", 'https://t.me/hedgehoglmao228'],
+			["SMixels2",		"smixels",		"BF icons", 'https://youtube.com/@SMixels2'],
+			["Rozebud",		"rozebud",		"Pico icons i stole from fnf fps+ LMAO", 'https://x.com/helpme_thebigt']
 		];
 		
 		for(i in defaultList)
@@ -86,6 +101,25 @@ class CreditsState extends MusicBeatState
 		descBox.sprTracker = descText;
 		add(descText);
 
+		dust = new FlxSprite(FlxG.width - 400, FlxG.height).loadGraphic(Paths.image('dust_easter'));
+		dust.antialiasing = ClientPrefs.data.antialiasing;
+		add(dust);
+
+		blackOVerlay = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+		blackOVerlay.setGraphicSize(Std.int(blackOVerlay.width * 10));
+		blackOVerlay.active = false;
+		blackOVerlay.alpha = 0.0001;
+		blackOVerlay.screenCenter();
+		add(blackOVerlay);
+
+		textDep = new FlxText(50, 0, 1180, "Ну что?\nПоиграем?", 54);
+		textDep.setFormat(Paths.font("tf2build.ttf"), 54, FlxColor.WHITE, CENTER/*, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK*/);
+		textDep.scrollFactor.set();
+		textDep.screenCenter();
+		textDep.active = false;
+		textDep.alpha = 0.0001;
+		add(textDep);
+
 		changeSelection();
 		super.create();
 
@@ -99,9 +133,63 @@ class CreditsState extends MusicBeatState
 	var holdTime:Float = 0;
 	override function update(elapsed:Float)
 	{
-		if (FlxG.sound.music.volume < 0.7)
+		if (FlxG.save.data.beatUnfuck && !FlxG.save.data.unlockedSong.contains('dep'))
 		{
-			FlxG.sound.music.volume += 0.5 * elapsed;
+			if(curSelected == 4)
+			{
+				dust.y = FlxMath.lerp(dust.y, 300, FlxMath.bound(elapsed * 0.1, 0, 1));
+				FlxG.mouse.visible = true;
+			}
+			else
+			{
+				dust.y = FlxMath.lerp(dust.y, FlxG.height, FlxMath.bound(elapsed * 10, 0, 1));
+				FlxG.mouse.visible = false;
+			}
+		}
+
+		if(FlxG.mouse.justPressed && FlxG.mouse.overlaps(dust) && quitting == false)
+		{
+			quitting = true;
+
+			FlxG.sound.music.fadeOut(2);
+			FlxTween.tween(FlxG.sound.music, {pitch: 0}, 2);
+			FlxTween.tween(blackOVerlay, {alpha: 1}, 2,
+			{
+				ease: FlxEase.linear,
+				onComplete: function(twn:FlxTween)
+				{
+					FlxG.sound.play(Paths.sound('dust_unlock'));
+					FlxG.sound.music.pitch = 1;
+					textDep.alpha = 1;
+
+					new FlxTimer().start(4, function(tmr:FlxTimer)
+					{
+						PlayState.storyPlaylist = ['dep'];
+          				PlayState.isStoryMode = true;
+
+						FreeplayState.curSelected = 4;
+    
+           				Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '', PlayState.storyPlaylist[0].toLowerCase());
+
+            			var directory = StageData.forceNextDirectory;
+						LoadingState.loadNextDirectory();
+						StageData.forceNextDirectory = directory;
+
+            			@:privateAccess
+						if(PlayState._lastLoadedModDirectory != Mods.currentModDirectory)
+						{
+							trace('CHANGED MOD DIRECTORY, RELOADING STUFF');
+							Paths.freeGraphicsFromMemory();
+						}
+
+						LoadingState.prepareToSong();
+						LoadingState.loadAndSwitchState(new PlayState());
+    
+            			FlxG.sound.music.stop();
+           				return;
+					});
+				}
+			});
 		}
 
 		if(!quitting)

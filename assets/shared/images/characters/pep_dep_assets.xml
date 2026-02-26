@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pep_dep_assets.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="p-break0000" x="1234" y="444" width="296" height="446" frameX="-339" frameY="-101" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0001" x="1234" y="444" width="296" height="446" frameX="-339" frameY="-101" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0002" x="1905" y="20" width="290" height="418" frameX="-336" frameY="-120" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0003" x="1553" y="1635" width="332" height="368" frameX="-337" frameY="-178" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0004" x="20" y="497" width="445" height="509" frameX="-276" frameY="-34" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0005" x="20" y="20" width="759" height="457" frameX="0" frameY="-88" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0006" x="485" y="948" width="383" height="446" frameX="-376" frameY="-88" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0007" x="456" y="1463" width="397" height="432" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0008" x="485" y="497" width="397" height="431" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0009" x="799" y="20" width="397" height="431" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0010" x="456" y="1463" width="397" height="432" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0011" x="485" y="497" width="397" height="431" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0012" x="799" y="20" width="397" height="431" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0013" x="456" y="1463" width="397" height="432" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0014" x="485" y="497" width="397" height="431" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0015" x="799" y="20" width="397" height="431" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0016" x="456" y="1463" width="397" height="432" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0017" x="485" y="497" width="397" height="431" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0018" x="799" y="20" width="397" height="431" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0019" x="456" y="1463" width="397" height="432" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0020" x="485" y="497" width="397" height="431" frameX="-369" frameY="-102" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0021" x="20" y="1026" width="417" height="417" frameX="-359" frameY="-116" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0022" x="20" y="1463" width="416" height="417" frameX="-360" frameY="-116" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0023" x="2256" y="20" width="146" height="536" frameX="-485" frameY="0" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0024" x="2089" y="1389" width="147" height="536" frameX="-484" frameY="0" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0025" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0026" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0027" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0028" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0029" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0030" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0031" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0032" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0033" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0034" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0035" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0036" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0037" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0038" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0039" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0040" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0041" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0042" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0043" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0044" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0045" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0046" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0047" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0048" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0049" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0050" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0051" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0052" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0053" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0054" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0055" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0056" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0057" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0058" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0059" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0060" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0061" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0062" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0063" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0064" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0065" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0066" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0067" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0068" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0069" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0070" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0071" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0072" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0073" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0074" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0075" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0076" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0077" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0078" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0079" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0080" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0081" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0082" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0083" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0084" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0085" x="1975" y="852" width="164" height="517" frameX="-476" frameY="-18" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0086" x="1905" y="1390" width="164" height="519" frameX="-476" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-break0087" x="1790" y="852" width="165" height="518" frameX="-475" frameY="-17" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-down0000" x="1780" y="458" width="293" height="374" frameX="-2" frameY="-16" frameWidth="297" frameHeight="394" rotated="false"/>
+	<SubTexture name="p-down0001" x="1780" y="458" width="293" height="374" frameX="-2" frameY="-16" frameWidth="297" frameHeight="394" rotated="false"/>
+	<SubTexture name="p-down0002" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-down0003" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-down0004" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-down0005" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-down0006" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-down0007" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-down0008" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-down0009" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-down0010" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-down0011" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-down0012" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-down0013" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-down0014" x="1576" y="20" width="297" height="394"/>
+	<SubTexture name="p-idle0000" x="1234" y="444" width="296" height="446" frameX="0" frameY="0" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-idle0001" x="1234" y="444" width="296" height="446" frameX="0" frameY="0" frameWidth="776" frameHeight="547" rotated="false"/>
+	<SubTexture name="p-idle0002" x="1237" y="1401" width="296" height="446" frameX="0" frameY="0" frameWidth="297" frameHeight="446" rotated="false"/>
+	<SubTexture name="p-idle0003" x="1237" y="1401" width="296" height="446" frameX="0" frameY="0" frameWidth="297" frameHeight="446" rotated="false"/>
+	<SubTexture name="p-idle0004" x="1225" y="935" width="297" height="446"/>
+	<SubTexture name="p-left0000" x="1216" y="20" width="340" height="404" frameX="0" frameY="-5" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0001" x="1216" y="20" width="340" height="404" frameX="0" frameY="-5" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0002" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0003" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0004" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0005" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0006" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0007" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0008" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0009" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0010" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0011" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0012" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0013" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-left0014" x="873" y="1414" width="344" height="413" frameX="-8" frameY="0" frameWidth="352" frameHeight="413" rotated="false"/>
+	<SubTexture name="p-right0000" x="902" y="471" width="312" height="444" frameX="-3" frameY="0" frameWidth="317" frameHeight="446" rotated="false"/>
+	<SubTexture name="p-right0001" x="902" y="471" width="312" height="444" frameX="-3" frameY="0" frameWidth="317" frameHeight="446" rotated="false"/>
+	<SubTexture name="p-right0002" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-right0003" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-right0004" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-right0005" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-right0006" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-right0007" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-right0008" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-right0009" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-right0010" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-right0011" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-right0012" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-right0013" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-right0014" x="888" y="948" width="317" height="446"/>
+	<SubTexture name="p-up0000" x="1550" y="444" width="210" height="585" frameX="0" frameY="0" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0001" x="1550" y="444" width="210" height="585" frameX="0" frameY="0" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0002" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0003" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0004" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0005" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0006" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0007" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0008" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0009" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0010" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0011" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0012" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0013" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+	<SubTexture name="p-up0014" x="1553" y="1049" width="217" height="566" frameX="-6" frameY="-25" frameWidth="223" frameHeight="591" rotated="false"/>
+</TextureAtlas>

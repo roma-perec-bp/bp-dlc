@@ -20,6 +20,7 @@ import objects.Note;
 
 import shaders.VCRMario85;
 import shaders.AngelShader;
+import shaders.HypnoShader;
 
 import shaders.ShadersHandler;
 
@@ -44,15 +45,16 @@ class Nesbeat extends BaseStage
 
 	var glitchSmall:FlxSprite;
 	var glitchSmall2:FlxSprite;
-	var staticTog:Bool = false;
 	var glitchBig:FlxSprite;
 	var glitchBig1:FlxSprite;
 	var glitchBig2:FlxSprite;
-	var staticTog2:Bool = false;
 
 	var valEnd:Float = 0;
 
 	var bgPizdec:FlxBackdrop;
+
+	var hypnoBg:FlxSprite;
+	var shaderHypno:HypnoShader = null; //fr?
 
 	var fire:FlxSprite;
 
@@ -80,7 +82,6 @@ class Nesbeat extends BaseStage
 	var blackfrontbars:FlxSprite;
 
     var beatText:FlxText;
-	var otherBeatText:FlxText;
 
     var ycbuLightningL:BGSprite;
 	var ycbuLightningR:BGSprite;
@@ -167,6 +168,7 @@ class Nesbeat extends BaseStage
 	{
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('bars', 'death'));
 		bg.scale.set(3, 3);
+		bg.active = false;
 		bg.screenCenter();
 		bg.scrollFactor.set(0, 0);
 		add(bg);
@@ -175,13 +177,14 @@ class Nesbeat extends BaseStage
 		bgPizdec.scale.set(3, 3);
 		bgPizdec.screenCenter();
 		bgPizdec.scrollFactor.set(0.6, 0.6);
-		bgPizdec.alpha = 0.00001;
+		bgPizdec.visible = false;
 		add(bgPizdec);
 
 		if (!ClientPrefs.data.lowQuality)
 		{
 			wabe = new FlxSprite().loadGraphic(Paths.image('wave1/wabe', 'death'));
 			wabe.screenCenter();
+			wabe.active = false;
 			wabe.alpha = 0.6;
 			wabe.scrollFactor.set(0, 0);
 			wabe.visible = false;
@@ -190,11 +193,13 @@ class Nesbeat extends BaseStage
 
 		blackfrontbars = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		blackfrontbars.setGraphicSize(Std.int(blackfrontbars.width * 10));
+		blackfrontbars.active = false;
 		blackfrontbars.alpha = 0.00001;
 		add(blackfrontbars);
 
 		grass = new FlxSprite().loadGraphic(Paths.image('wave2/grass', 'death'));
 		grass.scale.set(3, 3);
+		grass.active = false;
 		grass.screenCenter();
 		grass.scrollFactor.set(0.6, 0.6);
 		grass.alpha = 0.00001;
@@ -215,6 +220,7 @@ class Nesbeat extends BaseStage
 		}
 
 		roof = new FlxSprite().loadGraphic(Paths.image('wave3/roof', 'death'));
+		roof.active = false;
 		roof.scale.set(3, 3);
 		roof.screenCenter();
 		roof.scrollFactor.set(0.6, 0.6);
@@ -241,9 +247,7 @@ class Nesbeat extends BaseStage
 		roofstatic.updateHitbox();
 		roofstatic.visible = false;
 		roofstatic.screenCenter(XY);
-		
 		roofstatic.x -= 125;
-
 		roofstatic.antialiasing = ClientPrefs.data.antialiasing;
 		add(roofstatic);
 
@@ -252,9 +256,7 @@ class Nesbeat extends BaseStage
 		grassstatic.updateHitbox();
 		grassstatic.visible = false;
 		grassstatic.screenCenter(XY);
-
 		grassstatic.x += 125;
-
 		grassstatic.antialiasing = ClientPrefs.data.antialiasing;
 		add(grassstatic);
 
@@ -278,34 +280,62 @@ class Nesbeat extends BaseStage
 			fire.scale.set(3, 3);
 			fire.screenCenter(X);
 			fire.scrollFactor.set(0.6, 0.6);
-			fire.alpha = 0.00001;
+			fire.visible = false;
 			add(fire);
 
 			notesCamGroup = new FlxTypedGroup<FlxSprite>();
 			add(notesCamGroup);
+
+			if(PlayState.reloadEverything)
+				for (i in 0...65)
+					Paths.image('wave4/icons/' + i);
 		}
 
 		blackinfrontobowser = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		blackinfrontobowser.setGraphicSize(Std.int(blackinfrontobowser.width * 10));
 		blackinfrontobowser.alpha = 1;
+		blackinfrontobowser.active = false;
 		add(blackinfrontobowser);
 
 		blackBarThingie = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		blackBarThingie.setGraphicSize(Std.int(blackBarThingie.width * 10));
 		blackBarThingie.alpha = 0.00001;
 		blackBarThingie.scrollFactor.set(0, 0);
+		blackBarThingie.active = false;
 		add(blackBarThingie);
 
 		ycbuWhite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.WHITE);
 		ycbuWhite.setGraphicSize(Std.int(ycbuWhite.width * 10));
-		ycbuWhite.alpha = 0.00001;
+		ycbuWhite.visible = false;
+		ycbuWhite.active = false;
 		add(ycbuWhite);
+
+		if (!ClientPrefs.data.lowQuality && !ClientPrefs.data.optimize)
+		{
+			if(ClientPrefs.data.flashing)
+			{
+				//shoutout to ender and vocal zero for making this in game shader instead of video
+				//THAT SHIT BROKE MY OPTIMIZATION
+				shaderHypno = new HypnoShader();
+
+				hypnoBg = new FlxSprite(0, 0);
+				hypnoBg.loadGraphic(Paths.image('grid', 'shared'));
+				hypnoBg.setGraphicSize(FlxG.width * 2, FlxG.height * 2);
+				//hypnoBg.blend = MULTIPLY;
+				hypnoBg.visible = false;
+				hypnoBg.scrollFactor.set(0,0);
+				hypnoBg.screenCenter();
+				hypnoBg.shader = shaderHypno;
+				add(hypnoBg);
+			}
+		}
 
         beatText = new FlxText(-230, 150, 1818, '', 24);
 		beatText.setFormat(Paths.font("mariones.ttf"), 130, FlxColor.WHITE, CENTER);
 		beatText.scrollFactor.set(0, 0);
 		beatText.scale.set(1, 1.5);
 		beatText.updateHitbox();
+		beatText.active = false;
 		beatText.screenCenter();
 		add(beatText);
 
@@ -319,6 +349,7 @@ class Nesbeat extends BaseStage
 			beatusHandsL.visible = false;
 			beatusHandsL.updateHitbox();
 			beatusHandsL.cameras = [camHUD];
+			beatusHandsL.active = false;
 			add(beatusHandsL);
 
 			beatusHandsR = new FlxSprite(0, 0);
@@ -328,6 +359,7 @@ class Nesbeat extends BaseStage
 			beatusHandsR.antialiasing = ClientPrefs.data.antialiasing;
 			beatusHandsR.visible = false;
 			beatusHandsR.flipX = true;
+			beatusHandsR.active = false;
 			beatusHandsR.updateHitbox();
 			beatusHandsR.cameras = [camHUD];
 			add(beatusHandsR);
@@ -343,7 +375,7 @@ class Nesbeat extends BaseStage
 			peppers.updateHitbox();
 			//peppers.scale.set(0.2, 0.2);
 			peppers.spacing.set(-1, -1);
-			peppers.antialiasing = true;
+			peppers.antialiasing = ClientPrefs.data.antialiasing;
 			peppers.velocity.set(500, -450);
 			peppers.scrollFactor.set(0,0);
 			peppers.alpha = 0.00001;
@@ -376,7 +408,7 @@ class Nesbeat extends BaseStage
 			boomCap.cameras = [camHUD];
 			boomCap.scale.set(3, 3);
 			boomCap.screenCenter();
-			boomCap.alpha = 0.00001;
+			boomCap.visible = false;
 			add(boomCap);
 		}
 
@@ -460,20 +492,23 @@ class Nesbeat extends BaseStage
         add(estatica);
 
 		whatTheSigma = new FlxSprite().loadGraphic(Paths.image('wave2/what', 'death'));
+		whatTheSigma.active = false;
 		whatTheSigma.screenCenter();
 		whatTheSigma.visible = false;
 		whatTheSigma.cameras = [camHudBehind];
 		add(whatTheSigma);
 
 		target = new FlxSprite().loadGraphic(Paths.image('wave2/target', 'death'));
-		target.screenCenter();
 		target.visible = false;
+		target.screenCenter();
+		target.active = false;
 		target.cameras = [camHudBehind];
 		add(target);
 
 		brainz = new FlxSprite().loadGraphic(Paths.image('wave2/brain', 'death'));
 		brainz.screenCenter();
 		brainz.visible = false;
+		brainz.active = false;
 		brainz.cameras = [camHudBehind];
 		add(brainz);
 
@@ -491,6 +526,7 @@ class Nesbeat extends BaseStage
 
 			darkness = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 			darkness.alpha = 0.00001;
+			darkness.active = false;
 			add(darkness);
 			darkness.cameras = [camHUD];
 
@@ -500,9 +536,9 @@ class Nesbeat extends BaseStage
 			pepOne.animation.play('idle');
 			pepOne.antialiasing = ClientPrefs.data.antialiasing;
 			pepOne.cameras = [camHUD];
-			pepOne.alpha = 0.00001;
 			pepOne.updateHitbox();
 			pepOne.screenCenter();
+			pepOne.alpha = 0.00001;
 			add(pepOne);
 
 			if(ClientPrefs.data.shaders) finalPepShay = new GlitchShader();
@@ -513,22 +549,23 @@ class Nesbeat extends BaseStage
 			pepFinal.animation.play('idle');
 			pepFinal.antialiasing = ClientPrefs.data.antialiasing;
 			pepFinal.cameras = [camHUD];
-			pepFinal.alpha = 0.00001;
 			pepFinal.scale.set(1.5, 1.5);
 			pepFinal.updateHitbox();
 			pepFinal.screenCenter();
+			pepFinal.visible = false;
 			add(pepFinal);
+
 
 			pepMan = new FlxSprite();
 			pepMan.frames = Paths.getSparrowAtlas('wave2/pepBehind');
 			pepMan.animation.addByPrefix('idle', "pep_look", 24, false);
 			pepMan.animation.play('idle');
 			pepMan.antialiasing = ClientPrefs.data.antialiasing;
-			pepMan.alpha = 0.00001;
 			pepMan.scale.set(1.5, 1.5);
 			pepMan.updateHitbox();
 			pepMan.screenCenter(X);
 			pepMan.x -= 250;
+			pepMan.visible = false;
 			add(pepMan);
 
 			glitchSmall = new FlxSprite();
@@ -537,10 +574,11 @@ class Nesbeat extends BaseStage
 			glitchSmall.animation.play('idle');
 			glitchSmall.antialiasing = false;
 			glitchSmall.cameras = [camHUD];
-			glitchSmall.alpha = 0.00001;
 			glitchSmall.updateHitbox();
+			glitchSmall.alpha = 0.5;
 			glitchSmall.setGraphicSize(FlxG.width, FlxG.height);
 			glitchSmall.screenCenter();
+			glitchSmall.visible = false;
 			add(glitchSmall);
 
 			glitchSmall2 = new FlxSprite();
@@ -549,9 +587,10 @@ class Nesbeat extends BaseStage
 			glitchSmall2.animation.play('idle');
 			glitchSmall2.antialiasing = false;
 			glitchSmall2.cameras = [camHUD];
-			glitchSmall2.alpha = 0.00001;
 			glitchSmall2.updateHitbox();
 			glitchSmall2.screenCenter();
+			glitchSmall2.alpha = 0.6;
+			glitchSmall2.visible = false;
 			add(glitchSmall2);
 
 			glitchBig = new FlxSprite();
@@ -560,10 +599,11 @@ class Nesbeat extends BaseStage
 			glitchBig.animation.play('idle');
 			glitchBig.antialiasing = false;
 			glitchBig.cameras = [camHUD];
-			glitchBig.alpha = 0.00001;
 			glitchBig.scale.set(4, 4);
 			glitchBig.updateHitbox();
 			glitchBig.screenCenter();
+			glitchBig.alpha = 0.5;
+			glitchBig.visible = false;
 			add(glitchBig);
 
 			glitchBig1 = new FlxSprite();
@@ -571,8 +611,8 @@ class Nesbeat extends BaseStage
 			glitchBig1.animation.addByPrefix('idle', "HomeStatic", 24, true);
 			glitchBig1.animation.play('idle');
 			glitchBig1.antialiasing = false;
-			glitchBig1.cameras = [camHUD];
 			glitchBig1.alpha = 0.00001;
+			glitchBig1.cameras = [camHUD];
 			glitchBig1.setGraphicSize(FlxG.width, FlxG.height);
 			glitchBig1.updateHitbox();
 			glitchBig1.screenCenter();
@@ -585,12 +625,15 @@ class Nesbeat extends BaseStage
 			glitchBig2.antialiasing = false;
 			glitchBig2.cameras = [camHUD];
 			glitchBig2.blend = ADD;
-			glitchBig2.alpha = 0.00001;
+			glitchBig2.alpha = 0.6;
+			glitchBig2.visible = false;
 			glitchBig2.setGraphicSize(FlxG.width, FlxG.height);
 			glitchBig2.updateHitbox();
 			glitchBig2.screenCenter();
 			add(glitchBig2);
 		}
+
+		PlayState.reloadEverything = false;
 	}
 
     override function createPost()
@@ -628,6 +671,11 @@ class Nesbeat extends BaseStage
 			boomerLeft4.cameras = [camHUD];
 			boomerLeft4.antialiasing = ClientPrefs.data.antialiasing;
 			add(boomerLeft4);
+
+			boomerLeft4.active = false;
+			boomerLeft3.active = false;
+			boomerLeft2.active = false;
+			boomerLeft1.active = false;
 	
 			boomerRight1 = new FlxSprite(FlxG.width * 0.8, FlxG.height).loadGraphic(Paths.image('wave3/boomers', 'death'), true, 250, 380);
 			boomerRight1.animation.add('idle', [0, 1], 0, false);
@@ -656,6 +704,11 @@ class Nesbeat extends BaseStage
 			boomerRight4.cameras = [camHUD];
 			boomerRight4.antialiasing = ClientPrefs.data.antialiasing;
 			add(boomerRight4);
+
+			boomerRight4.active = false;
+			boomerRight3.active = false;
+			boomerRight2.active = false;
+			boomerRight1.active = false;
 		}
 
 		if(ClientPrefs.data.lowQuality)
@@ -742,6 +795,8 @@ class Nesbeat extends BaseStage
 
 		if (vcr != null) vcr.update(elapsed);
 
+		if (hypnoBg != null) hypnoBg.shader.data.iTime.value[0] += elapsed;
+
 		if (!ClientPrefs.data.lowQuality)
 		{
 			floatshit += 0.05;
@@ -759,6 +814,12 @@ class Nesbeat extends BaseStage
 	{
 		switch(eventName)
 		{
+			case 'bg hypno':
+				if(hypnoBg == null) return;
+
+				hypnoBg.visible = !hypnoBg.visible;
+	
+
 			case 'ycbu text':
 				var pibetexto:String = value1.replace(';', '\n');
 
@@ -809,9 +870,11 @@ class Nesbeat extends BaseStage
 					case '2': //БЛЯ
 					    goingNuts();
 					case '3': //уходить волна 1
-						bgPizdec.alpha = 0.00001;
+						bgPizdec.visible = false;
 					case '4': //для финала
-						bgPizdec.alpha = 1;
+						bgPizdec.visible = true;
+						FlxTween.cancelTweensOf(blackinfrontobowser);
+						blackinfrontobowser.alpha = 0.6;
 					case '5': //Нахуй Чернуху
 					    FlxTween.cancelTweensOf(blackinfrontobowser);
 					    blackinfrontobowser.alpha = 0.00001;
@@ -905,7 +968,7 @@ class Nesbeat extends BaseStage
 					    roofstatic.visible = true;
 					case '23': //CLEAR BEFORE FINAL
 					    cutstatic.visible = grassstatic.visible = roofstatic.visible = false;
-						if (!ClientPrefs.data.lowQuality) fire.alpha = 0.00001;
+						if (!ClientPrefs.data.lowQuality) fire.visible = false;
 						destruction = false;
 
 						if (!ClientPrefs.data.lowQuality)
@@ -931,9 +994,9 @@ class Nesbeat extends BaseStage
 					    for (i in 0...12)
 							spawnZombie(true);
 					case '29': //what
-					    whatTheSigma.visible = !whatTheSigma.visible;
+						whatTheSigma.visible = !whatTheSigma.visible;
 					case '30': //цель мозг
-					    target.visible = true;
+						target.visible = true;
 
 						redBrain = !redBrain;
 
@@ -947,8 +1010,7 @@ class Nesbeat extends BaseStage
 					    camHudBehind.zoom = 1;
 						target.visible = false;
 					case '33': //МОЗГИ
-					    brainz.visible = !brainz.visible;
-
+						brainz.visible = !brainz.visible;
 						camHudBehind.shake(0.05, 0.2);
 					case '34': //спавн
 					    for (i in 0...5)
@@ -969,14 +1031,16 @@ class Nesbeat extends BaseStage
 						}
 					case '37': //перец сзади
 					    if (ClientPrefs.data.lowQuality) return;
-
+						pepMan.visible = true;
 						pepMan.animation.play('idle', true);
-						pepMan.alpha = 1;
 					case '38': //пошел
 					    if (!ClientPrefs.data.lowQuality)
-							pepMan.alpha = 0.00001;
+							pepMan.visible = false;
 					case '39': //ручки
 					    if (ClientPrefs.data.lowQuality) return;
+
+						beatusHandsL.animation.play('idle');
+						beatusHandsR.animation.play('idle');
 
 						beatusHandsL.visible = !beatusHandsL.visible;
 						beatusHandsR.visible = !beatusHandsR.visible;
@@ -1101,7 +1165,7 @@ class Nesbeat extends BaseStage
 							handKidnap.alpha = 0.00001;
 						}
 					case '45': //через огонь
-					if (!ClientPrefs.data.lowQuality) fire.alpha = 1;
+					if (!ClientPrefs.data.lowQuality) fire.visible = true;
 
 					case '46': //уничтожение
 					    destruction = !destruction;
@@ -1111,11 +1175,12 @@ class Nesbeat extends BaseStage
 
 						FlxTween.tween(darkness, {alpha: 0.6}, 0.5);
 						pepFinal.alpha = 1;
+						pepFinal.visible = true;
 						pepFinal.animation.play('idle', true);
 
 						pepFinal.animation.finishCallback = function(pog:String)
 						{
-							pepFinal.alpha = 0.00001;
+							pepFinal.visible = false;
 							darkness.alpha = 0.00001;
 							pepFinal.shader = null;
 						}
@@ -1126,7 +1191,7 @@ class Nesbeat extends BaseStage
 					case '49': //end static
 						new FlxTimer().start(2, function(timer:FlxTimer)
 						{
-							FlxTween.tween(game, {health: 0.001}, 3, {ease: FlxEase.quadIn});
+							FlxTween.tween(game, {health: 0.001}, 4, {ease: FlxEase.expoIn});
 						});
 						FlxG.camera.flash(FlxColor.WHITE, 2);
 						FlxG.camera.shake(0.003, 2);
@@ -1146,10 +1211,10 @@ class Nesbeat extends BaseStage
 							pepFinal.shader = finalPepShay;
 
 					case '54':
-						ycbuWhite.alpha = 1;
+						ycbuWhite.visible = true;
 
 					case '55':
-						ycbuWhite.alpha = 0.00001;
+						ycbuWhite.visible = false;
 
 					case '56':
 						if(ClientPrefs.data.lowQuality) ycbuGyromite.visible = !ycbuGyromite.visible;
@@ -1180,10 +1245,39 @@ class Nesbeat extends BaseStage
 						FlxTween.tween(boomerRight3, {y: FlxG.height}, Conductor.crochet * 0.002, {ease: FlxEase.backInOut});
 						FlxTween.tween(boomerRight4, {y: FlxG.height}, Conductor.crochet * 0.002, {ease: FlxEase.backInOut});
 					}
-				}
 
-			case 'DONT MISS':
-				game.instakillOnMiss = !game.instakillOnMiss;
+					case '61': //анти фриз xd
+						if(ClientPrefs.data.lowQuality) return;
+
+						pepOne.alpha = 0.00001;
+						darkness.alpha = 0.00001;
+
+					case '62':
+						FlxTween.cancelTweensOf(blackinfrontobowser);
+						blackinfrontobowser.alpha = 0.0001;
+
+						if(hypnoBg == null) return;
+
+						hypnoBg.visible = true;
+						hypnoBg.shader.data.alphaShitLmao.value[0] = 1;
+
+					case '63':
+						cutstatic.visible = grassstatic.visible = roofstatic.visible = true;
+						if (!ClientPrefs.data.lowQuality) fire.visible = true;
+						
+						if(hypnoBg == null) return;
+
+						hypnoBg.visible = false;
+						hypnoBg.shader.data.alphaShitLmao.value[0] = .3;
+
+					case '64':
+						cutstatic.visible = grassstatic.visible = roofstatic.visible = false;
+						blackfrontbars.alpha = 1;
+
+					case '65':
+						estatica.alpha = 0.6;
+						FlxTween.tween(estatica, {alpha: 0.05}, 0.5, {ease: FlxEase.quadInOut});
+				}
 
 			case 'BACKDROP GUYS':
 				if(ClientPrefs.data.lowQuality) return;
@@ -1313,12 +1407,12 @@ class Nesbeat extends BaseStage
 
 			case 'CapCut Boom':
 				if (ClientPrefs.data.lowQuality) return;
-				boomCap.alpha = 1;
+				boomCap.visible = true;
 				boomCap.animation.play('boom', true);
 
 				new FlxTimer().start(1.5, function(timer:FlxTimer)
 				{
-					boomCap.alpha = 0.00001;
+					boomCap.visible = false;
 				});
 
 			case 'We Are Brutal Ex':
@@ -1330,16 +1424,16 @@ class Nesbeat extends BaseStage
 				switch(value1)
 				{
 					case '1':
+						glitchSmall.visible = true;
+						
 						glitchSmall.animation.play('idle', true);
-						glitchSmall.alpha = 0.5;
 
 						glitchSmall.animation.finishCallback = function(pog:String)
 						{
-							glitchSmall.alpha = 0.00001;
+							glitchSmall.visible = false;
 						}
 					case '2':
-						staticTog = !staticTog;
-						glitchSmall2.alpha = (staticTog ? 0.6 : 0.00001);
+						glitchSmall2.visible = !glitchSmall2.visible;
 				}
 			case 'Glitch Big':
 				if (ClientPrefs.data.lowQuality) return;
@@ -1347,12 +1441,12 @@ class Nesbeat extends BaseStage
 				switch(value1)
 				{
 					case '1':
+						glitchBig.visible = true;
 						glitchBig.animation.play('idle', true);
-						glitchBig.alpha = 0.5;
 
 						glitchBig.animation.finishCallback = function(pog:String)
 						{
-							glitchBig.alpha = 0.00001;
+							glitchBig.visible = false;
 						}
 					case '2':
 						FlxTween.tween(glitchBig1, {alpha: 0.6}, 0.3, {
@@ -1362,8 +1456,7 @@ class Nesbeat extends BaseStage
 							}
 						});
 					case '3':
-						staticTog2 = !staticTog2;
-						glitchBig2.alpha = (staticTog2 ? 0.6 : 0.00001);
+						glitchBig2.visible = !glitchBig2.visible;
 				}
 
 			case 'Force Dance':
@@ -1374,16 +1467,22 @@ class Nesbeat extends BaseStage
 				spawnJackson();
 
 			case 'Respawn Clear': //used so after skipping time no shit happens
-			    PlayState.respawnPoint++;
-			    camGame.stopShake(); //FOR FUCK SAKE FIANLLY
-				camHUD.stopShake();
+			    if(PlayState.respawned)
+				{
+					camGame.stopFX(); //FOR FUCK SAKE FIANLLY
+					camHUD.stopFX();
+	
+					game.resetCamera();
+	
+					game.cancelAllCameraTweens();
+					game.resetCameraZoom();
+	
+					FlxTween.cancelTweensOf(camHudBehind);
 
-				game.resetCamera();
+					PlayState.respawned = false;
+				}
 
-				game.cancelAllCameraTweens();
-				game.resetCameraZoom();
-
-				FlxTween.cancelTweensOf(camHudBehind);
+				PlayState.respawnPoint++;
 
 				if(!ClientPrefs.data.lowQuality)
 				{
@@ -1393,17 +1492,15 @@ class Nesbeat extends BaseStage
 
 					pepOne.alpha = 0.00001;
 					darkness.alpha = 0.00001;
-					pepFinal.alpha = 0.00001;
-	
-					glitchSmall.alpha = 0.00001;
-					glitchBig.alpha = 0.00001;
+					pepFinal.visible = false;
+
+					glitchSmall.visible = false;
+					glitchBig.visible = false;
 	
 					FlxTween.cancelTweensOf(glitchBig1);
 					glitchBig1.alpha = 0.00001;
 	
-					pepFinal.alpha = 0.00001;
-	
-					boomCap.alpha = 0.00001;
+					boomCap.visible = false;
 
 					FlxTween.cancelTweensOf(handKidnap);
 					handKidnap.alpha = 0.00001;
@@ -1606,14 +1703,11 @@ class Nesbeat extends BaseStage
 					boomDance = !boomDance;
 				}
 			}
-		}
 
-		if (!ClientPrefs.data.lowQuality)
-		{
 			FlxTween.cancelTweensOf(wabe);
-			//wabe.screenCenter(Y);
+			wabe.screenCenter(Y);
 			wabe.y += 25;
-			FlxTween.tween(wabe, {y: wabe.y - 25}, Conductor.crochet * 0.001, {ease: FlxEase.quadOut});
+			FlxTween.tween(wabe, {y: wabe.y - 25}, Conductor.crochet * 0.004, {ease: FlxEase.expoOut});
 		}
 	}
 
@@ -1638,31 +1732,35 @@ class Nesbeat extends BaseStage
 	var alreadychange2:Bool = true;
     override function sectionHit()
 	{
-		if (PlayState.SONG.notes[curSection].followCam)
+		//had to hardcode some sections cuz of STUPID ESTATICA
+		if (PlayState.SONG.notes[curSection] != null && PlayState.SONG.notes[curSection].followCam && (curSection != 168 && curSection != 169 && curSection != 176 && curSection != 177 && curSection != 193 && curSection != 194))
 		{
 			estatica.alpha = 0.6;
 			FlxTween.tween(estatica, {alpha: 0.05}, 0.5, {ease: FlxEase.quadInOut});
 
-			if(PlayState.SONG.notes[curSection].hwaw)
-			{
-				blackBarThingie.alpha = 0.3;
-
-				if(FlxG.random.bool(1))
-					game.gf.visible = true;
-				else
-					game.gf.visible = false;
-			}
+			if(FlxG.random.bool(1))
+				game.gf.visible = true;
 			else
-			{
-				blackBarThingie.alpha = 0.00001;
 				game.gf.visible = false;
-			}
 		}
 
-		boyfriend.visible = PlayState.SONG.notes[curSection].hwaw;
-		dad.visible = PlayState.SONG.notes[curSection].pepper;
-		mom.visible = PlayState.SONG.notes[curSection].pole;
-		bro.visible = PlayState.SONG.notes[curSection].jack;
+		if(PlayState.SONG.notes[curSection] != null && PlayState.SONG.notes[curSection].hwaw)
+		{
+			blackBarThingie.alpha = 0.3;
+		}
+		else
+		{
+			blackBarThingie.alpha = 0.00001;
+			game.gf.visible = false;
+		}
+
+		if(PlayState.SONG.notes[curSection] != null)
+		{
+			boyfriend.visible = PlayState.SONG.notes[curSection].hwaw;
+			dad.visible = PlayState.SONG.notes[curSection].pepper;
+			mom.visible = PlayState.SONG.notes[curSection].pole;
+			bro.visible = PlayState.SONG.notes[curSection].jack;
+		}
 	}
 
     override function opponentNoteHit(note:Note)
@@ -1679,8 +1777,8 @@ class Nesbeat extends BaseStage
 			if(chroma)
 				if(ClientPrefs.data.shaders && ClientPrefs.data.flashing) 
 				{
-					chromacrap = FlxG.random.float(0.005, 0.05);
-					FlxTween.tween(this, {chromacrap: 0}, FlxG.random.float(0.05, 0.12));
+					chromacrap = FlxG.random.float(0.005, 0.03);
+					FlxTween.tween(this, {chromacrap: 0}, FlxG.random.float(0.05, 0.6));
 				}
 		}
 	}
@@ -1709,7 +1807,7 @@ class Nesbeat extends BaseStage
 		notes.alpha = 1;
 		notesCamGroup.add(notes);
 
-		FlxTween.tween(notes, {y: FlxG.random.float(100, 200), alpha: 0}, 1, {ease: FlxEase.quadOut,
+		FlxTween.tween(notes, {y: FlxG.random.float(100, 200), alpha: 0}, 1, {ease: FlxEase.expoOut,
 			onComplete: function(tween:FlxTween)
 			{
 				notes.kill();
@@ -1801,14 +1899,14 @@ class Nesbeat extends BaseStage
 	public function goingNuts()
 	{
 		bgPizdec.angle = -35;
-		bgPizdec.alpha = 1;
+		bgPizdec.visible = true;
 		FlxTween.tween(bgPizdec, {angle: 0}, 0.3, {
 			ease: FlxEase.backOut,
 			onComplete: function(tween:FlxTween)
 			{
 				new FlxTimer().start(3, function(timer:FlxTimer)
 				{
-					FlxTween.tween(bgPizdec.velocity, {x: 2000}, 3, {ease: FlxEase.quadIn});
+					FlxTween.tween(bgPizdec.velocity, {x: 2000}, 3, {ease: FlxEase.expoIn});
 				});
 			}
 		});

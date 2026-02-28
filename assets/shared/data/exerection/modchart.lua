@@ -249,7 +249,7 @@ function onBeatHit()
     end
 
     if curBeat >= 536 and curBeat <= 664 then
-        staticArrowWave = 40
+        staticArrowWave = 35
 
         if balls then
             for i = 0, 7 do

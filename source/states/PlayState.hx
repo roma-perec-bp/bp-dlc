@@ -992,8 +992,11 @@ class PlayState extends MusicBeatState
 			}
 		#end
 
-		setupCameraToSong();
-		resetCamera(songName == 'hard-mode' ? false : true);
+		if (!ClientPrefs.data.optimize)
+		{
+			setupCameraToSong();
+			resetCamera(songName == 'hard-mode' ? false : true);
+		}
 
 		if(eventNotes.length > 0)
 		{

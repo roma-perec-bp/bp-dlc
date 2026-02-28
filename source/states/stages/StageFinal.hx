@@ -44,6 +44,8 @@ class StageFinal extends BaseStage
 
 	public var lavaEmitter:FlxTypedEmitter<LavaParticle>;
 
+	var amdAlert:Bool = false;
+
 
 	//FIRST DIALOGUE SHIR
 	var curDil:Int = 0;
@@ -92,6 +94,10 @@ class StageFinal extends BaseStage
 		GameOverSubstate.characterName = 'bf-dead-front';
 		GameOverSubstate.loopSoundName = 'gameOver-ex';
 		GameOverSubstate.endSoundName = 'gameOverEnd-ex';
+
+		var appGL = lime.app.Application.current.window.context.gl;
+		if(appGL.getString(appGL.VENDOR).contains('AMD') || appGL.getString(appGL.VENDOR).contains('ATI') || appGL.getString(appGL.SHADING_LANGUAGE_VERSION).substr(0, 3) < '1.2')
+			amdAlert = true;
 
 		if (!ClientPrefs.data.lowQuality)
 		{
@@ -207,7 +213,7 @@ class StageFinal extends BaseStage
 	override function noteMiss(note:Note) 
 	{
 		blackOverlay.alpha = 0.6;
-		if (!ClientPrefs.data.lowQuality)
+		if (!ClientPrefs.data.lowQuality && ClientPrefs.data.shaders)
 		{
 			if (ClientPrefs.data.flashing) caShader.warpStrength = 16;
 		}
@@ -302,7 +308,7 @@ class StageFinal extends BaseStage
 
 		if (!ClientPrefs.data.lowQuality)
 		{
-			if (ClientPrefs.data.flashing) caShader.warpStrength = FlxMath.lerp(0, caShader.warpStrength, 0.95);
+			if (ClientPrefs.data.flashing && ClientPrefs.data.shaders) caShader.warpStrength = FlxMath.lerp(0, caShader.warpStrength, 0.95);
 
 			if(analyzer == null) return;
 
@@ -424,7 +430,7 @@ class StageFinal extends BaseStage
 			lavaEmitter.start(false);
 		}
 
-		if (!ClientPrefs.data.lowQuality)
+		if (!ClientPrefs.data.lowQuality && ClientPrefs.data.shaders)
 		{
 			if(ClientPrefs.data.flashing)
 			{
@@ -461,9 +467,12 @@ class StageFinal extends BaseStage
 					case 'appear':
 						if (!ClientPrefs.data.lowQuality)
 						{
-							if(ClientPrefs.data.flashing)
+							if(ClientPrefs.data.flashing && ClientPrefs.data.shaders)
 							{
-								camGame.setFilters([new ShaderFilter(bloomShader), new ShaderFilter(caShader)]);
+								if(amdAlert)
+									camGame.setFilters([new ShaderFilter(caShader)]);
+								else
+									camGame.setFilters([new ShaderFilter(bloomShader), new ShaderFilter(caShader)]);
 							}
 							else
 							{
@@ -482,9 +491,12 @@ class StageFinal extends BaseStage
 						bg.alpha = 1;
 						if (!ClientPrefs.data.lowQuality)
 						{
-							if(ClientPrefs.data.flashing)
+							if(ClientPrefs.data.flashing && ClientPrefs.data.shaders)
 							{
-								camGame.setFilters([new ShaderFilter(bloomShader), new ShaderFilter(caShader)]);
+								if(amdAlert)
+									camGame.setFilters([new ShaderFilter(caShader)]);
+								else
+									camGame.setFilters([new ShaderFilter(bloomShader), new ShaderFilter(caShader)]);
 							}
 							else
 							{
@@ -498,9 +510,12 @@ class StageFinal extends BaseStage
 						bg.alpha = 1;
 						if (!ClientPrefs.data.lowQuality)
 						{
-							if(ClientPrefs.data.flashing)
+							if(ClientPrefs.data.flashing && ClientPrefs.data.shaders)
 							{
-								camGame.setFilters([new ShaderFilter(bloomShader), new ShaderFilter(desaturate), new ShaderFilter(caShader)]);
+								if(amdAlert)
+									camGame.setFilters([new ShaderFilter(desaturate), new ShaderFilter(caShader)]);
+								else
+									camGame.setFilters([new ShaderFilter(bloomShader), new ShaderFilter(desaturate), new ShaderFilter(caShader)]);
 							}
 							else
 							{

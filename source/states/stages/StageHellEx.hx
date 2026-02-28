@@ -40,6 +40,8 @@ class StageHellEx extends BaseStage
 
 	var effect:SMWPixelBlurShader;
 
+	var amdAlert:Bool = false;
+
 	override function create()
 	{
 		var _song = PlayState.SONG;
@@ -48,11 +50,15 @@ class StageHellEx extends BaseStage
 		if(_song.gameOverEnd == null || _song.gameOverEnd.trim().length < 1) GameOverSubstate.endSoundName = 'gameOverEnd-ex';
 		if(_song.gameOverChar == null || _song.gameOverChar.trim().length < 1) GameOverSubstate.characterName = 'bf_new-ex-dead';
 
-		if (FlxG.random.bool(24))
+		if (FlxG.random.bool(16))
 		{
 			if(_song.gameOverSound == null || _song.gameOverSound.trim().length < 1) GameOverSubstate.deathSoundName = 'fnf_loss_sfx-ex-secret';
 			if(_song.gameOverChar == null || _song.gameOverChar.trim().length < 1) GameOverSubstate.characterName = 'bf_new-ex-dead-secret';
 		}
+
+		var appGL = lime.app.Application.current.window.context.gl;
+		if(appGL.getString(appGL.VENDOR).contains('AMD') || appGL.getString(appGL.VENDOR).contains('ATI') || appGL.getString(appGL.SHADING_LANGUAGE_VERSION).substr(0, 3) < '1.2')
+			amdAlert = true;
 
 		temp = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK); //needs for color shit LMAO
 		temp.visible = false;
@@ -161,7 +167,7 @@ class StageHellEx extends BaseStage
 
 		if (!ClientPrefs.data.lowQuality)
 		{
-			if(ClientPrefs.data.flashing)
+			if(ClientPrefs.data.flashing && ClientPrefs.data.shaders)
 			{
 				lolShader = new BunnyShader();
 				noiseShader = new NoiseShader();
@@ -169,11 +175,11 @@ class StageHellEx extends BaseStage
 				camGame.setFilters([new ShaderFilter(lolShader), new ShaderFilter(noiseShader)]);
 			}
 
-			if (!ClientPrefs.data.lowQuality){
+			if (!ClientPrefs.data.lowQuality && ClientPrefs.data.shaders){
 				effect = new SMWPixelBlurShader();
 			}
 		}
-
+		
 		vin = new FlxSprite().loadGraphic(Paths.image('dark'));
 		vin.updateHitbox();
 		vin.setGraphicSize(FlxG.width, FlxG.height);
@@ -280,11 +286,14 @@ class StageHellEx extends BaseStage
 					case 'remove 1bit shader':
 						if (!ClientPrefs.data.lowQuality)
 						{
-							if(ClientPrefs.data.flashing)
+							if(ClientPrefs.data.flashing && ClientPrefs.data.shaders)
 							{
 								lolShader = new BunnyShader();
 								noiseShader = new NoiseShader();
-								camGame.setFilters([new ShaderFilter(bloomShader)]);
+								if(amdAlert)
+									camGame.setFilters([]);
+								else
+									camGame.setFilters([new ShaderFilter(bloomShader)]);
 							}
 						}
 						FlxTween.tween(camHUD, {alpha: 1}, 1, {ease: FlxEase.linear});
@@ -292,17 +301,18 @@ class StageHellEx extends BaseStage
 					case 'default colors':
 						rimDad.setAdjustColor(-26, -21, 12, -26);
 						rimDad.colorGay = 0xFFFF0000;
-						rimDad.distance = 15;
+						rimDad.distance = 10;
+						rimDad.angle = 90;
 						rimDad.threshold = 6;
 
 						rimBf.setAdjustColor(-26, -21, 12, -26);
 						rimBf.colorGay = 0xFFFF0000;
-						rimBf.distance = 15;
+						rimBf.distance = 10;
 						rimBf.threshold = 6;
 
 						rimBG.setAdjustColor(-26, -21, 12, -26);
 						rimBG.colorGay = 0xFFFF0000;
-						rimBG.distance = 20;
+						rimBG.distance = 15;
 						rimBG.threshold = 6;
 
 					case 'fire off':
@@ -502,8 +512,11 @@ class StageHellEx extends BaseStage
 						bigvin.alpha = 0.0001;
 
 					case 'pixel blur':
-						if (!ClientPrefs.data.lowQuality){
-							camGame.setFilters([new ShaderFilter(bloomShader), new ShaderFilter(effect.shader)]);
+						if (!ClientPrefs.data.lowQuality && ClientPrefs.data.shaders){
+							if(amdAlert)
+								camGame.setFilters([new ShaderFilter(effect.shader)]);
+							else
+								camGame.setFilters([new ShaderFilter(bloomShader), new ShaderFilter(effect.shader)]);
 							//effect.setStrength(40, 40);
 							FlxTween.num(0, 20, Conductor.stepCrochet * 32 / 1000, function(v)
 							{
@@ -512,7 +525,7 @@ class StageHellEx extends BaseStage
 					}
 
 					case 'pixel blur no':
-						if (!ClientPrefs.data.lowQuality)
+						if (!ClientPrefs.data.lowQuality && ClientPrefs.data.shaders && !amdAlert)
 							camGame.setFilters([new ShaderFilter(bloomShader)]);
 
 					case 'second stage':

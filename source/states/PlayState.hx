@@ -2171,6 +2171,8 @@ class PlayState extends MusicBeatState
 				 * CREDITS TO INCOMPETENT PSYCH FOR THIS
 				*/
 
+				if(ClientPrefs.data.optimize) return;
+
 				if(event.value1 != 'sequences')
 				{
 					if(!preloadedVideoAtLeastOnce)
@@ -4268,6 +4270,8 @@ class PlayState extends MusicBeatState
 				FlxG.sound.play(Paths.sound(value1), flValue2);
 
 			case 'Play Video':
+				if(ClientPrefs.data.optimize) return;
+
 				switch(value1)
 				{
 					case 'sequences':
@@ -4293,6 +4297,8 @@ class PlayState extends MusicBeatState
 						medal.alpha = 0.0001;
 				}
 			case 'Hide Video':
+				if(ClientPrefs.data.optimize) return;
+				
 				videoCutscene.alpha = 0.0001;
 				cover.alpha = 0;
 				playingVideo = false;

@@ -15,6 +15,7 @@ class HardSubState extends MusicBeatSubstate
 	var onYes:Bool = true;
 	var yesText:Alphabet;
 	var noText:Alphabet;
+	var choose:Bool = false;
 
 	// Week -1 = Freeplay
 	public function new()
@@ -57,64 +58,75 @@ class HardSubState extends MusicBeatSubstate
 		}
 
 		if(controls.UI_LEFT_P || controls.UI_RIGHT_P) {
+			if(choose) return;
 			FlxG.sound.play(Paths.sound('scrollMenu'), 1);
 			onYes = !onYes;
 			updateOptions();
 		}
 		if(controls.BACK) {
+			if(choose) return;
 			FlxG.sound.play(Paths.sound('cancelMenu'), 1);
 			close();
 		} else if(controls.ACCEPT) {
+			if(choose) return;
+			choose = true;
 			if(onYes) {
-				PlayState.storyPlaylist = ['holy-hell'];
-          		PlayState.isStoryMode = false;
-				PlayState.storyDifficulty = 1;
-    
-           		Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '', PlayState.storyPlaylist[0].toLowerCase());
+				FlxG.camera.fade(FlxColor.BLACK, 1, false);
+				FlxG.sound.music.stop();
 
-            	var directory = StageData.forceNextDirectory;
-				LoadingState.loadNextDirectory();
-				StageData.forceNextDirectory = directory;
-
-            	@:privateAccess
-				if(PlayState._lastLoadedModDirectory != Mods.currentModDirectory)
+				new FlxTimer().start(1, function(timer:FlxTimer)
 				{
-					trace('CHANGED MOD DIRECTORY, RELOADING STUFF');
-					Paths.freeGraphicsFromMemory();
-				}
-
-				LoadingState.prepareToSong();
-				LoadingState.loadAndSwitchState(new PlayState());
-    
-            	FlxG.sound.music.stop();
-           		return;
+					PlayState.storyPlaylist = ['holy-hell'];
+					PlayState.isStoryMode = false;
+				  	PlayState.storyDifficulty = 1;
+	  
+					Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '', PlayState.storyPlaylist[0].toLowerCase());
+  
+				  	var directory = StageData.forceNextDirectory;
+				  	LoadingState.loadNextDirectory();
+				  	StageData.forceNextDirectory = directory;
+  
+				  	@:privateAccess
+				  	if(PlayState._lastLoadedModDirectory != Mods.currentModDirectory)
+				  	{
+					  	trace('CHANGED MOD DIRECTORY, RELOADING STUFF');
+					  	Paths.freeGraphicsFromMemory();
+				  	}
+  
+				  	LoadingState.prepareToSong();
+				  	LoadingState.loadAndSwitchState(new PlayState());
+					return;
+				});
 			}
 			else {
-				PlayState.storyPlaylist = ['holy-hell'];
-          		PlayState.isStoryMode = false;
-				PlayState.storyDifficulty = 2;
-    
-           		Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '-hard', PlayState.storyPlaylist[0].toLowerCase());
+				FlxG.camera.fade(FlxColor.BLACK, 1, false);
+				FlxG.sound.music.stop();
 
-            	var directory = StageData.forceNextDirectory;
-				LoadingState.loadNextDirectory();
-				StageData.forceNextDirectory = directory;
-
-            	@:privateAccess
-				if(PlayState._lastLoadedModDirectory != Mods.currentModDirectory)
+				new FlxTimer().start(1, function(timer:FlxTimer)
 				{
-					trace('CHANGED MOD DIRECTORY, RELOADING STUFF');
-					Paths.freeGraphicsFromMemory();
-				}
-
-				LoadingState.prepareToSong();
-				LoadingState.loadAndSwitchState(new PlayState());
-    
-            	FlxG.sound.music.stop();
-           		return;
+					PlayState.storyPlaylist = ['holy-hell'];
+					PlayState.isStoryMode = false;
+				  	PlayState.storyDifficulty = 2;
+	  
+					Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '-hard', PlayState.storyPlaylist[0].toLowerCase());
+  
+				 	var directory = StageData.forceNextDirectory;
+				 	LoadingState.loadNextDirectory();
+				  	StageData.forceNextDirectory = directory;
+  
+				  	@:privateAccess
+				  	if(PlayState._lastLoadedModDirectory != Mods.currentModDirectory)
+				  	{
+					  	trace('CHANGED MOD DIRECTORY, RELOADING STUFF');
+					 	Paths.freeGraphicsFromMemory();
+				  	}
+  
+				  	LoadingState.prepareToSong();
+				  	LoadingState.loadAndSwitchState(new PlayState());
+					return;
+				});
 			}
 			FlxG.sound.play(Paths.sound('cancelMenu'), 1);
-			close();
 		}
 		super.update(elapsed);
 	}

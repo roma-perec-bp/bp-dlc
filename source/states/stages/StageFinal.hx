@@ -99,33 +99,36 @@ class StageFinal extends BaseStage
 		if(appGL.getString(appGL.VENDOR).contains('AMD') || appGL.getString(appGL.VENDOR).contains('ATI') || appGL.getString(appGL.SHADING_LANGUAGE_VERSION).substr(0, 3) < '1.2')
 			amdAlert = true;
 
-		if (!ClientPrefs.data.lowQuality)
+		if(!ClientPrefs.data.optimize)
 		{
-			var vizX:Float = 0;
-			var vizY:Float = 0;
-			for (i in 1...VIZ_MAX+1)
+			if (!ClientPrefs.data.lowQuality)
 			{
-				volumes.push(0.0);
-				vizX = VIZ_POS_X[i-1];
-				vizY = VIZ_POS_Y[i-1];
-				var viz:FlxSprite = new FlxSprite(vizX, vizY);
-				viz.frames = Paths.getSparrowAtlas('vis_spr/vis_'+i);
-				viz.animation.addByPrefix('VIZ', Std.string(i), 0);
-				viz.animation.play('VIZ', true);
-				viz.animation.curAnim.finish(); //make it go to the lowest point
-				viz.antialiasing = ClientPrefs.data.antialiasing;
-				vizSprites.push(viz);
-				viz.updateHitbox();
-				viz.centerOffsets();
-				add(viz);
-				viz.alpha = 0.0001;
+				var vizX:Float = 0;
+				var vizY:Float = 0;
+				for (i in 1...VIZ_MAX+1)
+				{
+					volumes.push(0.0);
+					vizX = VIZ_POS_X[i-1];
+					vizY = VIZ_POS_Y[i-1];
+					var viz:FlxSprite = new FlxSprite(vizX, vizY);
+					viz.frames = Paths.getSparrowAtlas('vis_spr/vis_'+i);
+					viz.animation.addByPrefix('VIZ', Std.string(i), 0);
+					viz.animation.play('VIZ', true);
+					viz.animation.curAnim.finish(); //make it go to the lowest point
+					viz.antialiasing = ClientPrefs.data.antialiasing;
+					vizSprites.push(viz);
+					viz.updateHitbox();
+					viz.centerOffsets();
+					add(viz);
+					viz.alpha = 0.0001;
+				}
 			}
+		
+			bg = new BGSprite('defeat_floor_lmao', -800, 460, 1, 1);
+			bg.updateHitbox();
+			bg.alpha = 0.0001;
+			add(bg);
 		}
-
-		bg = new BGSprite('defeat_floor_lmao', -800, 460, 1, 1);
-		bg.updateHitbox();
-		bg.alpha = 0.0001;
-		add(bg);
 
 		swagDialogue = new FlxTypeText(0, 520, Std.int(FlxG.width * 0.6), "", 42);
 		swagDialogue.font = Paths.font("HouseofTerrorRus.ttf");
@@ -212,6 +215,8 @@ class StageFinal extends BaseStage
 
 	override function noteMiss(note:Note) 
 	{
+		if(ClientPrefs.data.optimize) return;
+
 		blackOverlay.alpha = 0.6;
 		if (!ClientPrefs.data.lowQuality && ClientPrefs.data.shaders)
 		{
@@ -300,6 +305,8 @@ class StageFinal extends BaseStage
 
 		if(!game.endingSong && !game.startingSong)
 		{
+			if(ClientPrefs.data.optimize) return;
+
 			blackOverlay.alpha = FlxMath.lerp(0, blackOverlay.alpha, 0.95);
 			/*FlxG.sound.music.volume = FlxMath.lerp(1, FlxG.sound.music.volume, 0.95);
 			game.vocals.volume = FlxMath.lerp(1, game.vocals.volume, 0.95);
@@ -308,6 +315,8 @@ class StageFinal extends BaseStage
 
 		if (!ClientPrefs.data.lowQuality)
 		{
+			if(ClientPrefs.data.optimize) return;
+
 			if (ClientPrefs.data.flashing && ClientPrefs.data.shaders) caShader.warpStrength = FlxMath.lerp(0, caShader.warpStrength, 0.95);
 
 			if(analyzer == null) return;
@@ -406,6 +415,8 @@ class StageFinal extends BaseStage
     {
 		if (!ClientPrefs.data.lowQuality)
 		{
+			if(ClientPrefs.data.optimize) return;
+
 			overlay = new BGSprite('red_shit', -650, -100, 1, 1);
 			overlay.alpha = 0.0001;
 			overlay.updateHitbox();
@@ -432,6 +443,8 @@ class StageFinal extends BaseStage
 
 		if (!ClientPrefs.data.lowQuality && ClientPrefs.data.shaders)
 		{
+			if(ClientPrefs.data.optimize) return;
+
 			if(ClientPrefs.data.flashing)
 			{
 				bloomShader = new UhShader();
@@ -441,20 +454,24 @@ class StageFinal extends BaseStage
 				camGame.setFilters([new ShaderFilter(caShader)]);
 			}
 		}
-		desaturate = new DesaturateShader();
+		
+		if(!ClientPrefs.data.optimize)
+		{
+			desaturate = new DesaturateShader();
 
-		blackOverlay = new FlxSprite(FlxG.width * -0.5, FlxG.height * -0.5).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.BLACK);
-		blackOverlay.scale.set(5,5);
-		blackOverlay.alpha = 0.001;
-		add(blackOverlay);
-
-		flashbacc = new FlxSprite().loadGraphic(Paths.image('flashback/flash_0'));
-		flashbacc.scale.set(0.6, 0.6);
-		flashbacc.updateHitbox();
-		flashbacc.screenCenter();
-		add(flashbacc);
-		flashbacc.alpha = 0.0001;
-		flashbacc.cameras = [camHudBehind];
+			blackOverlay = new FlxSprite(FlxG.width * -0.5, FlxG.height * -0.5).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.BLACK);
+			blackOverlay.scale.set(5,5);
+			blackOverlay.alpha = 0.001;
+			add(blackOverlay);
+	
+			flashbacc = new FlxSprite().loadGraphic(Paths.image('flashback/flash_0'));
+			flashbacc.scale.set(0.6, 0.6);
+			flashbacc.updateHitbox();
+			flashbacc.screenCenter();
+			add(flashbacc);
+			flashbacc.alpha = 0.0001;
+			flashbacc.cameras = [camHudBehind];
+		}
 	}
 
 	override function eventCalled(eventName:String, value1:String, value2:String, value3:String, value4:String, value5:String, flValue1:Null<Float>, flValue2:Null<Float>, flValue3:Null<Float>, flValue4:Null<Float>, flValue5:Null<Float>, strumTime:Float)
@@ -465,6 +482,8 @@ class StageFinal extends BaseStage
 				switch(value1)
 				{
 					case 'appear':
+						if(ClientPrefs.data.optimize) return;
+
 						if (!ClientPrefs.data.lowQuality)
 						{
 							if(ClientPrefs.data.flashing && ClientPrefs.data.shaders)
@@ -488,6 +507,8 @@ class StageFinal extends BaseStage
 						bg.alpha = 1;
 
 					case 'no bg':
+						if(ClientPrefs.data.optimize) return;
+
 						bg.alpha = 1;
 						if (!ClientPrefs.data.lowQuality)
 						{
@@ -507,6 +528,8 @@ class StageFinal extends BaseStage
 							camGame.setFilters([]);
 
 					case 'trans':
+						if(ClientPrefs.data.optimize) return;
+
 						bg.alpha = 1;
 						if (!ClientPrefs.data.lowQuality)
 						{
@@ -534,37 +557,48 @@ class StageFinal extends BaseStage
 						}
 
 					case 'end':
-						camGame.setFilters([]);
-						camGame.stopFX();
-						camHUD.stopFX();
-						bg.alpha = 0.0001;
-						if (!ClientPrefs.data.lowQuality)
+						if(!ClientPrefs.data.optimize)
 						{
-
-							for (i in 0...Std.int(Math.min(vizSprites.length, levels.length)))
+							camGame.setFilters([]);
+							camGame.stopFX();
+							camHUD.stopFX();
+							bg.alpha = 0.0001;
+							if (!ClientPrefs.data.lowQuality)
 							{
-								vizSprites[i].alpha = 0.0001;
+	
+								for (i in 0...Std.int(Math.min(vizSprites.length, levels.length)))
+								{
+									vizSprites[i].alpha = 0.0001;
+								}
+								overlay.alpha = 0.0001;
 							}
-							overlay.alpha = 0.0001;
+	
+							if(!ClientPrefs.data.lowQuality)  light.alpha = 0.0001;
+							if(!ClientPrefs.data.lowQuality) FlxTween.tween(lavaEmitter, {y: 3400}, 0.0001, {ease: FlxEase.expoOut});
 						}
-
-						if(!ClientPrefs.data.lowQuality)  light.alpha = 0.0001;
-						if(!ClientPrefs.data.lowQuality) FlxTween.tween(lavaEmitter, {y: 3400}, 0.0001, {ease: FlxEase.expoOut});
 
 						FlxTween.tween(camHUD, {alpha: 0}, 3, {ease: FlxEase.linear});
 					case 'flash appear':
+						if(ClientPrefs.data.optimize) return;
+
 						flashbacc.alpha = 1;
 						camHudBehind.zoom = 2;
 						FlxTween.tween(camHudBehind, {zoom: 1}, Conductor.stepCrochet * 64 / 1000, {ease: FlxEase.smootherStepOut});
 
 					case 'flash do':
+						if(ClientPrefs.data.optimize) return;
+						
 						flush++;
 						flashbacc.loadGraphic(Paths.image('flashback/flash_'+flush));
 
 					case 'flash bye':
+						if(ClientPrefs.data.optimize) return;
+
 						flashbacc.alpha = 0.0001;
 
 					case 'brutal pizdec':
+						if(ClientPrefs.data.optimize) return;
+
 						if(!ClientPrefs.data.lowQuality)  light.alpha = 0.45;
 						if(!ClientPrefs.data.lowQuality) FlxTween.tween(lavaEmitter, {y: 800}, 1, {ease: FlxEase.expoOut});
 				}

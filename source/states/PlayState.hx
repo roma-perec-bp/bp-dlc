@@ -492,10 +492,13 @@ class PlayState extends MusicBeatState
 
 		curStage = SONG.stage;
 
-		if(SONG.song == 'ezqsvf') //лучше так чем графику создавать ЛОЛ
-			camGame.bgColor = 0xFFFFFFFF;
-		else
-			camGame.bgColor = 0xFF000000;
+		if(!ClientPrefs.data.optimize)
+		{
+			if(SONG.song == 'ezqsvf') //лучше так чем графику создавать ЛОЛ
+				camGame.bgColor = 0xFFFFFFFF;
+			else
+				camGame.bgColor = 0xFF000000;
+		}
 
 		var stageData:StageFile = StageData.getStageFile(curStage);
 		defaultCamZoom = stageData.defaultZoom;
@@ -549,8 +552,12 @@ class PlayState extends MusicBeatState
 				case 'dustStage': camGame.bgColor = 0xFFFFFFFF; //D.E.P
 				case 'caramelStage': new StageCaramel(); 		//CaramelDanses
 				case 'grassHard': new StageGrassHard(); 		//Hard Mode
-				case 'final': new StageFinal(); 				//Holy Hell
 			}
+		}
+		//из за концовки пришлсь переставить
+		switch (curStage)
+		{
+			case 'final': new StageFinal(); 				//Holy Hell
 		}
 
 		#if (LUA_ALLOWED || HSCRIPT_ALLOWED)
@@ -632,8 +639,11 @@ class PlayState extends MusicBeatState
 		
 		#if (LUA_ALLOWED || HSCRIPT_ALLOWED)
 		// STAGE SCRIPTS
-		#if LUA_ALLOWED startLuasNamed('stages/' + curStage + '.lua'); #end
-		#if HSCRIPT_ALLOWED startHScriptsNamed('stages/' + curStage + '.hx'); #end
+		if(!ClientPrefs.data.optimize)
+		{
+			#if LUA_ALLOWED startLuasNamed('stages/' + curStage + '.lua'); #end
+			#if HSCRIPT_ALLOWED startHScriptsNamed('stages/' + curStage + '.hx'); #end
+		}
 
 		// CHARACTER SCRIPTS
 		if(gf != null) startCharacterScripts(gf.curCharacter);
@@ -937,6 +947,10 @@ class PlayState extends MusicBeatState
 		medal.origin.set(128/2, 128/2);
 		medal.updateHitbox();
 		medal.visible = !ClientPrefs.data.hideHud;
+
+		if(ClientPrefs.data.downScroll)
+			medal.y = healthBar.y - 75;
+
 		if (!ClientPrefs.data.hideHud)uiGroup.add(medal);
 
 		if(SONG.song == 'ezqsvf')
@@ -3184,6 +3198,8 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'Add trail':
+				if(ClientPrefs.data.optimize) return;
+
 				var charType:Int = 0;
 				var val3:Int = Std.parseInt(value3);
 
@@ -3234,6 +3250,8 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'Remove trail':
+				if(ClientPrefs.data.optimize) return;
+
 				switch(value1.toLowerCase().trim()) {
 					case 'gf' | 'girlfriend':
 						remove(trailGf);
@@ -3247,6 +3265,8 @@ class PlayState extends MusicBeatState
 				}
 
 			case "Focus Camera":
+				if(ClientPrefs.data.optimize) return;
+				
 				var coordsStr:Array<String> = value4.split(",");
 					
 				var char:String = value1 ?? "dad";
@@ -5883,6 +5903,8 @@ class PlayState extends MusicBeatState
 
 			if (SONG.notes[curSection].followCam && !endingSong)
 			{
+				if(ClientPrefs.data.optimize) return;
+
 				switch (SONG.notes[curSection].charFollow.toLowerCase())
 				{
 					case "bf":

@@ -349,7 +349,6 @@ class Nesbeat extends BaseStage
 			beatusHandsL.visible = false;
 			beatusHandsL.updateHitbox();
 			beatusHandsL.cameras = [camHUD];
-			beatusHandsL.active = false;
 			add(beatusHandsL);
 
 			beatusHandsR = new FlxSprite(0, 0);
@@ -359,7 +358,6 @@ class Nesbeat extends BaseStage
 			beatusHandsR.antialiasing = ClientPrefs.data.antialiasing;
 			beatusHandsR.visible = false;
 			beatusHandsR.flipX = true;
-			beatusHandsR.active = false;
 			beatusHandsR.updateHitbox();
 			beatusHandsR.cameras = [camHUD];
 			add(beatusHandsR);
@@ -1039,8 +1037,8 @@ class Nesbeat extends BaseStage
 					case '39': //ручки
 					    if (ClientPrefs.data.lowQuality) return;
 
-						beatusHandsL.animation.play('idle');
-						beatusHandsR.animation.play('idle');
+						beatusHandsL.animation.play('idle', true);
+						beatusHandsR.animation.play('idle', true);
 
 						beatusHandsL.visible = !beatusHandsL.visible;
 						beatusHandsR.visible = !beatusHandsR.visible;
